@@ -1192,8 +1192,8 @@ def build_scenario(ws: Worksheet, raw: dict[str, RawTable], default_ticker: str)
     put(ws, "D26", f"={SC_DF_COL}{SC_PROJ_LAST}", font=F_BASE, fmt="0.0000",
         align="center", border=True)
     put(ws, "E26", "=C26*D26", font=F_BASE, fmt=FMT_CUR, align="center", border=True)
-    put(ws, "F26", "#N/A here means WACC <= terminal growth: the perpetuity does "
-        "not converge.", font=F_NOTE)
+    put(ws, "F26", "A not-available result here means WACC <= terminal growth, "
+        "for which the Gordon perpetuity does not converge.", font=F_NOTE)
 
     # ---- outputs ---------------------------------------------------------
     section(ws, 28, "OUTPUT", 6)
@@ -1478,7 +1478,9 @@ def build_workbook(input_dir: str, output_path: str) -> str:
     wb.remove(wb.active)
     # Make Arial the workbook default so the RAW dumps (which can run to
     # >100k cells) need no per-cell styling.
-    wb._named_styles["Normal"].font = Font(name=FONT_NAME, size=10)
+    for style in wb._named_styles:
+        if style.name == "Normal":
+            style.font = Font(name=FONT_NAME, size=10)
 
     sheets = {name: wb.create_sheet(name) for name in SHEET_ORDER}
 
