@@ -1,0 +1,10 @@
+# HTTP response cache. Regenerated on demand, hundreds of megabytes at full
+# universe scale, and stale within a day - never useful in version control.
+data/cache/
+
+# Run logs
+logs/
+
+__pycache__/
+*.pyc
+.pytest_cache/
