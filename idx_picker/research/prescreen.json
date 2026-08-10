@@ -26,7 +26,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 6471.9072,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 72.6
   },
   {
    "t": "LSIP",
@@ -54,7 +55,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 1953.2845,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 76.8
   },
   {
    "t": "DMAS",
@@ -82,7 +84,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 1642.504,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 71.4
   },
   {
    "t": "MAPI",
@@ -110,7 +113,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 2534.258,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 73.5
   },
   {
    "t": "NCKL",
@@ -138,7 +142,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 10260.054,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 69.1
   },
   {
    "t": "ACES",
@@ -166,7 +171,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 1303.1558,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 73.1
   },
   {
    "t": "PWON",
@@ -194,7 +200,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 2328.263,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 72.8
   },
   {
    "t": "MSTI",
@@ -222,7 +229,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 793.9245,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 69.5
   },
   {
    "t": "CTRA",
@@ -250,7 +258,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 1490.139,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 77.5
   },
   {
    "t": "KIJA",
@@ -278,7 +287,8 @@
    "shsrc": "market_cap/price",
    "shdis": 0.0342,
    "turnover_mn": 5807.2528,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 69.9
   },
   {
    "t": "AALI",
@@ -306,7 +316,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 1522.92,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 72.1
   },
   {
    "t": "BSSR",
@@ -334,7 +345,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 804.947,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 69.3
   },
   {
    "t": "NISP",
@@ -362,7 +374,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 977.114,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 67.3
   },
   {
    "t": "AADI",
@@ -390,7 +403,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 10381.815,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 68.6
   },
   {
    "t": "PGAS",
@@ -418,7 +432,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 14361.112,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 69.2
   },
   {
    "t": "SIMP",
@@ -446,7 +461,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 1897.14,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 71.9
   },
   {
    "t": "ERAL",
@@ -474,7 +490,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 406.968,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 66.3
   },
   {
    "t": "AUTO",
@@ -502,7 +519,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 2313.242,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 65.0
   },
   {
    "t": "INDF",
@@ -530,7 +548,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 5831.2,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 66.5
   },
   {
    "t": "ITMG",
@@ -558,7 +577,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 4872.0725,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 61.6
   },
   {
    "t": "MPMX",
@@ -586,7 +606,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 4141.7055,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 63.7
   },
   {
    "t": "SMDR",
@@ -614,7 +635,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 1571.0156,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 67.4
   },
   {
    "t": "BMRI",
@@ -642,7 +664,8 @@
    "shsrc": "market_cap/price",
    "shdis": 0.9948,
    "turnover_mn": 114703.024,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 58.9
   },
   {
    "t": "PTBA",
@@ -670,7 +693,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 12017.096,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 56.5
   },
   {
    "t": "PNBN",
@@ -698,7 +722,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 639.99,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 60.2
   },
   {
    "t": "JKON",
@@ -726,7 +751,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 1606.6636,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 60.6
   },
   {
    "t": "ERAA",
@@ -754,7 +780,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 14965.129,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 65.5
   },
   {
    "t": "HRUM",
@@ -782,7 +809,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 17992.962,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 56.8
   },
   {
    "t": "MNCN",
@@ -810,7 +838,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 4367.32,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 72.9
   },
   {
    "t": "UNTR",
@@ -838,7 +867,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 29864.37,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 55.8
   },
   {
    "t": "ADRO",
@@ -866,7 +896,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 12332.738,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 55.0
   },
   {
    "t": "LPPF",
@@ -894,7 +925,8 @@
    "shsrc": "market_cap/price",
    "shdis": 0.0012,
    "turnover_mn": 1371.381,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 71.5
   },
   {
    "t": "PNLF",
@@ -922,7 +954,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 5739.448,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 61.9
   },
   {
    "t": "MAIN",
@@ -950,7 +983,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 431.961,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 59.2
   },
   {
    "t": "GJTL",
@@ -978,7 +1012,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 2674.716,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 57.4
   },
   {
    "t": "BMTR",
@@ -1006,7 +1041,8 @@
    "shsrc": "market_cap/price",
    "shdis": 1.0,
    "turnover_mn": 1173.4281,
-   "cut_reasons": []
+   "cut_reasons": [],
+   "rank_score": 67.3
   }
  ],
  "cut": [
