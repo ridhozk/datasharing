@@ -386,17 +386,23 @@ def derive_rows(record: dict[str, Any], settings: Settings, seed: dict[str, Any]
     net_debt_equity = M.safe_div(record["net_debt"], core.total_equity)
 
     # ------------------------------------------------------------ efficiency
+    # Cost of revenue drives days-inventory and days-payables. Derive it once,
+    # and only when both inputs exist: a filer that reports inventory but no
+    # revenue line (banks holding repossessed assets, newly listed shells) would
+    # otherwise crash the whole row on a None minus int.
+    cogs_ttm = None
+    if core.revenue_ttm is not None and core.gross_profit_ttm is not None:
+        cogs_ttm = core.revenue_ttm - core.gross_profit_ttm
+    cogs_basis = abs(cogs_ttm) if cogs_ttm else None
+
     dso = M.safe_div((core.receivables or 0) * 365, core.revenue_ttm) if core.receivables else None
-    dio = M.safe_div((core.inventory or 0) * 365, abs(core.revenue_ttm - (core.gross_profit_ttm or 0)) or None) if core.inventory else None
-    dpo = M.safe_div((core.payables or 0) * 365, abs(core.revenue_ttm - (core.gross_profit_ttm or 0)) or None) if core.payables else None
+    dio = M.safe_div((core.inventory or 0) * 365, cogs_basis) if core.inventory else None
+    dpo = M.safe_div((core.payables or 0) * 365, cogs_basis) if core.payables else None
     ccc = None
     if dso is not None and dio is not None and dpo is not None:
         ccc = dso + dio - dpo
     receivables_turnover = M.safe_div(core.revenue_ttm, core.receivables)
     asset_turnover = M.safe_div(core.revenue_ttm, core.total_assets)
-    cogs_ttm = None
-    if core.revenue_ttm is not None and core.gross_profit_ttm is not None:
-        cogs_ttm = core.revenue_ttm - core.gross_profit_ttm
     inventory_turnover = M.safe_div(cogs_ttm, core.inventory)
 
     # ------------------------------------------------------------- dividends

@@ -447,9 +447,123 @@ def test_report_verdict_distribution(scores_rows):
     for row in scores_rows:
         counts[row.get("Verdict", "")] = counts.get(row.get("Verdict", ""), 0) + 1
     warnings.warn(f"verdict distribution over {len(scores_rows)} rows: {counts}", UserWarning)
-    assert max(counts.values()) < len(scores_rows) or len(counts) == 1, "unreachable"
     if len(counts) == 1:
         warnings.warn(f"every row received the same verdict: {counts}", UserWarning)
+
+
+def test_earnings_yield_and_acquirers_multiple_are_reciprocals(key_stats_rows):
+    """EBIT/EV and EV/EBIT must multiply to 1 on every row that has both.
+
+    They are the same ratio inverted. If they ever disagree, one of them was
+    computed from a different EBIT or a different EV -- most likely one applied
+    the currency conversion and the other did not.
+    """
+    _require_columns(key_stats_rows, "Earnings Yield Greenblatt (EBIT/EV)",
+                     "Acquirers Multiple (EV/EBIT)")
+    bad = []
+    for row in key_stats_rows:
+        yield_, multiple = (as_float(row.get("Earnings Yield Greenblatt (EBIT/EV)")),
+                            as_float(row.get("Acquirers Multiple (EV/EBIT)")))
+        if yield_ in (None, 0.0) or multiple is None:
+            continue
+        if abs(yield_ * multiple - 1.0) > 1e-6:
+            bad.append((row["Ticker"], yield_, multiple, yield_ * multiple))
+    assert not bad, f"EBIT/EV and EV/EBIT are not reciprocal: {bad[:10]}"
+
+
+def test_greenblatt_roc_never_equals_roic_on_real_data(key_stats_rows):
+    """The two return columns must stay distinct formulas in production output.
+
+    The original workbook substituted ROIC for Greenblatt ROC. If every row
+    reports identical values, the substitution has silently returned and the
+    Magic Formula ranking is no longer the Magic Formula.
+    """
+    _require_columns(key_stats_rows, "ROC Greenblatt", "Return On Invested Capital (TTM)")
+    pairs = [
+        (as_float(row.get("ROC Greenblatt")), as_float(row.get("Return On Invested Capital (TTM)")))
+        for row in key_stats_rows
+    ]
+    comparable = [(roc, roic) for roc, roic in pairs if roc is not None and roic is not None]
+    if not comparable:
+        pytest.skip("no rows with both return metrics")
+    identical = sum(1 for roc, roic in comparable if roc == pytest.approx(roic, rel=1e-9))
+    assert identical < len(comparable), (
+        "ROC Greenblatt is identical to ROIC on every row - one has been aliased to the other"
+    )
+
+
+@pytest.mark.parametrize(
+    "stats_column, scores_column",
+    [
+        ("NCAV per Share", "NCAV per Share"),
+        ("EPV per Share", "EPV per Share"),
+        ("ROC Greenblatt", "ROC (Greenblatt)"),
+        ("Earnings Yield Greenblatt (EBIT/EV)", "Earnings Yield (EBIT/EV)"),
+        ("Altman Z-Score (Modified)", "Altman Z"),
+    ],
+)
+def test_shared_columns_agree_between_the_two_files(key_stats_rows, scores_rows,
+                                                    stats_column, scores_column):
+    """A figure published in two files must be the same figure.
+
+    The workbook surfaces both sheets; a divergence means one was written from a
+    stale object and a user comparing the two would have no way to tell which is
+    authoritative.
+    """
+    _require_columns(key_stats_rows, stats_column)
+    _require_columns(scores_rows, scores_column)
+    stats = {row["Ticker"]: as_float(row.get(stats_column)) for row in key_stats_rows}
+    mismatches = [
+        (row["Ticker"], stats[row["Ticker"]], as_float(row.get(scores_column)))
+        for row in scores_rows
+        if row["Ticker"] in stats
+        and stats[row["Ticker"]] != pytest.approx(as_float(row.get(scores_column)), rel=1e-9)
+    ]
+    assert not mismatches, f"{stats_column} differs between files: {mismatches[:10]}"
+
+
+@pytest.mark.xfail(
+    reason="DEFECT (consequence): names are demoted from BUY to WATCH by an F-Score "
+           "whose components include unevaluable signals. The annual F-Score basis "
+           "cannot evaluate CFO Positive or Accruals because Yahoo returns no "
+           "annualOperatingCashFlow, so a profitable, cash-generative business is "
+           "capped at 7/9 and can be pushed under the F<=3 gate by two blanks.",
+    strict=False,
+)
+def test_no_row_is_demoted_by_an_f_score_built_on_blank_signals(scores_rows, key_stats_rows):
+    """A cheap, safe, decent-quality name must not be blocked by missing data.
+
+    `classify` sends anything with F-Score <= 3 to WATCH. When two of the nine
+    signals are structurally unevaluable, that gate is partly measuring Yahoo's
+    coverage rather than the company's fundamentals -- and on the current sample
+    it is the *only* thing standing between at least one name with a 60%+ margin
+    of safety and a BUY.
+    """
+    _require_columns(scores_rows, "Verdict", "MOS Blended", "Safety Score", "Quality Score",
+                     "F-Score", "Red Flags")
+    _require_columns(key_stats_rows, *F_COMPONENT_COLUMNS)
+    blanks_by_ticker = {
+        row["Ticker"]: sum(1 for column in F_COMPONENT_COLUMNS
+                           if not (row.get(column) or "").strip())
+        for row in key_stats_rows
+    }
+    affected = []
+    for row in scores_rows:
+        mos, f_score = as_float(row.get("MOS Blended")), as_float(row.get("F-Score"))
+        safety, quality = as_float(row.get("Safety Score")), as_float(row.get("Quality Score"))
+        if row.get("Verdict") != S.VERDICT_WATCH or None in (mos, f_score, safety, quality):
+            continue
+        blocked_only_by_f_score = (
+            mos >= 0.30 and f_score <= 3 and safety >= 40 and quality >= 35
+            and not (row.get("Red Flags") or "").strip()
+        )
+        if blocked_only_by_f_score and blanks_by_ticker.get(row["Ticker"], 0) > 0:
+            affected.append((row["Ticker"], mos, int(f_score),
+                             blanks_by_ticker[row["Ticker"]]))
+    assert not affected, (
+        "WATCH forced by an F-Score containing unevaluable signals "
+        f"(ticker, MOS, F-Score, blank signals): {affected[:10]}"
+    )
 
 
 def test_report_blended_iv_coverage(scores_rows):
