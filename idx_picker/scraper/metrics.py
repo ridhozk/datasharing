@@ -171,10 +171,30 @@ def build_core(ticker: str, bundle: Bundle) -> CoreFinancials:
 
     core.revenue_ttm = ttm(bundle, "TotalRevenue")
     core.gross_profit_ttm = ttm(bundle, "GrossProfit")
-    core.ebit_ttm = ttm(bundle, "EBIT")
+
+    # OperatingIncome first, EBIT only as a fallback. Yahoo computes its "EBIT"
+    # line as PretaxIncome + InterestExpense, which for a company with a large
+    # cash pile silently folds interest *income* into operating profit: LSIP's
+    # Yahoo EBIT is 2,232bn against a true operating profit of 1,851bn (+20.6%),
+    # ASII's is 46,289bn against 34,641bn (+33.6%). That contaminates EV/EBIT,
+    # the Acquirer's Multiple, EPV, ROC and earnings yield -- every Magic Formula
+    # input -- and it flatters exactly the cash-rich, apparently-cheap names the
+    # screen is built to surface.
+    core.ebit_ttm = ttm(bundle, "OperatingIncome")
     if core.ebit_ttm is None:
-        core.ebit_ttm = ttm(bundle, "OperatingIncome")
+        core.ebit_ttm = ttm(bundle, "EBIT")
+
     core.ebitda_ttm = ttm(bundle, "EBITDA")
+    # Yahoo returns EBITDA identical to its EBIT for a minority of IDX filers,
+    # meaning depreciation was never added back. A D&A-less "EBITDA" is not a
+    # conservative estimate, it is a wrong one, so it is reported as missing
+    # rather than as a number that would understate EV/EBITDA.
+    if (
+        core.ebitda_ttm is not None
+        and ttm(bundle, "EBIT") is not None
+        and abs(core.ebitda_ttm - ttm(bundle, "EBIT")) < 1.0
+    ):
+        core.ebitda_ttm = None
     core.net_income_ttm = ttm(bundle, "NetIncome")
     core.cfo_ttm = ttm(bundle, "OperatingCashFlow")
     core.capex_ttm = ttm(bundle, "CapitalExpenditure")
@@ -638,13 +658,17 @@ def normalised_ebit(bundle: Bundle, years: int = 5) -> float | None:
 
     Falls back to rolling TTM windows when the annual series is too thin.
     """
-    annual = _q(bundle, "EBIT", "annual") or _q(bundle, "OperatingIncome", "annual")
+    # Same preference as `build_core`: the reported operating line, not Yahoo's
+    # interest-contaminated EBIT. Normalising a contaminated series just
+    # produces a contaminated mid-cycle figure -- LSIP's normalised EBIT was
+    # 26.8% too high for exactly this reason.
+    annual = _q(bundle, "OperatingIncome", "annual") or _q(bundle, "EBIT", "annual")
     values = [item["value"] for item in annual[-years:]]
     if len(values) >= 2:
         return median(values)
     windows = []
     for offset in range(0, years * 4, 4):
-        value = ttm(bundle, "EBIT", offset) or ttm(bundle, "OperatingIncome", offset)
+        value = ttm(bundle, "OperatingIncome", offset) or ttm(bundle, "EBIT", offset)
         if value is None:
             break
         windows.append(value)
