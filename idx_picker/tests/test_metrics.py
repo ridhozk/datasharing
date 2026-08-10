@@ -412,13 +412,8 @@ def test_piotroski_no_long_term_debt_reads_as_the_strongest_leverage_signal():
     assert signals["leverage_falling"] == 1
 
 
-@pytest.mark.xfail(
-    reason="DEFECT: annual CFO is never derived from FreeCashFlow - CapitalExpenditure, "
-           "so cfo_positive and accruals are permanently unevaluable on the annual "
-           "basis whenever Yahoo omits annualOperatingCashFlow (it does for the whole "
-           "IDX universe).",
-    strict=True,
-)
+# Regression test for a fixed defect:
+# DEFECT: annual CFO is never derived from FreeCashFlow - CapitalExpenditure,
 def test_piotroski_annual_derives_cfo_from_fcf_and_capex():
     """CFO must be reconstructable from FCF and capex on the annual basis.
 
@@ -486,12 +481,8 @@ def test_altman_none_when_working_capital_or_ebit_missing():
     assert M.altman_z_modified(M.CoreFinancials("T", working_capital=100.0, **base)) is None
 
 
-@pytest.mark.xfail(
-    reason="DEFECT: X4 (equity/liabilities) is unbounded and collapses to 0.0 when "
-           "total liabilities are zero, so a debt-free balance sheet scores *worse* "
-           "than one with a token liability.",
-    strict=True,
-)
+# Regression test for a fixed defect:
+# DEFECT: X4 (equity/liabilities) is unbounded and collapses to 0.0 when
 def test_altman_debt_free_company_is_not_penalised():
     """A company with no liabilities must not score below one with 1 unit of them.
 
@@ -847,13 +838,8 @@ def test_justified_pb_none_for_non_positive_cost_of_equity(coe):
     assert M.justified_pb_value(1000.0, 0.15, coe, 0.03) is None
 
 
-@pytest.mark.xfail(
-    reason="DEFECT: the 400bp minimum-spread guard is unreachable. `growth_capped` is "
-           "already min(growth, coe - 0.04, ...), so `spread < minimum_spread` can "
-           "never be true and an input with g >= COE is silently revalued at the "
-           "maximum-spread assumption instead of being rejected.",
-    strict=True,
-)
+# Regression test for a fixed defect:
+# DEFECT: the 400bp minimum-spread guard is unreachable. `growth_capped` is
 def test_justified_pb_rejects_growth_at_or_above_the_cost_of_equity():
     """Growth above the cost of equity must blank the valuation, not be clamped.
 

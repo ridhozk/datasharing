@@ -206,3 +206,57 @@ cost of equity carries a floor of risk-free + 300bps.
 basis needs eight consecutive quarters; Yahoo supplies five or six, so every row
 returned blank. An annual-basis fallback — Piotroski's original construction —
 now applies where quarterly history is too short.
+
+
+---
+
+## Defects found by the test suite, and fixed
+
+The test suite was written adversarially against the finished library and found
+seven genuine defects. All are fixed; each has a regression test that fails if
+the behaviour returns.
+
+**Annual Piotroski could never evaluate cash flow.** Yahoo returns no
+`annualOperatingCashFlow` for the IDX universe at all, so `cfo_positive` and
+`accruals` were permanently blank — capping every annual-basis score at 7/9 and
+consuming two of the three blanks the total tolerates. ITMG, ADRO and PTBA were
+all demoted to WATCH by a missing data line rather than by anything about the
+businesses. CFO is now derived from `FreeCashFlow - CapitalExpenditure`, the
+identity `build_core` already runs in the opposite direction. Blank CFO signals
+fell from 897 rows to 313.
+
+**Missing data passed the BUY gates.** Every gate read
+`if x is not None and x < threshold`, making absence indistinguishable from a
+pass. A row with no computable safety score, no F-Score and no quality score
+reached BUY on margin of safety alone — and carried the reason text "quality and
+balance sheet both pass", an affirmative claim about two things never measured.
+Unmeasured is now WATCH.
+
+**The bull case could value a company below its own base case.** The bull WACC
+floor of 6% was applied without reference to the base WACC, so any base below 6%
+gave the bull case a *higher* discount rate. Bear and bull are now defined as
+offsets from the base, so bear < base < bull holds by construction.
+
+**The bear case stopped being pessimistic for shrinking businesses.** With
+historical growth at or below -5%, base and bear growth both clamped to -5% —
+removing the downside case exactly where downside matters most.
+
+**The justified-P/B spread guard was unreachable.** Growth was clamped to
+`COE - 0.04` and the spread tested afterwards, so the test could never fail: an
+input with growth above the cost of equity was silently revalued at the most
+generous spread the model allows instead of being refused. The rejection now
+happens before the clamp.
+
+**Altman penalised debt-free balance sheets.** The X4 term (equity/liabilities)
+collapsed to 0.0 when liabilities were zero, scoring a debt-free company *worse*
+than one carrying a token payable. Zero liabilities now takes the cap.
+
+**Yahoo's share count is wrong for 42 of 956 IDX tickers.** Found while
+investigating a valuation of IDR 5.7 million per share against a IDR 1,595 price.
+Yahoo reports `sharesOutstanding` of 1,395,970 for LPPF against an implied
+1,170,221,581 (838x), and 22,400,000 for BDMN against 9,773,552,914 (436x). The
+error flows into book value per share and every per-share valuation. Share count
+is now derived as market cap / price — both from the same quote payload, so
+internally consistent — falling back to the reported field and then to the
+diluted average. `Share Count Source` and `Reported/Implied Shares` record what
+happened on every row.

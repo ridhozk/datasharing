@@ -249,10 +249,23 @@ def build_scenarios(
     growth_base = historical_growth if historical_growth is not None else 0.03
     growth_base = max(-0.05, min(0.15, growth_base))
 
+    # Each case is defined as an offset from the base, so the ordering
+    # bear < base < bull holds by construction. Absolute clamps applied
+    # independently to each case broke that: a bull WACC of `max(0.06, base -
+    # 0.01)` sits *above* any base WACC below 6%, producing a bull valuation
+    # below the base one, and a bear growth of `max(-0.05, base - 0.05)` equals
+    # the base whenever the base is already at the -5% floor -- so the downside
+    # case stopped being pessimistic exactly for shrinking businesses, where the
+    # downside matters most.
+    bear_growth = growth_base - 0.05
+    bull_growth = min(0.20, growth_base + 0.04)
+    bear_wacc = base_wacc + 0.02
+    bull_wacc = max(0.04, base_wacc - 0.01)
+
     specs = [
-        ("bear", max(-0.05, growth_base - 0.05), base_wacc + 0.02, max(0.0, base_terminal_growth - 0.01)),
+        ("bear", bear_growth, bear_wacc, max(0.0, base_terminal_growth - 0.01)),
         ("base", growth_base, base_wacc, base_terminal_growth),
-        ("bull", min(0.20, growth_base + 0.04), max(0.06, base_wacc - 0.01), base_terminal_growth + 0.005),
+        ("bull", bull_growth, bull_wacc, base_terminal_growth + 0.005),
     ]
 
     # Prefer normalised EBIT converted to an unlevered cash-flow proxy over raw
@@ -381,15 +394,31 @@ def classify(
 
     # From here the price is right. Everything that follows tests whether the
     # business deserves it -- this is the value-trap filter.
-    if assessment.safety_score is not None and assessment.safety_score < 40:
+    #
+    # A missing score is not a passing score. Written as
+    # `if x is not None and x < threshold`, absence is indistinguishable from a
+    # pass, and a row with no computable balance-sheet score, no F-Score and no
+    # quality score reached BUY on margin of safety alone -- carrying the reason
+    # text "quality and balance sheet both pass", an affirmative claim about two
+    # things never measured. Unmeasured is WATCH.
+    if assessment.safety_score is None:
+        reasons.append("Cheap, but balance-sheet safety could not be assessed")
+        return VERDICT_WATCH
+    if assessment.safety_score < 40:
         reasons.append("Cheap but balance sheet weak - possible value trap")
         return VERDICT_WATCH
 
-    if f_score is not None and f_score <= 3:
+    if f_score is None:
+        reasons.append("Cheap, but F-Score could not be computed from available filings")
+        return VERDICT_WATCH
+    if f_score <= 3:
         reasons.append(f"Cheap but F-Score {f_score}/9 shows deteriorating fundamentals")
         return VERDICT_WATCH
 
-    if assessment.quality_score is not None and assessment.quality_score < 35:
+    if assessment.quality_score is None:
+        reasons.append("Cheap, but business quality could not be assessed")
+        return VERDICT_WATCH
+    if assessment.quality_score < 35:
         reasons.append("Cheap but business economics poor - value trap risk")
         return VERDICT_WATCH
 

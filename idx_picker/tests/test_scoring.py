@@ -335,13 +335,8 @@ def test_net_net_branch_ignores_margin_of_safety_and_f_score():
     assert verdict(assessment, f_score=1, is_net_net=True) == S.VERDICT_DEEP_VALUE
 
 
-@pytest.mark.xfail(
-    reason="DEFECT: missing quality/safety/F-Score data passes every BUY gate. "
-           "`classify` only tests `is not None and < threshold`, so a ticker with no "
-           "computable balance-sheet score, no F-Score and no quality score is "
-           "promoted to BUY on margin of safety alone.",
-    strict=True,
-)
+# Regression test for a fixed defect:
+# DEFECT: missing quality/safety/F-Score data passes every BUY gate.
 def test_missing_quality_and_safety_data_must_not_produce_a_buy():
     """Unknown is not the same as passing.
 
@@ -538,13 +533,8 @@ def test_scenarios_are_all_none_when_the_cash_flow_base_is_unusable():
     assert all(scenario.mos is None for scenario in scenarios.values())
 
 
-@pytest.mark.xfail(
-    reason="DEFECT: with historical growth at or below -5% the base growth and the "
-           "bear growth both clamp to -0.05, so the bear case is not pessimistic on "
-           "growth at all -- exactly the shrinking businesses where the downside "
-           "case matters most.",
-    strict=True,
-)
+# Regression test for a fixed defect:
+# DEFECT: with historical growth at or below -5% the base growth and the
 def test_bear_growth_is_still_lower_when_the_base_is_already_at_the_floor():
     """A shrinking company must still have a bear case worse than its base case.
 
@@ -558,12 +548,8 @@ def test_bear_growth_is_still_lower_when_the_base_is_already_at_the_floor():
     assert scenarios["bear"].growth < scenarios["base"].growth
 
 
-@pytest.mark.xfail(
-    reason="DEFECT: the bull WACC floor of 0.06 is applied without reference to the "
-           "base WACC, so any base WACC below 6% gives the bull case a *higher* "
-           "discount rate than the base and a bull intrinsic value below the base.",
-    strict=True,
-)
+# Regression test for a fixed defect:
+# DEFECT: the bull WACC floor of 0.06 is applied without reference to the
 def test_bull_case_is_never_worse_than_the_base_case():
     """The bull scenario must never value a company below its own base case.
 

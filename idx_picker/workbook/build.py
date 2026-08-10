@@ -940,14 +940,14 @@ def build_company(ws: Worksheet, raw: dict[str, RawTable], default_ticker: str):
     put(ws, "C25", scv("MOS Blended"), font=F_LINK, fmt=FMT_PCT, align="center", border=True)
     put(ws, "D25", scv("Upside Blended"), font=F_LINK, fmt=FMT_PCT, align="center", border=True)
 
-    put(ws, "A26", "Verdict vs Setup MOS thresholds", font=F_BOLD, border=True)
+    put(ws, "A26", "Price test only (MOS vs Setup thresholds)", font=F_BOLD, border=True)
     put(ws, "B26",
         f'=IF(NOT(ISNUMBER($C$25)),"n/a",'
         f'IF($C$25>={SETUP["mos_buy"]},"BUY",'
         f'IF($C$25>={SETUP["mos_watch"]},"WATCH","SKIP")))',
         font=F_BASE, fmt=FMT_TEXT, align="center", border=True)
     put(ws, "C26", "Thresholds live on Setup!B9 / Setup!B10", font=F_NOTE)
-    put(ws, "A27", "Verdict from scoring engine", font=F_BOLD, border=True)
+    put(ws, "A27", "VERDICT (price + quality + safety + flags)", font=F_BOLD, border=True)
     put(ws, "B27", scv("Verdict"), font=F_LINK, fmt=FMT_TEXT, align="center", border=True)
     apply_verdict_formats(ws, "B26:B27")
 
@@ -1210,7 +1210,7 @@ def build_scenario(ws: Worksheet, raw: dict[str, RawTable], default_ticker: str)
     for r, label, formula, fmt in outputs:
         put(ws, f"A{r}", label, font=F_BOLD, border=True)
         put(ws, f"B{r}", formula, font=F_BASE, fmt=fmt, align="center", border=True)
-    put(ws, "A37", "Verdict vs Setup MOS thresholds", font=F_BOLD, border=True)
+    put(ws, "A37", "Price test only (MOS vs Setup thresholds)", font=F_BOLD, border=True)
     put(ws, "B37",
         f'=IF(NOT(ISNUMBER(B35)),"n/a",IF(B35>={SETUP["mos_buy"]},"BUY",'
         f'IF(B35>={SETUP["mos_watch"]},"WATCH","SKIP")))',

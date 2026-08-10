@@ -325,9 +325,30 @@ def _piotroski_annual(bundle: Bundle) -> tuple[int | None, dict[str, int | None]
         series = _q(bundle, field, "annual")
         return series[-1 - back]["value"] if len(series) > back else None
 
+    def annual_cfo(back: int = 0) -> float | None:
+        """Operating cash flow, falling back to the FCF identity.
+
+        Yahoo returns no `annualOperatingCashFlow` for the IDX universe at all,
+        while `annualFreeCashFlow` and `annualCapitalExpenditure` are both
+        populated. Without this fallback the `cfo_positive` and `accruals`
+        signals are permanently unevaluable, which caps every annual-basis score
+        at 7/9 and consumes two of the three blanks the total tolerates -- ITMG,
+        ADRO and PTBA were all demoted to WATCH by a missing data line rather
+        than by anything about the businesses.
+
+        Capex arrives negative, so CFO = FCF - capex.
+        """
+        direct = annual("OperatingCashFlow", back)
+        if direct is not None:
+            return direct
+        fcf, capex = annual("FreeCashFlow", back), annual("CapitalExpenditure", back)
+        if fcf is None or capex is None:
+            return None
+        return fcf - capex
+
     assets_now, assets_prior = annual("TotalAssets"), annual("TotalAssets", 1)
     ni_now, ni_prior = annual("NetIncome"), annual("NetIncome", 1)
-    cfo_now = annual("OperatingCashFlow")
+    cfo_now = annual_cfo()
 
     roa_now = safe_div(ni_now, assets_now)
     roa_prior = safe_div(ni_prior, assets_prior)
@@ -406,10 +427,15 @@ def justified_pb_value(
     # minimum spread and capping the multiple at 4x book keeps the output inside
     # the range where the model carries information.
     minimum_spread = 0.04
-    growth_capped = min(growth, cost_of_equity - minimum_spread, roe_capped * 0.6)
-    spread = cost_of_equity - growth_capped
-    if spread < minimum_spread:
+    # Reject before clamping, not after. Capping growth at `COE - minimum_spread`
+    # and *then* testing the spread makes the test unreachable: the clamp
+    # guarantees it passes, so an input with growth at or above the cost of
+    # equity was silently revalued at the most generous spread the model allows
+    # instead of being refused.
+    if cost_of_equity - growth < minimum_spread:
         return None
+    growth_capped = min(growth, roe_capped * 0.6)
+    spread = cost_of_equity - growth_capped
     multiple = (roe_capped - growth_capped) / spread
     if multiple <= 0:
         return None
@@ -480,10 +506,21 @@ def altman_z_modified(core: CoreFinancials) -> float | None:
     x1 = safe_div(core.working_capital, assets)
     x2 = safe_div(core.retained_earnings, assets)
     x3 = safe_div(core.ebit_ttm, assets)
-    x4 = safe_div(core.total_equity, core.total_liabilities)
     if x1 is None or x3 is None:
         return None
-    return 6.56 * x1 + 3.26 * (x2 or 0.0) + 6.72 * x3 + 1.05 * (x4 or 0.0)
+
+    # X4 is equity/liabilities. A company with no liabilities at all divides by
+    # zero, and treating that as 0.0 scores a debt-free balance sheet *worse*
+    # than one carrying a token payable -- the opposite of what the ratio
+    # measures. Zero liabilities is the strongest possible reading, so it takes
+    # the cap rather than the floor. The cap also stops a near-debt-free filer
+    # from contributing an unbounded term that swamps the other three.
+    if core.total_liabilities is not None and core.total_liabilities <= 0:
+        x4 = 10.0
+    else:
+        x4 = min(safe_div(core.total_equity, core.total_liabilities) or 0.0, 10.0)
+
+    return 6.56 * x1 + 3.26 * (x2 or 0.0) + 6.72 * x3 + 1.05 * x4
 
 
 # ------------------------------------------------------- returns and valuation

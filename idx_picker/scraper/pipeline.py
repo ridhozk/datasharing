@@ -93,7 +93,7 @@ NEW_KEYSTATS_COLUMNS = [
     "Price CAGR 3Y", "Price CAGR 5Y", "Price Percentile 10Y", "Max Drawdown 10Y",
     "Months of Price History",
     "Latest Filing Date", "Quarters Stale", "Statement Currency", "FX Rate Applied",
-    "Data Source", "Fetched At",
+    "Share Count Source", "Reported/Implied Shares", "Data Source", "Fetched At",
 ]
 
 KEYSTATS_COLUMNS = LEGACY_KEYSTATS_COLUMNS + NEW_KEYSTATS_COLUMNS
@@ -239,11 +239,35 @@ def fetch_one(client: YahooClient, ticker: str, market: str = "IDX") -> dict[str
     if price is None:
         price = _get(chart, "meta", "regularMarketPrice")
     market_cap = _get(quote, "price", "marketCap") or _get(quote, "summaryDetail", "marketCap")
-    shares = _get(quote, "defaultKeyStatistics", "sharesOutstanding")
-    if not shares and market_cap and price:
-        shares = market_cap / price
-    if not shares:
-        shares = core.shares_diluted
+
+    # Share count, in priority order: market cap / price, then Yahoo's reported
+    # `sharesOutstanding`, then the diluted average from the filings.
+    #
+    # Market cap over price comes first because Yahoo's `sharesOutstanding` is
+    # unreliable for IDX listings by orders of magnitude -- it reports 1,395,970
+    # for LPPF against an implied 1,170,221,581 (838x), and 22,400,000 for BDMN
+    # against 9,773,552,914 (436x). Both errors flow straight into book value per
+    # share and every per-share valuation: BDMN was valued at IDR 1.7 million a
+    # share against a IDR 4,410 price. Market cap and price come from the same
+    # quote payload and are internally consistent, which is what makes the ratio
+    # trustworthy where the standalone field is not.
+    reported_shares = _get(quote, "defaultKeyStatistics", "sharesOutstanding")
+    implied_shares = (market_cap / price) if (market_cap and price) else None
+
+    shares = implied_shares or reported_shares or core.shares_diluted
+    shares_source = (
+        "market_cap/price" if implied_shares
+        else "reported" if reported_shares
+        else "diluted_average" if core.shares_diluted
+        else None
+    )
+
+    # Record when the sources disagree materially, so a bad share count is
+    # visible in the output rather than silently priced in.
+    shares_disagreement = None
+    if implied_shares and reported_shares:
+        shares_disagreement = round(reported_shares / implied_shares, 4)
+
     if not market_cap and shares and price:
         market_cap = shares * price
 
@@ -261,6 +285,7 @@ def fetch_one(client: YahooClient, ticker: str, market: str = "IDX") -> dict[str
         "enterprise_value": enterprise_value, "net_debt": net_debt, "beta": beta,
         "currency": currency, "market": market, "long_chart": long_chart,
         "statement_currency": statement_currency, "fx_rate": fx,
+        "shares_source": shares_source, "shares_disagreement": shares_disagreement,
     }
 
 
@@ -630,6 +655,8 @@ def derive_rows(record: dict[str, Any], settings: Settings, seed: dict[str, Any]
         "Quarters Stale": staleness,
         "Statement Currency": record["statement_currency"],
         "FX Rate Applied": record["fx_rate"],
+        "Share Count Source": record["shares_source"],
+        "Reported/Implied Shares": record["shares_disagreement"],
         "Data Source": "Yahoo Finance",
         "Fetched At": fetched_at,
     }

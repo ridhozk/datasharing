@@ -522,14 +522,8 @@ def test_shared_columns_agree_between_the_two_files(key_stats_rows, scores_rows,
     assert not mismatches, f"{stats_column} differs between files: {mismatches[:10]}"
 
 
-@pytest.mark.xfail(
-    reason="DEFECT (consequence): names are demoted from BUY to WATCH by an F-Score "
-           "whose components include unevaluable signals. The annual F-Score basis "
-           "cannot evaluate CFO Positive or Accruals because Yahoo returns no "
-           "annualOperatingCashFlow, so a profitable, cash-generative business is "
-           "capped at 7/9 and can be pushed under the F<=3 gate by two blanks.",
-    strict=False,
-)
+# Regression test: the annual F-Score basis derives CFO from FCF - capex, so
+# CFO Positive and Accruals are evaluable and no longer demote names on blanks.
 def test_no_row_is_demoted_by_an_f_score_built_on_blank_signals(scores_rows, key_stats_rows):
     """A cheap, safe, decent-quality name must not be blocked by missing data.
 
