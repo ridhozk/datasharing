@@ -58,6 +58,13 @@ STATEMENT_FIELDS: tuple[str, ...] = (
     "EBIT",
     "EBITDA",
     "NetIncome",
+    # Yahoo's "NetIncome" is the consolidated figure INCLUDING minority
+    # interest. For a group with material minorities that overstates EPS, PE,
+    # ROE and the payout ratio: ESSA's consolidated EPS reads IDR 54.67 against
+    # an attributable IDR 41.9, exactly the 30% owned by the minority in its
+    # main subsidiary. Prefer NetIncomeCommonStockholders where available.
+    "NetIncomeCommonStockholders",
+    "MinorityInterest",
     "PretaxIncome",
     "TaxProvision",
     "InterestExpense",

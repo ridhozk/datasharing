@@ -195,7 +195,12 @@ def build_core(ticker: str, bundle: Bundle) -> CoreFinancials:
         and abs(core.ebitda_ttm - ttm(bundle, "EBIT")) < 1.0
     ):
         core.ebitda_ttm = None
-    core.net_income_ttm = ttm(bundle, "NetIncome")
+    # Attributable profit first: earnings that belong to minority shareholders
+    # of subsidiaries are not the parent shareholder's to value. Falls back to
+    # the consolidated line where Yahoo does not publish the split.
+    core.net_income_ttm = ttm(bundle, "NetIncomeCommonStockholders")
+    if core.net_income_ttm is None:
+        core.net_income_ttm = ttm(bundle, "NetIncome")
     core.cfo_ttm = ttm(bundle, "OperatingCashFlow")
     core.capex_ttm = ttm(bundle, "CapitalExpenditure")
     core.fcf_ttm = ttm(bundle, "FreeCashFlow")
@@ -209,7 +214,9 @@ def build_core(ticker: str, bundle: Bundle) -> CoreFinancials:
     core.revenue_q = nth_last(bundle, "TotalRevenue", 0)
     core.gross_profit_q = nth_last(bundle, "GrossProfit", 0)
     core.operating_income_q = nth_last(bundle, "OperatingIncome", 0) or nth_last(bundle, "EBIT", 0)
-    core.net_income_q = nth_last(bundle, "NetIncome", 0)
+    core.net_income_q = nth_last(bundle, "NetIncomeCommonStockholders", 0)
+    if core.net_income_q is None:
+        core.net_income_q = nth_last(bundle, "NetIncome", 0)
 
     core.total_assets = latest(bundle, "TotalAssets")
     core.total_liabilities = latest(bundle, "TotalLiabilitiesNetMinorityInterest")
