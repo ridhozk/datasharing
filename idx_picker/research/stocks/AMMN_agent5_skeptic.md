@@ -68,17 +68,29 @@ leveraged capex cycle.
   swing the company from strongly profitable to loss-making within two
   quarters. That volatility is a risk factor in itself, independent of the
   long-run economics.
-- **Global base rate, unverified for AMMN specifically — INSUFFICIENT
-  EVIDENCE:** Indonesian nickel/copper downstreaming broadly has a mixed
-  record — smelter capex overruns, weak treatment/refining charges (TCs/RCs
-  have been near zero or negative in the seaborne copper concentrate market
-  through 2024–2025 amid a global smelting capacity glut), and offtake
-  agreements that transfer little margin to the smelter owner unless fully
-  integrated end-to-end as AMMN's is. I could not find AMMN-specific realized
-  TC/RC or per-tonne smelting margin data in this pass — **this is the single
-  most important number the Financial Forensics / Valuation agents should
-  chase**: is the smelter earning a normal industrial margin, or is it a
-  regulatory-compliance cost center dressed up as a value-accretive asset?
+- **Global smelting economics — FACT, and directly unfavorable to the "smelter
+  unlocks margin" narrative.** Seaborne copper concentrate treatment/refining
+  charges (TC/RCs — the fee smelters earn to process concentrate) have
+  collapsed to **negative levels (as low as −$80.20/tonne)** through 2025–2026,
+  because global smelting capacity (much of it new Indonesian and Chinese
+  capacity) now exceeds available concentrate supply (Fastmarkets, Discovery
+  Alert, Canadian Mining Journal — cited below). Negative TCs mean an
+  independent smelter is *paying* for the privilege of processing ore rather
+  than being paid — the textbook sign of a structurally oversupplied,
+  margin-destroying industry. This is consistent with the prompt's framing
+  that smelting is "a notoriously poor business globally," and it is not an
+  AMMN-specific claim — it is the prevailing market condition AMMN's smelter
+  is ramping into. **AMMN's specific realized captive-processing economics
+  (since it feeds its own concentrate rather than buying on the merchant
+  market) are still unverified — insufficient evidence — but the surrounding
+  industry conditions argue that "smelter unlocks margin" should not be taken
+  on faith; a captive smelter avoids paying negative TCs to a third party, but
+  that is a cost-avoidance argument, not proof the facility earns a positive
+  economic return on its own multi-billion-dollar capex.** This remains the
+  single most important number for the Financial Forensics / Valuation agents
+  to chase: is the smelter earning a normal industrial margin standalone, or
+  is it a regulatory-compliance cost center (Indonesia bans raw concentrate
+  export) dressed up as a value-accretive asset?
 
 **Elang — THESIS: an option, not an asset, and priced-in optionality is a red
 flag if the market is already crediting it**
@@ -166,14 +178,38 @@ is measuring exactly the year the market chose to look through.
   on the former Newmont Nusa Tenggara asset; **current-year specific
   divestment or local-ownership requirements applicable to AMMN going forward
   — insufficient evidence, requires further research.**
-- **Governance / free float / ownership concentration** — **insufficient
-  evidence in this pass**: I could not confirm the controlling shareholder
-  group's current stake, board independence, or related-party transaction
-  history within the search budget. Given the F-Score-implied deterioration
-  happened in the same year as heavy related-subsidiary bank borrowing
-  (US$2bn+ at PT Amman Mineral Nusa Tenggara, US$175m at PT Amman Mineral
-  Industri, US$29m at PT Amman Nusantara Gas), a governance/related-party
-  review of intercompany debt terms is warranted before underwriting.
+- **Governance / free float / ownership concentration — FACT, and a genuine
+  amber flag.** Public float is only **~17.3%**; the remainder is held by a
+  tight group — PT Sumber Gemilang Persada 32.2%, PT Medco Energi
+  Internasional 20.9%, PT AP Investment 15.5%, PT Alpha Investasi Mandiri
+  7.1%, PT Pesona Sukses Cemerlang 6.5%, directors/commissioners ~0.6%
+  (company disclosure, 2023 IPO structure, likely diluted somewhat since but
+  directionally current). A ~17% free float on a US$22bn+ market cap is thin,
+  which (a) amplifies price moves on modest flow, and (b) is precisely the
+  kind of situation MSCI's proposed free-float-methodology tightening is
+  designed to catch — reinforcing the index-flow risk above.
+- **Insider selling near the 52-week high — FACT, and directly relevant to
+  the "is the quality already in the price" question.** Multiple AMMN
+  directors/commissioners sold significant share blocks in August–September
+  2025: Irwin Ka Pui Wan sold 40 million shares at an average ~IDR 8,595
+  (12–15 August 2025) pocketing ~IDR 343.8bn; another commissioner
+  (Alexander Ramlie) divested shares worth ~IDR 536.6bn in the same window
+  (IDNFinancials). The 52-week high is IDR 8,775 — this insider selling
+  clustered almost exactly at the top of the range, shortly before the stock
+  fell to the current IDR 4,470 (a ~49% decline from the insider-selling
+  price level, matching the fact sheet's 52W-high drawdown of −49%). **This
+  is not proof of superior insider information** — Indonesian disclosure
+  rules require these sales be reported, and diversification by long-time
+  holders after an IPO is normal — but a value investor should weigh that the
+  people closest to the mine plan, the smelter ramp, and Elang chose to sell
+  meaningfully into the same strength that today's bull case is asking new
+  investors to buy into.
+- Given the F-Score-implied deterioration happened in the same year as heavy
+  related-subsidiary bank borrowing (US$2bn+ at PT Amman Mineral Nusa
+  Tenggara, US$175m at PT Amman Mineral Industri, US$29m at PT Amman
+  Nusantara Gas) and a tight, related-party-heavy ownership structure, a
+  fuller related-party/intercompany-debt review is warranted before
+  underwriting — **insufficient evidence in this pass to go further.**
 - **Index-inclusion flows may be propping up the price for non-fundamental
   reasons — FACT, material and currently working against the stock.** AMMN
   joined MSCI Indonesia (Nov 2023) and subsequently FTSE Global indexes,
@@ -245,7 +281,7 @@ pass, that burden is not yet met).
 ## Summary block
 
 ```
-Skeptic Score: 74/100  (higher = more concern; scale: 0=bull case fully
+Skeptic Score: 78/100  (higher = more concern; scale: 0=bull case fully
                          validated, 100=fatal flaws / hard reject)
 
 Strongest Bull Argument:
