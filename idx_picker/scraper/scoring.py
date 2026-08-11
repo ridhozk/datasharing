@@ -239,6 +239,7 @@ def build_scenarios(
     base_terminal_growth: float,
     historical_growth: float | None,
     tax_rate: float = 0.22,
+    normalised_capex_value: float | None = None,
 ) -> dict[str, Scenario]:
     """Bear / Base / Bull FCFF valuations off one consistent cash-flow base.
 
@@ -272,9 +273,19 @@ def build_scenarios(
     # TTM FCF, which for a cyclical is a snapshot of the wrong point in the cycle.
     if normalised_ebit_value is not None and normalised_ebit_value > 0:
         fcf_base = normalised_ebit_value * (1 - tax_rate)
-        if core.capex_ttm is not None and core.ebitda_ttm and core.ebit_ttm:
+        # Reinvestment must be deducted on the SAME time basis as the earnings.
+        # Normalised (median annual) capex, not TTM capex -- see
+        # `metrics.normalised_capex` for why one lumpy growth quarter otherwise
+        # destroys the valuation.
+        capex = normalised_capex_value if normalised_capex_value is not None else core.capex_ttm
+        if capex is not None and core.ebitda_ttm and core.ebit_ttm:
             depreciation = core.ebitda_ttm - core.ebit_ttm
-            fcf_base += depreciation + core.capex_ttm  # capex arrives negative
+            fcf_base += depreciation + capex  # capex arrives negative
+        elif capex is not None:
+            # No usable depreciation figure (Yahoo returns EBITDA equal to EBIT
+            # for some filers). Deduct only the capex above a depreciation proxy
+            # of zero rather than assuming the whole outlay is growth spend.
+            fcf_base += capex
     else:
         fcf_base = core.fcf_ttm
 

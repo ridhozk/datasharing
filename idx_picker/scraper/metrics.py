@@ -682,6 +682,25 @@ def normalised_ebit(bundle: Bundle, years: int = 5) -> float | None:
     return median(windows) if windows else None
 
 
+def normalised_capex(bundle: Bundle, years: int = 5) -> float | None:
+    """Median annual capital expenditure, returned negative as Yahoo reports it.
+
+    Exists so the DCF deducts reinvestment on the same time basis as the
+    earnings it is deducting from. Netting a five-year median EBIT against a
+    single trailing-twelve-month capex figure mixes a cycle-normalised numerator
+    with a point-in-time denominator, and one lumpy growth-capex quarter then
+    destroys the valuation: MOLI's Q1 2026 carried a IDR 43.8bn expansion outlay
+    that pushed TTM capex to 2x its annual median and collapsed the cash-flow
+    base from a NOPAT of IDR 71.4bn to IDR 1.7bn, making ~90% of the resulting
+    intrinsic value nothing but the per-share cash pile passing through.
+    """
+    annual = _q(bundle, "CapitalExpenditure", "annual")
+    values = [item["value"] for item in annual[-years:]]
+    if values:
+        return median(values)
+    return ttm(bundle, "CapitalExpenditure")
+
+
 def dcf_per_share(
     fcf_base: float | None,
     shares: float | None,

@@ -515,6 +515,7 @@ def derive_rows(record: dict[str, Any], settings: Settings, seed: dict[str, Any]
     assessment.scenarios = S.build_scenarios(
         core, normalised_ebit_value, shares, price, settings.wacc,
         settings.terminal_growth, revenue_cagr_3y, settings.tax_rate,
+        normalised_capex_value=M.normalised_capex(bundle),
     )
     assessment.flags = S.detect_red_flags(core, bundle, business_type)
 

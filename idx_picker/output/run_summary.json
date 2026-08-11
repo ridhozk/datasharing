@@ -1,21 +1,21 @@
 {
-  "run_at": "2026-08-11T12:19:05",
+  "run_at": "2026-08-11T12:25:42",
   "market": "IDX",
-  "tickers_requested": 1,
-  "tickers_ok": 1,
+  "tickers_requested": 956,
+  "tickers_ok": 956,
   "tickers_failed": 0,
   "failed": [],
-  "elapsed_seconds": 2.0,
+  "elapsed_seconds": 6.6,
   "rows_written": {
-    "RAW_idx_stocks.csv": 1,
-    "RAW_key_statistics.csv": 1,
-    "RAW_analyses.csv": 1,
-    "RAW_scores.csv": 1,
-    "RAW_history_quarterly.csv": 7,
-    "RAW_history_annual.csv": 4
+    "RAW_idx_stocks.csv": 956,
+    "RAW_key_statistics.csv": 956,
+    "RAW_analyses.csv": 956,
+    "RAW_scores.csv": 956,
+    "RAW_history_quarterly.csv": 3502,
+    "RAW_history_annual.csv": 2683
   },
   "client_stats": {
-    "cache_hits": 8,
+    "cache_hits": 7734,
     "network": 0,
     "retries": 0,
     "failures": 0
