@@ -306,11 +306,16 @@ rolls off before Elang can plausibly fill the gap (Elang mining not until
 remain unverified rather than confirmed value-accretive.
 
 Biggest Hidden Risk:
-A confirmed royalty/export-duty hike (currently postponed, not cancelled)
-landing during the still-heavily-levered post-smelter years, compounding with
-the MSCI free-float methodology change that could remove ~US$3.9bn of AMMN's
-index-eligible market cap and trigger forced passive selling unrelated to
-fundamentals.
+Global copper-smelting economics are currently negative-TC (smelters pay to
+process concentrate, not the reverse) amid a capacity glut — the "smelter
+unlocks margin" leg of the bull case is ramping into an industry-wide
+downcycle for smelting margins specifically, a fact largely absent from
+promotional coverage of the ramp-up. Compounding this: multiple AMMN
+directors/commissioners sold large share blocks in Aug–Sept 2025 near the
+IDR 8,595–8,775 level (the 52-week high), shortly before the stock fell ~49%
+to today's IDR 4,470, and free float is only ~17.3%, leaving the stock exposed
+to the pending MSCI free-float methodology change (simulated ~US$3.9bn
+index-cap reduction) and forced passive selling unrelated to fundamentals.
 
 Most Fragile Assumption:
 That Elang is a like-for-like or better sequel to Batu Hijau — its disclosed
