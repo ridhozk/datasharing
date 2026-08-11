@@ -93,7 +93,8 @@ NEW_KEYSTATS_COLUMNS = [
     "Price CAGR 3Y", "Price CAGR 5Y", "Price Percentile 10Y", "Max Drawdown 10Y",
     "Months of Price History",
     "Latest Filing Date", "Quarters Stale", "Statement Currency", "FX Rate Applied",
-    "Share Count Source", "Reported/Implied Shares", "Data Source", "Fetched At",
+    "Share Count Source", "Reported/Implied Shares", "Minority Interest",
+    "Data Source", "Fetched At",
 ]
 
 KEYSTATS_COLUMNS = LEGACY_KEYSTATS_COLUMNS + NEW_KEYSTATS_COLUMNS
@@ -280,8 +281,27 @@ def fetch_one(client: YahooClient, ticker: str, market: str = "IDX") -> dict[str
     # recognised only IDR 345bn of a IDR 2,945bn net cash pile, overstating
     # EV/EBIT at 6.5x against a true 5.0x. Deriving it here keeps EV, net debt,
     # EPV and the Acquirer's Multiple all consistent with one balance sheet.
+    # Minority interest belongs in enterprise value: EV is the cost of acquiring
+    # the whole enterprise, and EBIT/EBITDA are consolidated figures that already
+    # include the minorities' share of earnings. Omitting it compares a
+    # parent-only numerator against a consolidated denominator and understates
+    # every EV multiple. It exceeds 5% of market cap on 154 of 956 IDX tickers --
+    # PNIN by 16x, BHIT by 10x -- and for INDY it lifts EV/EBIT from 9.1x to
+    # 10.1x. Derived rather than read: total equity including minorities, less
+    # the parent's stockholders' equity.
+    minority_interest = 0.0
+    if (
+        core.total_assets is not None
+        and core.total_liabilities is not None
+        and core.total_equity is not None
+    ):
+        derived = (core.total_assets - core.total_liabilities) - core.total_equity
+        # Rounding noise and restatements can make this mildly negative; a
+        # negative minority interest is not meaningful, so it floors at zero.
+        minority_interest = max(0.0, derived)
+
     if market_cap is not None:
-        enterprise_value = market_cap + net_debt
+        enterprise_value = market_cap + net_debt + minority_interest
     else:
         enterprise_value = _get(quote, "defaultKeyStatistics", "enterpriseValue")
 
@@ -293,6 +313,7 @@ def fetch_one(client: YahooClient, ticker: str, market: str = "IDX") -> dict[str
         "price": price, "market_cap": market_cap, "shares": shares,
         "enterprise_value": enterprise_value, "net_debt": net_debt, "beta": beta,
         "currency": currency, "market": market, "long_chart": long_chart,
+        "minority_interest": minority_interest,
         "statement_currency": statement_currency, "fx_rate": fx,
         "shares_source": shares_source, "shares_disagreement": shares_disagreement,
     }
@@ -671,6 +692,7 @@ def derive_rows(record: dict[str, Any], settings: Settings, seed: dict[str, Any]
         "Quarters Stale": staleness,
         "Statement Currency": record["statement_currency"],
         "FX Rate Applied": record["fx_rate"],
+        "Minority Interest": record["minority_interest"],
         "Share Count Source": record["shares_source"],
         "Reported/Implied Shares": record["shares_disagreement"],
         "Data Source": "Yahoo Finance",
