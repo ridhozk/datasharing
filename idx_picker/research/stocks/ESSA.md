@@ -1,12 +1,20 @@
 # ESSA — ESSA Industries Indonesia Tbk.
 
-*Screener fact sheet. Figures in IDR unless noted. Statement currency: **USD** (FX 17908.0 applied to convert statements into the trading currency).*
+*Screener fact sheet, REGENERATED 2026-08-11 after four screener corrections. Statement currency **USD**, FX 17908.0 applied.*
 
-> NOTE: the screener's EBIT was corrected on 2026-08-10 to use reported OperatingIncome
-> instead of Yahoo's EBIT (which equals PretaxIncome + InterestExpense and folds in
-> interest income). Figures below reflect the corrected basis.
+> **Corrections applied since the first run — figures below are the corrected ones:**
+> 1. EBIT now uses reported OperatingIncome, not Yahoo's PretaxIncome+InterestExpense
+>    (which folded in interest income).
+> 2. Enterprise value now = market cap + balance-sheet net debt, not Yahoo's
+>    enterpriseValue (which disagreed by >5% of market cap on 557 of 956 tickers).
+> 3. Payout ratio now computed from DPS/EPS, not Yahoo's stale field.
+> 4. EBITDA suppressed where Yahoo returned it equal to EBIT (D&A never added back).
+>
+> Still outstanding: net income is Yahoo's consolidated figure and may include
+> minority interest. For a group with material minorities, EPS/PE/ROE are overstated.
+> Verify attributable profit from the filings.
 
-## Screener output (candidate generation only — treat as a hypothesis to falsify)
+## Screener output (candidate generation only — a hypothesis to falsify)
 
 | Field | Value |
 |---|---|
@@ -15,33 +23,32 @@
 | Price | 655.0 |
 | Quality Score | 61.7 |
 | Safety Score | 95.6 |
-| Value Score | 83.8 |
-| Composite Score | 80.4 |
+| Value Score | 91.8 |
+| Composite Score | 83.0 |
 | F-Score | 7 |
 | Altman Z | 11.256760812675648 |
-| Earnings Yield (EBIT/EV) | 0.15274617745313365 |
+| Earnings Yield (EBIT/EV) | 0.20036777489415625 |
 | ROC (Greenblatt) | 0.1877948395170429 |
-| Acquirers Multiple | 6.546808677466412 |
+| Acquirers Multiple | 4.990822503909361 |
 | Net-Net Pass | False |
 | NCAV per Share | 179.6533524723472 |
 | EPV per Share | 708.2811684000532 |
 | IV Bear | 495.2993453064911 |
 | IV Base | 679.2527810875766 |
 | IV Bull | 880.0269527629222 |
-| Comparables IV | 805.9200556650363 |
-| Justified PB IV |  |
-| Blended IV | 731.7671571170529 |
-| MOS Blended | 0.10490653532401327 |
-| Upside Blended | 0.11720176659092041 |
+| Comparables IV | 823.480195871643 |
+| Blended IV | 737.0351991790349 |
+| MOS Blended | 0.11130431663292584 |
+| Upside Blended | 0.12524457889928997 |
 | Verdict | WATCH |
-| Reasons | MOS 10% attractive but short of buy threshold 30% |
+| Reasons | MOS 11% attractive but short of buy threshold 30% |
 | Red Flags |  |
 | Peer Group | Energy | Oil, Gas & Coal | Oil & Gas | Oil & Gas Production & Refinery |
 | Peer Count | 9 |
 | Peer PE Median | 15.064036542847035 |
-| Peer EV/EBIT Median | 6.546808677466412 |
+| Peer EV/EBIT Median | 7.0585571619209 |
 | Peer PB Median | 1.5179638241818716 |
-| Quarters Stale | 1.45 |
+| Quarters Stale | 1.46 |
 | Latest Filing | 2026-03-31 |
 
 ## Key statistics
@@ -49,22 +56,20 @@
 | Metric | Value |
 |---|---|
 | Market Cap | 11283668664320 |
-| Enterprise Value | 10939057307648 |
+| Enterprise Value | 8339161272648.0 |
 | Current Share Outstanding | 17226975060.030533 |
 | Share Count Source | market_cap/price |
-| Reported/Implied Shares | 1.0 |
 | Current PE Ratio (TTM) | 11.982005135072832 |
 | Current Price to Book Value | 1.353991026774576 |
-| EV to EBIT (TTM) | 6.546808677466412 |
-| EV to EBITDA (TTM) | 6.2487937559574105 |
+| EV to EBIT (TTM) | 4.990822503909361 |
+| EV to EBITDA (TTM) | 4.763637068983301 |
 | Current Price to Sales(TTM) | 1.9241945743925946 |
-| Dividend | 52.0 |
+| Dividend (TTM) | 52.0 |
 | Dividend Yield | 0.08189999 |
-| Payout Ratio | 0.2023 |
+| Payout Ratio | 0.9512431557615073 |
 | Return on Assets (TTM) | 0.07701610410871723 |
 | Return on Equity (TTM) | 0.11300204026880896 |
 | Return On Invested Capital (TTM) | 0.15547703672451482 |
-| Return on Capital Employed (TTM) | 0.14107096364727112 |
 | Gross Profit Margin (Quarter) | 0.4583055668721936 |
 | Operating Profit Margin (Quarter) | 0.35653397475302684 |
 | Net Profit Margin (Quarter) | 0.1969836617153881 |
@@ -80,18 +85,15 @@
 | Normalised EBIT (5Y) | 1424159174130.0 |
 | Normalised/Trailing EBIT | 0.8523309986473018 |
 | Current Ratio (Quarter) | 11.46096700370188 |
-| Quick Ratio (Quarter) | 9.567157563241716 |
 | Interest Coverage (TTM) | 66.16241749607867 |
 | Debt to Equity Ratio (Quarter) | 0.00028907618810906406 |
 | Net Debt (Quarter) | -2944507391672.0 |
 | Total Debt (Quarter) | 2409055792.0 |
 | Cash (Quarter) | 2946916447464.0 |
-| Working Capital (Quarter) | 4008198054476.0 |
 | FCF Yield (TTM) | 0.20235768625395056 |
 | Free cash flow (TTM) | 2283337083368.0 |
 | Operating Cash Flow (TTM) |  |
 | Capital expenditure (TTM) | -117307177768.0 |
-| Asset Turnover (TTM) | 0.4795811022413126 |
 | 52W High | 995.0 |
 | 52W Low | 505.0 |
 | Pct From 52W High | -0.3417085427135678 |
@@ -101,20 +103,6 @@
 | Price Percentile 10Y | 0.4794 |
 | Max Drawdown 10Y | -0.6675 |
 | Beta | 0.206 |
-| Quarters of History | 5 |
-| Years of Annual History | 4 |
-
-### Piotroski breakdown (basis: annual)
-
-- ROA Positive: 1
-- CFO Positive: 1
-- ROA Improving: 0
-- Accruals: 1
-- Leverage Falling: 1
-- Current Ratio Improving: 1
-- No Dilution: 1
-- Gross Margin Improving: 0
-- Asset Turnover Improving: 1
 
 ## Annual history (IDR bn, FX-converted)
 
@@ -169,6 +157,4 @@
 ## Market data
 
 - Price 655.0 | Volume 42467000 | 52W 505.0–995.0
-- Board: UTAMA | IPO 2012-02-01 00:00:00 | Shares outstanding 17226975060.030533
-
-*Source: Yahoo Finance via idx_picker. Screener figures are candidate generation only.*
+- Board UTAMA | IPO 2012-02-01 00:00:00 | Shares out 17226975060.030533

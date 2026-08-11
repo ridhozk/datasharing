@@ -1,12 +1,20 @@
 # INDY — Indika Energy Tbk.
 
-*Screener fact sheet. Figures in IDR unless noted. Statement currency: **USD** (FX 17908.0 applied to convert statements into the trading currency).*
+*Screener fact sheet, REGENERATED 2026-08-11 after four screener corrections. Statement currency **USD**, FX 17908.0 applied.*
 
-> NOTE: the screener's EBIT was corrected on 2026-08-10 to use reported OperatingIncome
-> instead of Yahoo's EBIT (which equals PretaxIncome + InterestExpense and folds in
-> interest income). Figures below reflect the corrected basis.
+> **Corrections applied since the first run — figures below are the corrected ones:**
+> 1. EBIT now uses reported OperatingIncome, not Yahoo's PretaxIncome+InterestExpense
+>    (which folded in interest income).
+> 2. Enterprise value now = market cap + balance-sheet net debt, not Yahoo's
+>    enterpriseValue (which disagreed by >5% of market cap on 557 of 956 tickers).
+> 3. Payout ratio now computed from DPS/EPS, not Yahoo's stale field.
+> 4. EBITDA suppressed where Yahoo returned it equal to EBIT (D&A never added back).
+>
+> Still outstanding: net income is Yahoo's consolidated figure and may include
+> minority interest. For a group with material minorities, EPS/PE/ROE are overstated.
+> Verify attributable profit from the filings.
 
-## Screener output (candidate generation only — treat as a hypothesis to falsify)
+## Screener output (candidate generation only — a hypothesis to falsify)
 
 | Field | Value |
 |---|---|
@@ -15,33 +23,32 @@
 | Price | 2680.0 |
 | Quality Score | 30.0 |
 | Safety Score | 64.9 |
-| Value Score | 53.2 |
-| Composite Score | 49.4 |
+| Value Score | 38.0 |
+| Composite Score | 44.3 |
 | F-Score | 4 |
 | Altman Z | 3.26698531376477 |
-| Earnings Yield (EBIT/EV) | 0.19847539756269855 |
+| Earnings Yield (EBIT/EV) | 0.10934199448433883 |
 | ROC (Greenblatt) | 0.07849747078116116 |
-| Acquirers Multiple | 5.038407844398443 |
+| Acquirers Multiple | 9.145616967351287 |
 | Net-Net Pass | False |
 | NCAV per Share | -1928.7098131145408 |
 | EPV per Share | 2065.6707909218244 |
 | IV Bear |  |
 | IV Base |  |
 | IV Bull |  |
-| Comparables IV | 2262.7612593051995 |
-| Justified PB IV |  |
-| Blended IV | 2139.5797165655895 |
-| MOS Blended | -0.25258244843612665 |
-| Upside Blended | -0.2016493594904517 |
+| Comparables IV | 2082.7798986158546 |
+| Blended IV | 2072.0867063070855 |
+| MOS Blended | -0.2933821696951812 |
+| Upside Blended | -0.2268333185421323 |
 | Verdict | SKIP |
-| Reasons | MOS -25% below watch threshold 10% |
+| Reasons | MOS -29% below watch threshold 10% |
 | Red Flags |  |
 | Peer Group | Energy | Oil, Gas & Coal | Coal | Coal Production |
 | Peer Count | 26 |
 | Peer PE Median | 15.378032536083092 |
-| Peer EV/EBIT Median | 8.367060220529522 |
+| Peer EV/EBIT Median | 8.031219635751826 |
 | Peer PB Median | 1.327597648369335 |
-| Quarters Stale | 0.45 |
+| Quarters Stale | 0.46 |
 | Latest Filing | 2026-06-30 |
 
 ## Key statistics
@@ -49,22 +56,20 @@
 | Metric | Value |
 |---|---|
 | Market Cap | 13943214964736 |
-| Enterprise Value | 14048042156032 |
+| Enterprise Value | 25499724648752.0 |
 | Current Share Outstanding | 5202692151.020896 |
 | Share Count Source | market_cap/price |
-| Reported/Implied Shares | 1.0 |
 | Current PE Ratio (TTM) | 51.601033600101545 |
 | Current Price to Book Value | 0.6487048334972119 |
-| EV to EBIT (TTM) | 5.038407844398443 |
-| EV to EBITDA (TTM) | 4.610971193467461 |
+| EV to EBIT (TTM) | 9.145616967351287 |
+| EV to EBITDA (TTM) | 8.369742522893935 |
 | Current Price to Sales(TTM) | 0.35357252457378424 |
-| Dividend | 10.25 |
+| Dividend (TTM) | 10.25 |
 | Dividend Yield | 0.0038 |
-| Payout Ratio | 0.205 |
+| Payout Ratio | 0.19735469940337344 |
 | Return on Assets (TTM) | 0.004674224281231641 |
 | Return on Equity (TTM) | 0.012571547277997457 |
 | Return On Invested Capital (TTM) | 0.0497666783351003 |
-| Return on Capital Employed (TTM) | 0.06007859119283547 |
 | Gross Profit Margin (Quarter) | 0.16391557770743403 |
 | Operating Profit Margin (Quarter) | 0.09279962041399817 |
 | Net Profit Margin (Quarter) | 0.004851728983020422 |
@@ -80,18 +85,15 @@
 | Normalised EBIT (5Y) | 3892540561668.0 |
 | Normalised/Trailing EBIT | 1.3960811537090962 |
 | Current Ratio (Quarter) | 2.070939491578254 |
-| Quick Ratio (Quarter) | 1.9805481083055787 |
 | Interest Coverage (TTM) | 2.5493381449884653 |
 | Debt to Equity Ratio (Quarter) | 1.0442981192659433 |
 | Net Debt (Quarter) | 11556509684016.0 |
 | Total Debt (Quarter) | 22446068554316.0 |
 | Cash (Quarter) | 10889558870300.0 |
-| Working Capital (Quarter) | 12208580668900.0 |
 | FCF Yield (TTM) | -0.05959945204156395 |
 | Free cash flow (TTM) | -831007971596.0 |
 | Operating Cash Flow (TTM) |  |
 | Capital expenditure (TTM) | -2743480063192.0 |
-| Asset Turnover (TTM) | 0.6821650083840474 |
 | 52W High | 4370.0 |
 | 52W Low | 1250.0 |
 | Pct From 52W High | -0.38672768878718533 |
@@ -101,20 +103,6 @@
 | Price Percentile 10Y | 0.5357 |
 | Max Drawdown 10Y | -0.8568 |
 | Beta | 0.33 |
-| Quarters of History | 5 |
-| Years of Annual History | 4 |
-
-### Piotroski breakdown (basis: annual)
-
-- ROA Positive: 1
-- CFO Positive: 1
-- ROA Improving: 0
-- Accruals: 1
-- Leverage Falling: 0
-- Current Ratio Improving: 0
-- No Dilution: 1
-- Gross Margin Improving: 0
-- Asset Turnover Improving: 0
 
 ## Annual history (IDR bn, FX-converted)
 
@@ -169,6 +157,4 @@
 ## Market data
 
 - Price 2680.0 | Volume 10929400 | 52W 1250.0–4370.0
-- Board: UTAMA | IPO 2008-06-11 00:00:00 | Shares outstanding 5202692151.020896
-
-*Source: Yahoo Finance via idx_picker. Screener figures are candidate generation only.*
+- Board UTAMA | IPO 2008-06-11 00:00:00 | Shares out 5202692151.020896
