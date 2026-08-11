@@ -80,6 +80,7 @@ NEW_KEYSTATS_COLUMNS = [
     "FCF Yield (TTM)", "NCAV", "NCAV per Share", "Net-Net Pass",
     # Cycle-aware inputs
     "Normalised EBIT (5Y)", "Normalised EBIT Margin", "Normalised/Trailing EBIT", "EPV per Share",
+    "Working Capital Intensity", "Implied Terminal Multiple",
     # History-derived
     "Revenue CAGR 3Y", "Revenue CAGR 5Y", "EPS CAGR 3Y", "Net Income CAGR 3Y",
     "Gross Margin 5Y Avg", "EBIT Margin 5Y Avg", "ROE 5Y Avg",
@@ -518,6 +519,10 @@ def derive_rows(record: dict[str, Any], settings: Settings, seed: dict[str, Any]
         normalised_capex_value=M.normalised_capex(bundle),
     )
     assessment.flags = S.detect_red_flags(core, bundle, business_type)
+    if S.growth_destroys_value(assessment.scenarios):
+        assessment.flags.append(
+            "Growth destroys value - working capital consumed exceeds returns earned"
+        )
 
     staleness = M.quarters_stale(core.as_of)
     scores = [s for s in (assessment.quality_score, assessment.safety_score, assessment.value_score) if s is not None]
@@ -659,6 +664,13 @@ def derive_rows(record: dict[str, Any], settings: Settings, seed: dict[str, Any]
         "Normalised EBIT (5Y)": normalised_ebit_value,
         "Normalised EBIT Margin": normalised_ebit_margin,
         "Normalised/Trailing EBIT": M.safe_div(normalised_ebit_value, core.ebit_ttm),
+        "Working Capital Intensity": M.working_capital_intensity(core),
+        # 1/(WACC - g). Surfaced because it silently drives ~70% of any DCF's
+        # present value: at 12% and 3% it implies an ~11x terminal cash-flow
+        # multiple, well above the ~7.6x EV/EBIT Indonesian distributors
+        # actually trade at. A terminal multiple far above sector norms is an
+        # assumption, not a result.
+        "Implied Terminal Multiple": round(1.0 / (settings.wacc - settings.terminal_growth), 2),
         "EPV per Share": epv_ps,
         "Revenue CAGR 3Y": revenue_cagr_3y,
         "Revenue CAGR 5Y": revenue_cagr_5y,

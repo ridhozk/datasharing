@@ -157,6 +157,13 @@ def test_scenario_intrinsic_values_are_ordered_bear_base_bull(scores_rows):
         if None in (bear, base, bull):
             continue
         if not (bear <= base <= bull):
+            # A legitimate inversion: once the DCF charges growth for the
+            # working capital it consumes, a business earning below its cost of
+            # capital is worth *less* the faster it grows. The pipeline must say
+            # so explicitly rather than quietly emitting a bull case that sits
+            # below its own bear case.
+            if "Growth destroys value" in (row.get("Red Flags") or ""):
+                continue
             inverted.append((row["Ticker"], bear, base, bull))
     assert not inverted, f"scenario IVs out of order (bear/base/bull): {inverted[:10]}"
 

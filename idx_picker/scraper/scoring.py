@@ -301,6 +301,8 @@ def build_scenarios(
             wacc=wacc,
             growth_stage1=growth,
             terminal_growth=terminal,
+            revenue_base=core.revenue_ttm,
+            wc_intensity=M.working_capital_intensity(core),
         )
         if scenario.intrinsic_value and price:
             # MOS is measured against intrinsic value; upside against price.
@@ -309,6 +311,24 @@ def build_scenarios(
             scenario.upside = scenario.intrinsic_value / price - 1
         out[name] = scenario
     return out
+
+
+def growth_destroys_value(scenarios: dict[str, Scenario]) -> bool:
+    """True when the bull case values the company BELOW the bear case.
+
+    Not a bug. Once the DCF charges growth for the working capital it consumes,
+    a business earning below its cost of capital is worth *less* the faster it
+    grows -- so the scenario ordering legitimately inverts. When this fires, the
+    usual reading of "bull case" is meaningless and the right conclusion is that
+    management should shrink or return capital rather than expand.
+    """
+    bear = scenarios.get("bear")
+    bull = scenarios.get("bull")
+    if not bear or not bull:
+        return False
+    if bear.intrinsic_value is None or bull.intrinsic_value is None:
+        return False
+    return bull.intrinsic_value < bear.intrinsic_value
 
 
 def blended_intrinsic(

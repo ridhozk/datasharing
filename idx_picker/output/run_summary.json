@@ -1,11 +1,11 @@
 {
-  "run_at": "2026-08-11T12:25:42",
+  "run_at": "2026-08-11T12:38:26",
   "market": "IDX",
   "tickers_requested": 956,
   "tickers_ok": 956,
   "tickers_failed": 0,
   "failed": [],
-  "elapsed_seconds": 6.6,
+  "elapsed_seconds": 5.1,
   "rows_written": {
     "RAW_idx_stocks.csv": 956,
     "RAW_key_statistics.csv": 956,

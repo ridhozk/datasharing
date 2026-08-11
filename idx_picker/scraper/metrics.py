@@ -701,6 +701,30 @@ def normalised_capex(bundle: Bundle, years: int = 5) -> float | None:
     return ttm(bundle, "CapitalExpenditure")
 
 
+def working_capital_intensity(core: "CoreFinancials") -> float | None:
+    """Operating working capital as a fraction of revenue.
+
+    `(inventory + receivables - payables) / revenue`. This is the cash each
+    rupiah of revenue ties up, and therefore the cash that *growth* consumes.
+
+    A DCF that deducts only capex silently treats a distributor's growth as free
+    cash. ERAA is the worked example: working capital runs ~9.5% of revenue on a
+    27-38 day cash conversion cycle, and 2025 alone absorbed IDR 2,775bn of it
+    while free cash flow was -680bn. Ignoring that term valued the company at
+    IDR 2,737 a share against a IDR 470 price.
+    """
+    if not core.revenue_ttm or core.revenue_ttm <= 0:
+        return None
+    parts = [core.inventory, core.receivables]
+    if all(part is None for part in parts):
+        return None
+    nwc = (core.inventory or 0.0) + (core.receivables or 0.0) - (core.payables or 0.0)
+    intensity = nwc / core.revenue_ttm
+    # Bound it. A negative figure (supplier-financed, as in some retail) is real
+    # and helpful, but an extreme reading usually signals a broken input.
+    return max(-0.5, min(1.0, intensity))
+
+
 def dcf_per_share(
     fcf_base: float | None,
     shares: float | None,
@@ -709,6 +733,8 @@ def dcf_per_share(
     growth_stage1: float,
     terminal_growth: float,
     years: int = 5,
+    revenue_base: float | None = None,
+    wc_intensity: float | None = None,
 ) -> float | None:
     """Two-stage FCFF DCF returning intrinsic value per share.
 
@@ -726,11 +752,23 @@ def dcf_per_share(
 
     present_value = 0.0
     cash_flow = fcf_base
+    revenue = revenue_base
     for year in range(1, years + 1):
         cash_flow *= 1 + growth_stage1
-        present_value += cash_flow / (1 + wacc) ** year
+        # Growth consumes working capital before it becomes owner cash.
+        wc_investment = 0.0
+        if revenue and wc_intensity:
+            revenue_next = revenue * (1 + growth_stage1)
+            wc_investment = (revenue_next - revenue) * wc_intensity
+            revenue = revenue_next
+        present_value += (cash_flow - wc_investment) / (1 + wacc) ** year
 
-    terminal_value = cash_flow * (1 + terminal_growth) / (wacc - terminal_growth)
+    terminal_cash_flow = cash_flow * (1 + terminal_growth)
+    if revenue and wc_intensity:
+        terminal_cash_flow -= revenue * terminal_growth * wc_intensity
+    if terminal_cash_flow <= 0:
+        return None
+    terminal_value = terminal_cash_flow / (wacc - terminal_growth)
     present_value += terminal_value / (1 + wacc) ** years
 
     equity_value = present_value - net_debt
