@@ -1,6 +1,8 @@
 # BULL — Agent 2: Valuation & Model Validation
 
-*Status: IN PROGRESS — being written incrementally. Last updated: see bottom.*
+*Status: COMPLETE. Incorporates the orchestrator's mid-task Q2-2026 data drop
+(owner's Stockbit screenshots) — see §0 and §5-7, which supersede the Q1-only
+framing in §1-4 wherever they conflict.*
 
 Target: PT Buana Lintas Lautan Tbk (IDX: BULL), oil tanker owner/operator.
 Price IDR 464, mkt cap ~IDR 7,189bn (~USD 407m), EV ~IDR 9,143bn (~USD 517m).

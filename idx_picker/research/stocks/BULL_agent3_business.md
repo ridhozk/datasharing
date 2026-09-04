@@ -183,6 +183,78 @@ charter — spot voyages are fixed cargo-by-cargo, not "rolled." **INSUFFICIENT
 EVIDENCE** on the specific domestic LNG PLN tender status update since April
 2026 (see §5) or on terms of the 2 residual domestic-route vessels' contracts.
 
+## 3b. RESPONSE TO ORCHESTRATOR — what happened in Q2-2026 (revenue 741bn → 1,487bn QoQ)
+
+**My reading: this is very likely explained mechanically by the spot/TCE rate spike
+compounding through Q2, not by an acquisition or JV consolidation — though I cannot
+fully rule the latter out and flag it for Agent 1's balance-sheet check.**
+
+**FACT, directly on point** (idxchannel/RCTI+/other outlets, citing BULL management
+commentary through Q2-2026): *"Average TCE revenue through Q2-2026 had reached more
+than double compared to Q1-2026"* — management's own words, reported before the
+formal Q2 filing. Separately, Q1-2026 TCE was already reported as Aframax
+USD 56,314/day (+40.6% YoY) and MR USD 30,466/day (+43.7% YoY).
+
+**Arithmetic check against the owner's Stockbit numbers:** Q1-2026 revenue USD 43.9m
+(≈ IDR 741bn at prevailing FX) → Q2-2026 revenue IDR 1,487bn (≈ USD 84m at FX
+~17,684) is almost exactly a **1.9x** quarter-on-quarter increase. **This is
+consistent, to within rounding, with management's own statement that TCE more than
+doubled QoQ.** Given §2's finding that oil-tanker revenue is 95%+ spot/TCE-based,
+a near-doubling of spot rates mechanically produces a near-doubling of revenue on
+an unchanged fleet — **no acquisition or consolidation is required to explain the
+magnitude.** The timing also fits the war: the Wikipedia timeline (§5 below) places
+the Strait of Hormuz crisis escalating continuously from 28-Feb through Q2 into a
+collapsed truce on 8-July, exactly the window management cited for the "2-3 month
+lag" between rate spikes and revenue recognition.
+
+**Incremental contributors, smaller in scale:**
+- MT Gas Polaris (2nd LNG carrier) delivered 1Q-2026 — its first full quarter of
+  revenue lands in Q2, adding LNG charter revenue on top of the oil-tanker spike.
+- **INSUFFICIENT EVIDENCE, not ruled out:** an FPSO/FSO contract win. BULL was
+  bidding on 3 FPSO tenders as of Dec-2025, with **2 tenders expected to be decided
+  in Q2-2026** (Kontan, reported via search, exact date uncertain) — I could not
+  confirm whether either was actually won and booked in Q2. If one was, FPSO/FSO
+  contracts are large-day-rate, long-duration and could add a step-change chunk of
+  revenue on their own. **This is the single most likely non-rate-driven
+  contributor and should be checked directly against the Q2 filing's segment
+  revenue breakdown** (oil vs gas vs FPSO/FSO vs agency), which I could not source.
+- I could not locate any news of an acquisition, merger, reverse takeover, or a
+  joint venture moving from equity-method to full consolidation in Q2-2026.
+  **INSUFFICIENT EVIDENCE for the JV-consolidation hypothesis** — I did not find
+  positive evidence for it, but I also could not rule it out from public sources;
+  it would show up as a jump in consolidated total assets / non-controlling
+  interest, which is Agent 1's territory (balance sheet), not mine.
+
+**On the Q2 net margin (52.1%) exceeding operating margin — a real anomaly worth
+flagging:** the Feb-2026 Kompas Saham broker note explicitly discusses **"kenaikan
+nilai aset kapal tanker bekas... menciptakan potensi capital gain... melalui
+refinancing atau redeployment"** (rising secondhand tanker asset values creating
+potential capital gains via refinancing or redeployment) as a named 2026 catalyst
+for the sector generally. **THESIS, not fact:** part of the Q2 non-operating
+outperformance could be a gain on vessel disposal/revaluation or an FX gain (the
+company holds USD debt and reports in USD, so IDR moves are not the likely source —
+but interest income on the growing cash pile, or a one-off item, could be). **I
+could not confirm the specific source of the sub-operating-line gain — flagged for
+Agent 1 to trace through the actual income statement "other income" line in the Q2
+filing.**
+
+**Net assessment for the business-analysis question:** the Q2 jump does **not**
+appear to signal "this is now a different, larger company" in the sense of a
+transformative acquisition. It appears to signal **"the war got materially worse
+and lasted long enough for its full TCE effect to land in the P&L,"** compounded
+by a small LNG contribution. That is consistent with — indeed it sharpens — the
+central bear-case concern already raised in §3: **this is peak/war-driven cyclical
+earnings, now even more extreme than the Q1 print, and even more dependent on an
+active geopolitical crisis that could reverse quickly.** It does not by itself
+change BULL's classification from cyclical to something structurally different,
+unless the FPSO/FSO tender outcome (unconfirmed) has added a genuine long-duration
+contracted revenue stream — which would partially validate the "contracted
+infrastructure" reframing management has been pitching since Feb-2026 (see the
+Kompas Saham report's own language: *"pergeseran persepsi investor dari turnaround
+play menjadi cash-generative infrastructure shipping platform"* — a direct
+admission from a bullish broker that this is a **narrative repositioning still in
+progress, not yet an accomplished fact**).
+
 ## 4. The moat question — cabotage, competitors, Pertamina in-sourcing risk
 
 TBD

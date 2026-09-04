@@ -2,6 +2,94 @@
 
 *Status: IN PROGRESS — skeleton, being filled in incrementally.*
 
+## URGENT — Q2-2026 (owner-supplied Stockbit data): the revenue-doubling / margin puzzle
+
+**The orchestrator supplied Q2-2026 per-share data from the owner's Stockbit terminal
+(2026-09-04) that Yahoo/our pipeline does not carry.** Key reported figures: Q2-2026 revenue
+≈ IDR 1,487bn (vs Q1-2026's IDR 741bn — **revenue nearly doubled QoQ**), Q2-2026 EPS IDR
+50.04 (vs Q1's IDR 15.45), **net margin (Quarter) 52.12%**. Derived (INFERENCE, per-share ×
+15.494bn shares, NOT independently confirmed against a primary filing): Q2 net income
+≈ IDR 775bn (~USD 44m); TTM net income ≈ IDR 1,257bn; equity rose only ≈ IDR 840bn QoQ, i.e.
+**roughly equal to the quarter's own earnings — INFERENCE: this is consistent with the
+equity increase being retained profit, not a fresh capital injection, though I could not
+verify this against the actual balance sheet.**
+
+**FACT — found the most plausible driver, and it is NOT a hidden one-off gain: an LNG
+spot-rate spike.** [Pasardana.id, 12 March 2026](https://pasardana.id/news/2026/3/12/buana-lintas-lautan-tbk-perkuat-armada-kapal-lng/)
+reports that **LNG tanker charter rates "surged nearly 18-fold since late February 2026,
+with spot rates reaching US$300,000/day"**, and that BULL took delivery of its **second LNG
+tanker (78,000 DWT, ~280m)** in Q1 2026, on top of its first LNG vessel secured December
+2025, with **three more LNG units planned for H2 2026**. LNG is explicitly framed as the
+company's "second pillar" alongside oil tankers (four pillars: oil tanker / LNG / FSRU /
+FPSO-FSO). **INFERENCE, moderately high confidence:** a single 78,000 DWT LNG carrier
+earning even a fraction of a $300,000/day spot rate for part of Q2 could plausibly
+contribute tens of millions of USD to revenue in one quarter — this is large enough,
+relative to BULL's ~USD 42m Q1 total revenue, to explain most of the revenue near-doubling
+without needing a change in consolidation scope or a vessel-sale-through-revenue
+mechanism. **Voyage costs (fuel, port charges) do not scale anywhere near proportionately
+with an extreme spot-rate spike, so the incremental margin on LNG spot cargoes at
+$300k/day would be very high — plausibly explaining a blended net margin materially above
+BULL's historical (oil-tanker-driven) operating margin, without requiring a hidden
+below-the-line gain.** This is my best-sourced hypothesis, not a confirmed reconciliation
+of the P&L — I could not obtain the actual Q2-2026 income statement to quantify the LNG
+segment's contribution directly (see the unresolved items below).
+
+**IMPORTANT METHODOLOGICAL CAUTION on the "net margin exceeds operating margin" framing
+itself.** The orchestrator's own screenshot notes flag that the Gross Profit Margin
+(Quarter) 42.11% and Operating Profit Margin (Quarter) 37.32% tiles are **byte-identical to
+the Q1-2026 values**, with no "updated" marker — i.e. **these are very likely stale Q1
+figures the terminal is carrying forward, not real Q2 figures.** If that is correct, then
+"Q2 net margin 52.12% > Q2 operating margin" **is not actually a same-quarter comparison at
+all** — it compares a real Q2 net-margin figure against a stale Q1 operating-margin figure.
+**This substantially weakens (does not eliminate) the inference that a large non-operating
+item is required to explain the margin.** If Q2's true operating margin is itself elevated
+(plausible, given the LNG spot-rate spike above), net margin exceeding it would need no
+below-the-line gain at all. **I flag this explicitly rather than asserting a hidden gain I
+cannot source — treating a stale-tile artifact as a forensic red flag would itself be a
+fabrication risk under this project's rules.**
+
+**What I could NOT resolve — insufficient evidence, requires further research with primary
+filings:**
+- The actual Q2-2026 (or H1-2026) income statement — gross profit, operating income, "other
+  income/expense," and finance-cost lines — to test directly for a bargain-purchase gain,
+  FX gain, debt-extinguishment gain, or deconsolidation gain. **I could not locate or fetch
+  BULL's Q2-2026 filing anywhere** (see Section 1 above and the repeated attempts there);
+  this is the single biggest gap preventing a definitive answer to the orchestrator's
+  question.
+- Whether the **Sinarmas Group investment process** (see below) or the **Hadleigh
+  Investment Pte Ltd share-purchase agreement** (Note 31c of the FY2024 audited statements —
+  still "in due diligence process" as of the 19 May 2025 report date) closed during H1-2026
+  and, if so, whether it changed consolidation scope. **I found no confirmation either way**
+  that Hadleigh closed; if it had closed and consolidated new vessel-owning subsidiaries,
+  that would be an alternative/additional driver of the revenue jump the orchestrator asked
+  me to test for — I could not rule this in or out.
+- A **corporate-action / capital-raise event in H1-2026** that might explain part of the
+  revenue or equity movement (e.g. a completed Sinarmas-linked placement) beyond the 2025
+  Fortune Street placement already documented in Section 6.
+
+**FACT — a live, actively-denied acquisition/investment process by Sinarmas Group is under
+way, and it connects directly to two items already in this report.** [Katadata, 22 Dec
+2025](https://katadata.co.id/finansial/bursa/6951e4b0e4f4f/bull-angkat-suara-terkait-kabar-masuknya-grup-sinarmas-ini-kata-manajemen):
+market rumours that **Sinarmas Group is taking over a minority stake in BULL**; BULL's
+Corporate Secretary (Krisnanto Tedjaprawira) would not deny it ("we don't rule out further
+collaboration in coming years"); Director Wong Kevin declined comment "before there are
+final specifics"; management said it is considering "various strategic steps including
+corporate actions and new financing"; and — the connective finding — **management would
+not disclose details about Fortune Street Limited, described in this article as a Hong
+Kong investor**, which is the **same entity that took the entire 2025 private placement**
+documented in Section 6 (1.40bn shares, 9.09%, IDR 253.5bn). **INFERENCE, moderate
+confidence: Fortune Street Limited may be a Sinarmas-linked or Sinarmas-adjacent vehicle,**
+which would mean the 2025 dilution event was **not** a clean arm's-length capital raise but
+a step in an unfolding change-of-control process — I could not confirm this link directly
+(the article stops short of stating it), so it remains inference, not fact. **Separately
+confirmed as FACT:** PT Bank Sinarmas Tbk has been one of BULL's secured lenders since 2018
+(USD 41.4m outstanding at FY2024 per Note 17) — so if a Sinarmas equity stake materialises,
+**BULL's largest banking relationship and a prospective controlling/large shareholder would
+be the same corporate group**, a related-party-lender configuration worth flagging for any
+buyer, though as of the article's date (22 December 2025) **no transaction had closed.**
+
+---
+
 Target: PT Buana Lintas Lautan Tbk (IDX: BULL). Price IDR 464, mkt cap ~IDR 7,189bn (~USD 407m).
 Screener fact sheet: `idx_picker/research/stocks/BULL.md` (latest filing in feed: 2026-03-31, Q1).
 
@@ -61,7 +149,65 @@ further research. What I tried and could not get:
   already underwriting the "new run-rate" bull thesis the fact sheet flags as unproven. This
   is a sell-side forecast, not a reported result, and should not be treated as confirmation.
 
-## 2. Real depreciation charge / vessel depreciation policy
+## 2. Real depreciation charge / vessel depreciation policy — RESOLVED FROM PRIMARY SOURCE
+
+**FACT — sourced directly from the audited FY2024 consolidated financial statements**
+(`https://bull.co.id/uploads/financial/BULL%202024%20-%20LK%20Audited%2031%20December%202024.pdf`,
+opinion signed 19 May 2025 by BDO Indonesia). This supersedes the ballpark estimate below
+and the earlier academic-thesis source.
+
+**Actual total depreciation expense (Note 10):**
+- **FY2024: USD 15,598,365** (of which USD 15,334,919 vessel depreciation in direct costs +
+  USD 263,446 in administrative expenses).
+- **FY2023: USD 15,782,350** (USD 15,500,217 + USD 282,133).
+- At FX ~17,684 that is **~IDR 276bn/year** — roughly **12x** the screener's implied
+  IDR 23bn/yr, and it validates the fact sheet's suspicion exactly: Yahoo's `EBITDA − EBIT`
+  proxy massively understates real D&A because Yahoo simply does not carry a usable D&A line
+  for this name. **This is the number a rebuilt DCF should use**, not a derived EBITDA-EBIT
+  gap.
+
+**Depreciation policy (Note 2j, Note 3b):** BULL uses the **revaluation model** for vessels
+under PSAK 16 — carried at fair value at the revaluation date less subsequent accumulated
+depreciation/impairment, confirming the academic-thesis finding. Key terms, all sourced:
+- **Useful life: 5–35 years**, straight-line, **depreciation rates 2.85%–20%** — a wide band
+  that management sets per vessel/vessel-type, reviewed at least annually.
+- **Residual (scrap) value: USD 470/LDT (Light Displacement Tonnage) at FY2024** (USD
+  495/LDT at FY2023) — reviewed annually against scrap-market prices, so it moves with the
+  scrap-steel cycle, not a fixed assumption.
+- Latest formal appraisal: **31 December 2022**, by KJPP Indriani, Sauvan & Rekan (OJK-
+  registered appraiser, per Indonesia Valuation Standards / Rule VIII.C.4), reviewed and
+  carried forward by management since — i.e. the FY2024 revalued carrying amount is **not**
+  a fresh FY2024 appraisal, it is a 2-year-old valuation rolled forward. Fair value hierarchy
+  Level 2 (market-comparable + discounted-income approach).
+- **If vessels were carried at historical cost instead of revaluation, net carrying amount
+  would be USD 154,003,679 at FY2024 (vs USD 184,732,442 actually reported)** — i.e. the
+  revaluation model currently **inflates the vessel carrying value (and thus equity/book
+  value) by ~USD 30.7m, about 20% of the historical-cost base.** This directly bears on the
+  fact sheet's P/B-vs-NAV question: **P/B of 1.87x is being measured against a book value
+  that already includes a ~USD 31m unrealised revaluation surplus not yet validated by an
+  actual arm's-length sale of the current fleet** — a real but bounded overstatement risk,
+  not a fabricated one.
+- **CORRECTION to an earlier draft of this section:** on closer reading of Note 2j, the
+  *gain or loss on sale/retirement of a vessel* (sale proceeds vs. carrying amount) **is
+  recognised in profit or loss like any normal disposal** — it is not blocked from the P&L.
+  What bypasses the P&L is a **separate, secondary item**: the leftover *revaluation
+  surplus* sitting in the equity reserve for that specific vessel is transferred directly to
+  the deficit (retained earnings) account on disposal — an equity-to-equity reclassification
+  that runs alongside, not instead of, the P&L gain/loss. **Net effect: a large vessel-sale
+  gain in Q1-2026 or Q2-2026 is NOT ruled out by this accounting policy** — I was wrong to
+  suggest otherwise in an earlier pass of this report. FY2024 shows the disposal side was a
+  **net loss** of USD 3,074,844 (proceeds USD 38.3m vs. carrying amount USD 41.4m), i.e. in
+  the one year I can see, vessel disposals were a drag on earnings, not a boost — but that is
+  FY2024, not Q1/Q2-2026, and tells us nothing about whether a 2026 disposal produced a gain.
+  **This remains open — see the Q2-2026 section above for the current best hypothesis
+  (an LNG spot-rate spike, not a disposal gain).**
+
+**ASSUMPTION (superseded, kept for the record):** my earlier ballpark sanity-check of
+USD 15-20m/yr, made before finding the primary source, turned out to be very close to the
+actual USD 15.6m — kept here only to show the estimate was directionally sound, not as a
+substitute for the sourced figure above.
+
+## 2b. [renumber note — see Section 2 above for the resolved depreciation finding]
 
 **FACT (sourced, but from a secondary academic source citing BULL's financial statements,
 not the primary statements themselves):** a STAN (Indonesian state accounting college)
@@ -125,50 +271,130 @@ independent press sources but not by the raw financial statements. **A genuine o
 in a small "other income" line cannot be ruled out from what I found** — this should be
 flagged as a residual risk, not resolved.
 
-## 4. Accumulated deficit — origin and dividend-blocking effect
+## 4. Accumulated deficit — origin and dividend-blocking effect — UPDATED FROM PRIMARY SOURCE
 
-**NOT SOURCED — insufficient evidence, requires further research.** I searched for the
-origin of BULL's accumulated deficit (retained earnings −3,592bn to −3,903bn per the fact
-sheet) and did not find a direct source explaining it in this pass. **INFERENCE (moderate
-confidence):** BULL was formerly named **PT Buana Listya Tama Tbk** (confirmed independently
-via the Pertamina blacklist search below and via Investing.com's ticker description "Buana
-Listya Tama Tbk PT" for IDX:BULL) — a large legacy deficit combined with a corporate
-rename is a pattern consistent with a past restructuring or financial distress episode
-(BULL/Buana Listya Tama's 2022 loss year alone, per the fact sheet, was −787.5bn, which is
-roughly a fifth of the total deficit and clearly does not explain all of it) — but I have
-**not** confirmed a quasi-reorganisation, debt restructuring, or the pre-2019 history the
-task asked for. This needs a follow-up read of the FY2019-2022 annual reports or a
-restructuring-specific search ("Buana Listya Tama restrukturisasi utang" / "quasi
-reorganisasi").
+**FACT (sourced, audited FY2024 statements, Exhibit C — Statement of Changes in Equity):**
+the deficit was already **USD −309,523,121 at 1 January 2023** — i.e. **before** the FY2022
+loss year the fact sheet highlights, and before the 2023-2024 recovery. FY2023 net income of
++USD 27,956,492 brought it to −274,131,330 at end-2023; FY2024 net income of +USD 13,751,711
+(attributable to owners) brought it to −244,739,725 at end-2024. **This cross-checks cleanly
+against the fact sheet's IDR figures at the FX rates in effect: −244.7m USD × ~17,700 ≈
+−IDR 4.33tn at FY2024, and the trajectory continuing to improve to the fact sheet's quoted
+−IDR 3,903bn at FY2025 and −IDR 3,637bn at Q1-2026 is exactly what continued profitability
+should produce** (−244.7m + FY2025 net income of ~USD 24.7m ≈ −220m USD ≈ −IDR 3.9tn at
+FX ~17,700 — matches). This is a genuine, useful cross-validation that the fact sheet's
+numbers are internally consistent with the primary-source audited statements.
 
-**On the dividend-blocking question:** under Indonesian company law (UU PT — Law 40/2007,
-Art. 71), dividends may only be distributed from **positive net income after covering any
-accumulated losses (laba bersih setelah dikurangi kerugian tahun-tahun sebelumnya)**. A
-company with a large negative retained-earnings balance is legally required to first offset
-that deficit with current profits before any dividend can be declared, unless it undergoes a
-formal quasi-reorganisation (PSAK 51) to reset retained earnings to zero against
-paid-in capital. **INFERENCE, not company-specific FACT:** given BULL's retained earnings
-were still roughly −3,592bn to −3,903bn as of Q1-2026/FY2025 against annual net income in
-the 250-580bn range, **the accumulated deficit alone is a sufficient legal explanation for
-zero dividends** — BULL would need several more years of profit at even the elevated 2025/
-Q1-2026 rate before retained earnings turn positive, absent a quasi-reorganisation. I did not
-find a specific company disclosure invoking Art. 71 or announcing a quasi-reorganisation, so
-this is my inference from general Indonesian company law applied to the numbers in the fact
-sheet, not a sourced company statement.
+**INFERENCE, revised — the deficit is older and larger than a single bad year can explain.**
+A deficit already exceeding USD 300m at the start of 2023 means the accumulated losses
+significantly predate 2022. **NOT SOURCED — I could not pin down the exact originating
+years/events (pre-2019 history) in the time available**, but the audited notes give real
+supporting texture: Note 7 states that **"in connection with the impact of Covid-19, the
+Group was unable to fulfill some of the provisions of the loan agreements with [5 non-bank]
+creditors,"** and that in 2022-2023 the Group sold the vessels securing those loans and
+applied proceeds to debt — i.e. there was a genuine **COVID-era (2020-2022) financial
+distress episode involving forced/negotiated vessel sales to non-bank lenders**, on top of
+which the Company separately restructured its bank facilities with Panin (April 2022) and
+Sinarmas (July 2022) after being **unable to meet loan covenants**. This is a corroborated,
+sourced pattern of distress-driven restructuring in 2020-2023, not merely the single 2022
+loss year the fact sheet's annual table shows — the deficit is the accumulation of multiple
+difficult years, of which 2022 is only the most recent large single-year loss visible in the
+4-year table.
 
-## 5. Liquidity and debt ladder
+**Dividend-blocking effect — reaffirmed and now better evidenced.** No change to the
+Article 71 (UU PT 40/2007) legal analysis in the original entry, but it is now on firmer
+footing: an accumulated deficit that was still **−USD 244.7m at FY2024** against annual net
+income in the USD 13-28m range implies BULL is **many years away** from a legally
+positive-retained-earnings position even at the improved 2024-2025 profit run-rate, absent
+a quasi-reorganisation (PSAK 51) — which I found **no evidence** the company has undertaken
+or announced. **This alone is a sufficient, sourced explanation for the zero-dividend policy
+independent of any cash-flow or covenant constraint** — even a cash-rich, covenant-compliant
+version of this company would likely still be legally barred from paying a cash dividend.
 
-**NOT SOURCED — insufficient evidence, requires further research.** I did not find a debt
-maturity schedule, lender list, currency/fixed-floating breakdown, or covenant detail in the
-web sources located in this pass (no time remained to fetch and parse the AR2025 PDF's debt
-note). **INFERENCE:** for a tanker owner financing vessels with secured vessel-level loans,
-negative working capital driven by the **current portion of long-term vessel debt** sitting
-in current liabilities is structurally normal and not automatically a liquidity red flag —
-but this is a general-industry inference, not a BULL-specific verification. The fact sheet's
-own framing (current ratio 0.597, quick ratio 0.560, interest coverage 4.58x) is the
-best-sourced data point available to me; I could not independently corroborate or refute it
-with primary filings in this pass. **A follow-up must read the AR2025 debt note and the
-Q1-2026 interim financial statements' liabilities schedule directly.**
+## 5. Liquidity and debt ladder — RESOLVED FROM PRIMARY SOURCE, and this is a genuine red flag
+
+**FACT — full lender roster and terms (Note 17, FY2024 audited statements):**
+
+| Lender | FY2024 balance (USD) | Secured by |
+|---|---:|---|
+| PT Bank Woori Saudara Indonesia 1906 Tbk | 45,491,517 | 5 vessels, receivables, corporate guarantee |
+| PT Bank Panin Tbk | 41,998,840 | 2 vessels, share pledge, corporate/personal guarantees |
+| PT Bank Sinarmas Tbk | 41,444,412 | 5 vessels, controlling-shareholder-family shares/land, corp/personal guarantee |
+| PT Bank Oke Indonesia Tbk | 2,997,052 | Land/building owned by entities related to majority shareholder |
+| PT Bank MNC Internasional Tbk | 1,374,967 | 1 vessel |
+| Short-term loan (Panin PRK) | 2,165,286 | — |
+
+USD-denominated loans carry **7.4%–12.0%**, IDR-denominated **9.5%–11.5%** per annum. All
+non-bank lender facilities (Minsheng Qiping, CIMC Aries, Fleetscape entities) were **fully
+repaid during 2024**. Note the recurring pattern: **BULL's loan collateral routinely
+includes shares and land owned by the Halim Jusuf family / PT Delta Royal Sejahtera group**
+(not just vessels) — a related-party credit-support structure, not merely arm's-length
+vessel financing (see Section 7).
+
+**FACT — a materially more serious liquidity/covenant finding than the fact sheet's ratios
+alone convey. The auditor issued a QUALIFIED opinion specifically on this point, for the
+third consecutive year.** Per BDO's independent auditors' report (signed 19 May 2025):
+**BULL has been unable to meet the financial-ratio covenants and collateral compliance
+provisions in its bank loan agreements since 2022** (covenants include: time-interest-earned
+≥2x, current ratio ≥100%, debt/equity ≤2x, debt-service coverage ≥1, loan/vessel-fair-value
+and DSCR ≥1.1, collateral-market-value/loan ratio ≥125% — uniform across all facilities).
+Under the applicable accounting standard, a breach of this kind should force **reclassification
+of the entire non-current portion of the affected bank loans to current liabilities**. BULL's
+management **elected not to make this reclassification**, arguing its own internal review of
+"settlement procedures" shows no actual breach consequence — the auditor **disagreed and
+qualified the audit opinion on exactly this point**, stating explicitly: **"If the
+classification of loans from banks had been recognized by the Group in accordance with such
+[covenant-breach] conditions, non-current liabilities would decrease by USD 70,721,758 (2023:
+USD 88,118,382) and current liabilities would increase by the same amount"** at FY2024 (and
+FY2023).
+
+**This means BULL's own auditor believes the current ratio, on a covenant-compliant basis,
+is materially worse than reported — by roughly USD 70.7m of understated current liabilities
+at FY2024 alone.** The fact sheet's current ratio of 0.597 / quick ratio of 0.560 already look
+weak; **a strict reclassification would push reported current liabilities up by roughly
+70m against total current assets of only USD 77.1m at FY2024 — i.e. the "true" covenant-
+adjusted current ratio would be far below 1, likely in the 0.4x area or worse, not the ~0.6x
+the balance sheet shows.** **This is a genuine, sourced, and material accounting risk the
+screener could not see and the fact sheet's ratio table does not capture: BULL is in
+continuous, multi-year covenant breach on essentially its entire bank debt book, and its
+auditor does not agree with management's balance-sheet presentation of that fact.**
+
+**FACT — second, separate qualification, also unresolved since 2022.** Several subsidiaries
+defaulted on **non-bank** financing (5 creditors: Uranus Partners, Lavies, Beta, Alpha, Eris
+Partners Co. Ltd, all Marshall-Islands/offshore vehicles) during COVID; the secured vessels
+were sold and proceeds applied to debt, but **the final settlement amounts were never
+reconciled with the creditors.** BULL carries a net **"receivables under reconciliation" of
+USD 9,929,376** based on its own unilateral calculation (using a 31 Dec 2021 loan balance
+that differs from the creditors' own confirmation replies by USD 4,140,325). The auditor
+**could not perform confirmation procedures** and has qualified its opinion on this point
+every year since the FY2022 audit, carrying into FY2024 "because of the possible effect of
+this matter on the current period." **Post-year-end (per Note 37), BULL did receive partial
+payments in March 2025 from 3 of the 5 creditors (Beta, Alpha, Eris — totalling ~USD 1.96m)**
+— a positive sign the reconciliation is being worked down, but not yet fully resolved as of
+the audit report date.
+
+**FACT — explicit going-concern paragraph.** The auditor's report carries a **"Material
+uncertainties related to going concern"** paragraph (not itself a further opinion
+modification, but a mandatory disclosure) stating: FY2024 profit of USD 13.79m notwithstanding,
+the Group's **accumulated deficit was USD 244.7m and current liabilities exceeded current
+assets by USD 41.46m at FY2024**; the Group could not meet the required financial ratios and
+collateral provisions of its loan agreements; and the non-bank reconciliation above is
+unresolved. The auditor states these conditions **"indicate that a material uncertainty
+exists that may cast significant doubt on the Group's ability to continue as a going
+concern."** Management's mitigants, per Note 36, are generic (monitor liquidity, seek new
+financing "as they deem fit," maintain covenant compliance, "obtained financial support from
+ultimate shareholder" — no further detail on what that shareholder support consists of).
+
+**INFERENCE:** none of this necessarily means BULL is at imminent risk of default — the
+company has been in this same qualified-opinion/going-concern position for at least three
+years running while continuing to operate, refinance, and (per 2025-2026 news) grow its
+fleet, and lenders have shown willingness to extend/restructure repeatedly rather than call
+loans (e.g. the Sinarmas facility maturity was rolled month-to-month three times in early
+2025 per Note 37a). **But a buyer relying on the fact sheet's 0.597 current ratio as "the"
+liquidity picture is working from an incomplete number — the company's own auditor believes
+the true current-liabilities figure is materially higher, and has said so in writing for
+three straight annual reports.** This is one of the most important, concretely sourced
+findings in this report.
 
 ## 6. Share count / dilution history
 
