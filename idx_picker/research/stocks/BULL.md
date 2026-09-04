@@ -95,6 +95,25 @@ cash-flow base                       =  −113.9bn   → DCF returns None
 *(Figures at today's FX; on the 2026-08-11 FX the same arithmetic gave −116.0bn. The sign
 does not depend on the currency conversion — it depends entirely on the missing D&A.)*
 
+**Probed Yahoo directly on 2026-09-04 to see whether the D&A is simply a field we failed to
+request. It is not.** FACT:
+- `ReconciledDepreciation` — returned, and **0.00 in every period**, FY2022–FY2025 annual
+  and Q1-2025 through Q1-2026 quarterly.
+- `DepreciationAndAmortization` — no key returned at all.
+- `DepreciationAmortizationDepletion` — no key returned at all.
+
+**Yahoo's IDX feed carries no depreciation line whatsoever for this filer.** The fix cannot
+be "fetch the missing field"; real D&A has to come from the filings, and the screener needs
+a rule that does not fabricate a cash-flow base when D&A is unknowable.
+
+`NetPPE` *is* available, and raises its own question (USD m): FY2022 239 · FY2023 257 ·
+FY2024 185 · FY2025 198 · **Q1-2026 219**. Against total assets of ~USD 408m and revenue of
+~USD 150m, a tanker owner carrying only ~USD 219m of net PP&E does not obviously add up —
+either a material part of the fleet sits outside Yahoo's NetPPE mapping (joint ventures,
+assets under construction, right-of-use, or a separate "vessels" caption), or the fleet is
+smaller and more JV-held than the revenue implies. **Reconciling this is a prerequisite for
+any NAV-based valuation.**
+
 So the DCF did not "decline to value" BULL — **it was silently killed by a depreciation
 add-back that Yahoo did not supply.** The existing suppression rule only fires when
 EBITDA equals EBIT to within IDR 1, so a 23.5bn stub slips through. The blend then fell

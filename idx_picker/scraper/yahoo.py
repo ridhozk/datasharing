@@ -94,6 +94,16 @@ STATEMENT_FIELDS: tuple[str, ...] = (
     "CapitalExpenditure",
     "FreeCashFlow",
     "CommonStockDividendPaid",
+    # Depreciation must be fetched explicitly, never inferred from
+    # EBITDA - EBIT. Yahoo's IDX EBITDA frequently carries no D&A at all:
+    # BULL, a tanker owner with IDR 7.2trn of assets, reports EBITDA 740.7bn
+    # against EBIT 717.5bn -- an implied IDR 23bn annual depreciation on a
+    # fleet of ships. Fed into the DCF that turns a real cash-flow base
+    # negative and silently kills the valuation. Yahoo names this line
+    # inconsistently across filers, so ask for all three spellings.
+    "DepreciationAndAmortization",
+    "DepreciationAmortizationDepletion",
+    "ReconciledDepreciation",
 )
 
 QUOTE_MODULES = (
