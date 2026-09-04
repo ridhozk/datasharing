@@ -2,12 +2,12 @@
 
 **PT Buana Lintas Lautan Tbk** · IDX: BULL · Price IDR 466 · Market cap ~IDR 7,220bn (~USD 408m)
 Screener verdict: **SKIP, MOS −69%** — the first negatively-rated name in this review
-Synthesis 2026-09-04 · All five agents on Sonnet · *Valuation section pending Agent 2's rerun*
+Synthesis 2026-09-04 · All five agents on Sonnet
 
 | Agent | Verdict |
 |---|---|
 | 1 Financial Forensics | **RED FLAG** (qualified opinion, going concern, covenant breach) |
-| 2 Valuation | *rerunning — §1 defect analysis complete and confirmed* |
+| 2 Valuation | **SKIP — CORRECT-BY-ACCIDENT**; bear 92 / base 298 / bull 477 |
 | 3 Business / Industry | **CYCLICAL** — and far more cyclical than the screener believed |
 | 4 Macro / Catalyst | Macro **58**, Catalyst **45** — NEUTRAL, cycle past its acute peak |
 | 5 Thesis Killer | **REJECT** |
@@ -139,28 +139,60 @@ cannot return cash gives shareholders no way to realise the cycle.**
 
 ---
 
-## The book value is marked to the top of the cycle
+## NAV — and a correction to my own earlier reading
 
 **FACT (Note 2j/3b):** BULL carries vessels on the **revaluation model** under PSAK 16, not
 historical cost. Useful life **5–35 years**, depreciation rates 2.85%–20%, residual value
-**USD 470/LDT**. The last formal appraisal was **31 December 2022**, rolled forward since.
+**USD 470/LDT**. At FY2024, historical cost would have carried the vessels at USD 154.0m
+against USD 184.7m reported — a **~USD 30.7m unrealised revaluation surplus** in book equity.
 
-**At FY2024, historical cost would have carried the vessels at USD 154.0m against USD 184.7m
-reported — the revaluation model inflates carrying value, and therefore book equity, by
-~USD 30.7m (~20% of the historical-cost base).**
+**Agent 5 read that as book being marked to a cycle peak, and I repeated it. Agent 2 showed
+the direction is probably the opposite.** The last formal appraisal was **31 December
+2022** — it *predates the entire 2026 war-driven asset-value spike.* A book frozen at 2022
+marks is more plausibly **stale-low** than stale-high against 2026 comps, where a 22-year-old
+Aframax set a record at USD 33m. The surplus is real and not market-tested; its direction is
+not what I said it was.
 
-This makes the fleet-NAV question and the "has the cycle peaked" question **the same
-question**. Secondhand vessel values in 2026 are at decade/record highs — Breakwave reports
-5-year-old VLCCs pricing **above newbuild cost** and 20-year-old tonnage up **~90% YoY**.
-When the oldest, least efficient ships rally hardest, that is a **late-cycle signal**.
+**The NAV work then converged from two directions.** Agent 2 priced the fleet bottom-up
+against 2026 broker comps at **~USD 210–220m**, which lands almost exactly on the reported
+**NetPPE of USD 219m** — so the "fleet too small for the balance sheet" puzzle I flagged in
+the fact sheet was **my own size-intuition error, not a data defect.** Converting to NAV:
 
-So **P/B 1.56 is not the comfort it appears to be.** Adjusted to historical cost the ratio is
-roughly **1.7–1.8x**, and the "B" itself is marked toward a cycle peak. Tanker owners above
-~1.3x NAV are usually late-cycle.
+> **NAV ≈ IDR 295–301/share** (band 210–390), against reported **BVPS 299.49** — two
+> independent methods within a few rupiah of each other.
+
+**At IDR 466 that is P/NAV ~1.55x.** The global crude-tanker peer set trades at **0.85–1.05x**
+(Nordic American ~0.88, Torm ~1.02, Hafnia at a small discount), with **Okeanis the richest
+of the set at ~1.6x**. BULL is not catching up toward the peer cluster from a discount — **it
+has already run past it to sit beside the most expensive name in it.** That is a late-cycle
+position on the lens shipowners are actually valued on.
 
 **And the fleet is old:** 11 owned vessels, oil sub-fleet averaging **~22 years** against a
-typical 20–25 year commercial life. Several are already past it. High forward capex is
-required **to replace age, not only to grow**.
+typical 20–25 year commercial life. High forward capex is required **to replace age, not only
+to grow**.
+
+### The LNG story is smaller and weaker than it first looked
+
+This is Agent 2's most valuable single find, and it qualifies Agent 1's LNG explanation:
+
+- BULL bought **Gas Polaris (2002-built, 140,500 cbm) for USD 14.9m in March 2026** — press
+  described the purchase as **"counter-cyclical," because secondhand LNG carrier values have
+  been falling for four consecutive years.**
+- **Both LNG carriers are old steam-turbine tonnage** — the segment 2026 shipping press
+  describes as struggling against modern dual-fuel vessels. **~100 steam units are expected
+  to be scrapped industry-wide by 2030**, and **60+ LNG carriers were idle in February 2026,
+  70% of them steam.** Comparable steam LNGCs sold for **USD 13.8–19.2m for recycling**.
+
+So BULL bought cheap, semi-obsolete assets opportunistically near scrap value — a sensible
+trade, but **not premium tonnage positioned to capture the headline USD 300k/day spot rate**,
+which accrues disproportionately to modern efficient ships. Whether BULL's specific vessels
+fixed anywhere near that rate is **not established.**
+
+**And there is a dated precedent against capitalising the spike at all: LNG spot rates hit
+USD 200,000/day in late 2022 and collapsed ~85% to ~USD 30,000/day.** Same decade, same
+segment, same shape. Meanwhile 2026 LNG *commodity* fundamentals are bearish — 37 mtpa of new
+liquefaction capacity arriving, Kpler seeing Asian spot prices fall from ~USD 12 to
+~USD 10/mmBtu.
 
 ---
 
@@ -190,12 +222,37 @@ far: staleness.** Correct arithmetic on two-quarter-old inputs. `Quarters Stale`
 (**1.72**) and printed — **but it does not gate, downgrade, or flag the verdict.** A
 confident SKIP was published on data that predated a quadrupling of earnings.
 
-**Three fixes are queued** (Agent 2 is recommending between the D&A options):
-1. D&A: proxy from NetPPE, fall back to a Greenwald NOPAT-only base, or declare the DCF
-   unavailable with an explicit red flag instead of returning silently blank.
-2. **Staleness gate** — above ~1.5 quarters, red-flag the row and suppress the verdict.
+**Correcting the DCF changes its answer but not its conclusion.** On real D&A the cash-flow
+base flips from **−114bn to +140bn** — but bear and base still return *no positive equity*,
+because IDR 1,907bn of net debt swamps a thin, capex-hungry cash flow. Only bull clears, at
+IDR 38/share. An independent model agrees the downside is severe.
+
+**Fixes — one shipped, two queued:**
+
+1. **Staleness gate — SHIPPED.** Above `STALE_QUARTERS_WARN` (1.5) `classify` now raises a red
+   flag, which surfaces the row for refresh and blocks the BUY gate. **209 of 956 rows now
+   carry it; 9 BUYs dropped to WATCH (41 → 32) and no BUY rests on stale filings.** A second
+   bug surfaced while verifying: `Red Flags` was serialised in `derive_rows` *before*
+   `classify` ran, so the flag altered verdicts while every row showed an empty cell. Fixed,
+   with an integration test anchored on `Reasons` that would have caught it. **Agent 2
+   recommends going further — tightening to >1.0 quarters for `BUSINESS_CYCLICAL` names**,
+   since a stale cyclical risks being out of date *and* at the wrong point in the cycle at
+   once. Not yet implemented.
+2. **D&A — Agent 2's recommendation, not yet implemented:** a **sector-aware NetPPE ÷
+   useful-life proxy**, always tagged `D&A Source: Proxied`. Validated against BULL's audited
+   figure: a 15-year life gives USD 13.9m against the real USD 15.6m — **11% out, versus the
+   current method's 12x.** Crucially it must *not* be applied universally: **toll roads**
+   (concession intangibles, often units-of-usage) and **coal** (units-of-production against
+   reserves) should route to "declare unavailable + red flag" instead, because there a flat
+   time-based proxy is the wrong *model*, not merely the wrong parameter. Shipping, towers and
+   plantations are good fits.
 3. **Peer group** — "Passenger Marine Transportation" (EV/EBIT median 15.0x) is wrong for a
-   tanker owner; Comparables IV of 580 is unusable.
+   tanker owner. Not yet implemented.
+
+**A warning worth recording: the two defects partially cancelled.** Had the peer-group bug
+been fixed *alone*, a correctly-matched higher Comps number combining with a still-blank DCF
+and unchanged EPV could plausibly have pushed the blend across the watch threshold into a
+**false BUY**. Fixing one bug at a time is not always safe.
 
 ---
 
@@ -245,27 +302,44 @@ values at record highs. **Both cannot be true of the same market.**
 
 ---
 
-## Valuation
+## Valuation — five lenses, rebuilt
 
-*Agent 2 is rerunning with the sourced depreciation, the corrected peer set and the Q2
-actuals. Directional read pending its adopted range:*
+Agent 2 re-derived this independently on the sourced depreciation, a rebuilt peer set and
+the Q2 actuals:
 
-| Lens | Reading |
-|---|---|
-| PE on Q2 TTM (81.13) | 5.74x — cheap, **if** the war is permanent |
-| PE annualised (130.97) | 3.59x — annualising the best quarter in company history |
-| PE on normalised earnings | **~10–16x** on a 4-year median operating income of IDR 623bn |
-| P/B reported | 1.56x |
-| **P/B ex-revaluation surplus** | **~1.7–1.8x, against a book already marked to peak vessel values** |
-| Screener blended IV | 275 *(rejected — dead DCF + wrong peer group)* |
-| Sell-side | BRI Danareksa **780**; consensus **550–750**; 7 analysts avg **742** |
+| Lens | Bear | Base | Bull | What it credits |
+|---|---:|---:|---:|---|
+| EPV *(unaffected by the D&A bug)* | — | **92** | — | Through-cycle NOPAT, no growth |
+| DCF, corrected D&A | *no positive equity* | *no positive equity* | 38 | Charges 100% of normalised capex |
+| Comps, rebuilt tanker/LNG peers | — | ~635 | — | Peak-to-peak EV/EBITDA, not through-cycle |
+| **NAV** | ~210 | **~298** | ~390 | 2026 broker comps, cross-validated against book |
+| Earnings power × peer PE (6.5x) | 208 | 377 | 650 | Normalised EPS 32 / 58 / 100 |
 
-The gap between 3.59x and ~16x **is the entire investment question**, and it resolves to one
-judgement: **how much of an 18-fold LNG spot spike and a multi-decade-high Aframax rate,
-both produced by an active shooting war, belongs in a permanent earnings base?**
+**Adopted: bear IDR 92 (EPV) · base IDR 298 (NAV) · bull IDR 477 (NAV × Okeanis's 1.6x).**
 
-The owner's framework answers that directly: **never treat peak-cycle earnings as permanent
-earnings.** This is not even peak-*cycle* — it is peak-*event*.
+| Scenario | IV | **MOS** | **Upside** |
+|---|---:|---:|---:|
+| Bear | 92 | −406.5% | −80.3% |
+| Base | 298 | **−56.4%** | **−36.0%** |
+| Bull | 477 | +2.3% | +2.4% |
+
+**Even the bull case barely clears the price** — and it requires BULL to re-rate to where the
+single most expensive global tanker owner already trades, on a NAV that *already* prices the
+fleet at 2026's elevated values. **No correctly computed lens makes BULL look cheap. The best
+case says roughly fair; every other case says expensive.**
+
+**The recurring baseline cross-checks cleanly.** Strip the war premium out — 4-year median
+EBIT of IDR 631bn less a normalised ~IDR 153bn interest burden, taxed — and recurring EPS is
+**~24**, within IDR 2 of BULL's **actual FY2025 EPS of 25.93**, earned before the spike. So
+the base case treats **under half** of the current annualised 130.97 as repeatable, and even
+the bull case sits ~24% below it.
+
+**Sell-side is unanimous and, in this case, that is a warning rather than support:** BRI
+Danareksa **780**, NH Korindo **800**, Samuel **700**, consensus **703 across 7 analysts, zero
+Holds or Sells**. Not one note surfaced engages with the qualified audit opinion, the
+going-concern paragraph, the covenant breach, the 2022 LNG mean-reversion precedent, or the
+steam-turbine disadvantage. Samuel's own FY2026 forecast is explicitly hedged on *"the market
+stays at this level."* Agent 2 declined to adopt consensus as a lens; so do I.
 
 ---
 
@@ -327,8 +401,9 @@ the owner's terminal data.**
 the Strait of Hormuz staying closed** — a legitimate trade, but not a value investment, and
 not one this framework can underwrite.
 
-**Alert at IDR 250–280**, where the price would approach ~1.0x an appraisal-adjusted book and
-mid-cycle earnings would carry the valuation rather than war earnings.
+**Alert at IDR 250–300** — the NAV base case, where the price would sit at ~1.0x fleet value
+in line with the 0.85–1.05x global tanker peer cluster, and mid-cycle earnings rather than war
+earnings would carry the valuation. Today's 1.55x P/NAV is Okeanis territory.
 
 **Watch, in order:** (1) the Q2-2026 filing's other-income and covenant notes; (2)
 confirmation or denial of the Sinar Mas 30-vessel rights issue — **and its price**, given a

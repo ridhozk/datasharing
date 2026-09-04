@@ -168,6 +168,49 @@ def test_scenario_intrinsic_values_are_ordered_bear_base_bull(scores_rows):
     assert not inverted, f"scenario IVs out of order (bear/base/bull): {inverted[:10]}"
 
 
+# ================================================================ staleness gate
+
+
+def test_staleness_flag_survives_serialisation_into_the_row(scores_rows):
+    """A flag raised inside `classify` must reach the `Red Flags` column.
+
+    It did not. `derive_rows` serialised `assessment.flags` into the row before
+    `classify` ran, and `finalise_row` refreshed only `Verdict` and `Reasons` --
+    so the staleness flag changed verdicts (nine BUYs dropped to WATCH) while
+    every row in the file showed an empty `Red Flags` cell. A verdict altered by
+    a reason the row does not carry is exactly the kind of silent behaviour this
+    project treats as a defect.
+
+    Anchored on `Reasons`, which was serialised correctly, so the two must agree.
+    """
+    _require_columns(scores_rows, "Reasons", "Red Flags", "Quarters Stale")
+    missing = [
+        row["Ticker"] for row in scores_rows
+        if "quarters stale - refresh before acting" in (row.get("Reasons") or "")
+        and "quarters stale" not in (row.get("Red Flags") or "")
+    ]
+    assert not missing, (
+        "staleness reason present but no matching Red Flags entry: "
+        f"{len(missing)} rows, e.g. {missing[:10]}"
+    )
+
+
+def test_stale_rows_never_carry_a_buy(scores_rows):
+    """No BUY may rest on filings past the warn threshold.
+
+    A BUY is an instruction to act. Acting on numbers that predate a reporting
+    period nobody has re-checked is the failure BULL exposed.
+    """
+    _require_columns(scores_rows, "Verdict", "Quarters Stale")
+    offenders = [
+        (row["Ticker"], row["Quarters Stale"]) for row in scores_rows
+        if row.get("Verdict") == S.VERDICT_BUY
+        and (stale := as_float(row.get("Quarters Stale"))) is not None
+        and stale > S.STALE_QUARTERS_WARN
+    ]
+    assert not offenders, f"BUY issued on stale filings: {offenders[:10]}"
+
+
 # ================================================================== net-net flag
 
 

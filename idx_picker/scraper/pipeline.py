@@ -1002,6 +1002,11 @@ def finalise_row(row: dict[str, Any], peer: dict[str, Any]) -> None:
     scores["Upside Blended"] = assessment.upside_base
     scores["Verdict"] = assessment.verdict
     scores["Reasons"] = "; ".join(assessment.reasons)
+    # `derive_rows` serialised the flags before `classify` ran, so any flag
+    # raised inside the verdict logic -- the staleness flag in particular --
+    # would otherwise be dropped from the row while still altering the verdict.
+    # Re-serialise here, where the list is final.
+    scores["Red Flags"] = "; ".join(assessment.flags)
 
 
 def write_csv(path: Path, columns: list[str], rows: Iterable[dict[str, Any]]) -> int:
