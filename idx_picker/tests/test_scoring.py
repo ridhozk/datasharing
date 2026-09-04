@@ -268,7 +268,7 @@ def test_no_intrinsic_value_is_skip_not_buy():
     assert "No usable intrinsic value" in assessment.reasons[-1]
 
 
-@pytest.mark.parametrize("staleness, expected", [(3.01, S.VERDICT_SKIP), (3.0, S.VERDICT_BUY)])
+@pytest.mark.parametrize("staleness, expected", [(3.01, S.VERDICT_SKIP), (3.0, S.VERDICT_WATCH)])
 def test_stale_filings_skip_regardless_of_how_cheap(staleness, expected):
     """Filings more than three quarters old make a name unscreenable, full stop.
 
@@ -276,9 +276,56 @@ def test_stale_filings_skip_regardless_of_how_cheap(staleness, expected):
     form. The staleness check runs before everything else -- including the
     net-net branch -- because a cheap-looking stale name is the most dangerous
     row in the file.
+
+    Just inside the hard limit the row is still WATCH, not BUY: three quarters
+    is well past `STALE_QUARTERS_WARN`, and a BUY is an instruction to act on
+    numbers nobody has re-checked.
     """
     assessment = buyable_assessment(mos=0.95)
     assert verdict(assessment, quarters_stale=staleness) == expected
+
+
+@pytest.mark.parametrize("staleness, expected", [
+    (1.5, S.VERDICT_BUY),      # at the threshold, not past it
+    (1.51, S.VERDICT_WATCH),   # past it: downgraded
+    (1.72, S.VERDICT_WATCH),   # BULL's actual staleness
+])
+def test_moderately_stale_filings_cannot_produce_a_buy(staleness, expected):
+    """Correct arithmetic on expired inputs is its own failure mode.
+
+    BULL published a confident verdict at 1.72 quarters stale while its actual
+    trailing earnings had more than doubled in the quarter Yahoo did not carry.
+    Nothing in the model was wrong -- the data had expired and nothing said so.
+    """
+    assert verdict(buyable_assessment(mos=0.95), quarters_stale=staleness) == expected
+
+
+def test_moderately_stale_filings_raise_a_red_flag_on_any_verdict():
+    """The flag must reach the row itself, not just the BUY gate.
+
+    A stale SKIP is the case that caused the miss: it disappears from review
+    unexamined unless something on the row marks it for a refresh. `classify`
+    appends to the caller's own flag list, which is what carries it to the
+    `Red Flags` column.
+    """
+    flags: list[str] = []
+    assessment = buyable_assessment(mos=-0.90)  # deeply "expensive" -> SKIP
+    result = S.classify(
+        assessment, price=100.0, mos_buy=0.30, mos_watch=0.10,
+        f_score=6, is_net_net=False, quarters_stale=1.72, red_flags=flags,
+    )
+    assert result == S.VERDICT_SKIP
+    assert any("1.7 quarters stale" in flag for flag in flags)
+
+
+def test_staleness_flag_is_not_duplicated_when_already_present():
+    """`classify` may run against a flag list a previous pass already touched."""
+    flags = ["Data 1.7 quarters stale - verdict unreliable"]
+    S.classify(
+        buyable_assessment(mos=0.95), price=100.0, mos_buy=0.30, mos_watch=0.10,
+        f_score=6, is_net_net=False, quarters_stale=1.72, red_flags=flags,
+    )
+    assert len(flags) == 1
 
 
 def test_stale_filings_skip_even_a_net_net():

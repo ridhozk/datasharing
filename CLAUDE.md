@@ -120,6 +120,37 @@ lenses. Reject outliers beyond 10x from the median, then take the median.
 **Bear/base/bull must be offsets from the base**, never independent absolute
 clamps, or the bull case can price below the base.
 
+**`EBITDA − EBIT` is not a depreciation figure.** Yahoo's IDX feed carries no D&A
+line at all for some filers — `ReconciledDepreciation` comes back 0.00 in every
+period and the other spellings are absent. BULL, a tanker owner with IDR 7.2trn
+of assets, implied **IDR 23bn** of annual depreciation against a real, audited
+**IDR 276bn** — 12x out. Fed into `build_scenarios` that turns a healthy
+cash-flow base negative, and `dcf_per_share` then returns `None` for all three
+scenarios *silently*. Never infer D&A from the EBITDA/EBIT gap without a
+plausibility check against NetPPE, and never let a valuation disappear without
+a red flag saying why.
+
+**Staleness is its own failure mode — correct arithmetic on expired inputs.**
+Distinct from every logic defect above: nothing computes wrongly, the data is
+simply old and nothing says so. BULL screened SKIP at MOS −69% on a filing
+1.72 quarters old; the quarter Yahoo did not carry had more than doubled
+trailing earnings, and on current data the same row screened at 5.7x. Above
+`STALE_QUARTERS_WARN` (1.5) `classify` now raises a red flag, which both
+surfaces the row for a refresh and blocks the BUY gate. **A stale SKIP is the
+dangerous case** — it vanishes from review unexamined.
+
+**Yahoo's sector classification is not trustworthy for peer groups.** BULL, a
+crude/product tanker owner, was grouped under *Passenger Marine Transportation*
+with a peer EV/EBIT median of 15.0x, which fed a Comparables IV of 580 out of
+thin air. Sanity-check the peer group before trusting any comparables lens.
+
+**Low trailing revenue volatility can be an artifact of a business the company
+has abandoned.** BULL's 9.9% five-year figure read like contracted,
+infrastructure-like earnings. It described a Pertamina time-charter model
+discontinued around 2022; the company is now ~95% international spot with no
+charter backlog. A backward-looking stability metric says nothing about a
+business that has been restructured underneath it.
+
 ---
 
 ## Formula portability (the workbook)

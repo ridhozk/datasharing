@@ -46,6 +46,12 @@ VERDICT_WATCH = "WATCH"
 VERDICT_SKIP = "SKIP"
 VERDICT_DEEP_VALUE = "DEEP VALUE"
 
+# Beyond MAX a row cannot be screened at all. Between WARN and MAX it still
+# computes, but every figure in it describes the company as it was two quarters
+# ago -- see the staleness gate in `classify` for the case that forced this.
+STALE_QUARTERS_WARN = 1.5
+STALE_QUARTERS_MAX = 3.0
+
 
 @dataclass
 class Scenario:
@@ -399,9 +405,26 @@ def classify(
     reasons = assessment.reasons
     mos = assessment.mos_base
 
-    if quarters_stale is not None and quarters_stale > 3.0:
+    if quarters_stale is not None and quarters_stale > STALE_QUARTERS_MAX:
         reasons.append(f"Filings {quarters_stale:.1f} quarters stale - not screenable")
         return VERDICT_SKIP
+
+    # Correct arithmetic on expired inputs is its own failure mode, distinct
+    # from every logic defect fixed so far. BULL forced this gate: at 1.72
+    # quarters stale it published a confident SKIP at MOS -69% while the
+    # company's actual trailing earnings had more than doubled -- Yahoo simply
+    # never carried the quarter that changed the answer. Nothing in the model
+    # was wrong; the data had expired and nothing said so.
+    #
+    # Raising it as a red flag does two jobs at once: it surfaces the row for a
+    # refresh instead of letting a stale SKIP disappear unexamined, and, because
+    # `red_flags` is the same list the BUY gate below tests, it blocks a BUY
+    # issued on figures nobody has re-checked.
+    if quarters_stale is not None and quarters_stale > STALE_QUARTERS_WARN:
+        flag = f"Data {quarters_stale:.1f} quarters stale - verdict unreliable"
+        if flag not in red_flags:
+            red_flags.append(flag)
+        reasons.append(f"Filings {quarters_stale:.1f} quarters stale - refresh before acting")
 
     # Deep value is judged on asset protection, not earnings quality.
     if is_net_net:
