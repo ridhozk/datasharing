@@ -1,0 +1,957 @@
+ticker,name,sector,subsector,industry,subindustry
+AALI,Astra Agro Lestari Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+ABBA,Mahaka Media Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Advertising
+ABDA,Asuransi Bina Dana Arta Tbk.,Financials,Insurance,Insurance,General Insurance
+ABMM,ABM Investama Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+ACES,Aspirasi Hidup Indonesia Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Home Improvement Retail
+ACST,Acset Indonusa Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+ADES,Akasha Wira International Tbk.,Consumer Non-Cyclicals,Food & Beverage,Beverages,Soft Drinks
+ADHI,Adhi Karya (Persero) Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+AISA,FKS Food Sejahtera Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+AKKU,Anugerah Kagum Karya Utama Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+AKPI,Argha Karya Prima Industry Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+AKRA,AKR Corporindo Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Storage & Distribution
+AKSI,Mineral Sumberdaya Mandiri Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+ALDO,Alkindo Naratama Tbk.,Basic Materials,Forestry & Paper,Paper,Paper
+ALKA,Alakasa Industrindo Tbk.,Basic Materials,Metals & Minerals,Aluminum,Aluminum
+ALMI,Alumindo Light Metal Industry Tbk.,Basic Materials,Metals & Minerals,Aluminum,Aluminum
+ALTO,Tri Banyan Tirta Tbk.,Consumer Non-Cyclicals,Food & Beverage,Beverages,Soft Drinks
+AMAG,Asuransi Multi Artha Guna Tbk.,Financials,Insurance,Insurance,General Insurance
+AMFG,Asahimas Flat Glass Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+AMIN,Ateliers Mecaniques D Indonesia Tbk.,Industrials,Industrial Goods,Machinery,Industrial Machinery & Components
+AMRT,Sumber Alfaria Trijaya Tbk.,Consumer Non-Cyclicals,Food & Staples Retailing,Food & Staples Retailing,Supermarkets & Convenience Store
+ANJT,Austindo Nusantara Jaya Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+ANTM,Aneka Tambang Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+APEX,Apexindo Pratama Duta Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas Supports,Oil & Gas Drilling Service
+APIC,Pacific Strategic Financial Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+APII,Arita Prima Indonesia Tbk.,Industrials,Industrial Goods,Machinery,Industrial Machinery & Components
+APLI,Asiaplast Industries Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+APLN,Agung Podomoro Land Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+ARGO,Argo Pantes Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+ARII,Atlas Resources Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+ARNA,Arwana Citramulia Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+ARTA,Arthavest Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+ARTI,Ratu Prabu Energi Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+ARTO,Bank Jago Tbk.,Financials,Banks,Banks,Banks
+ASBI,Asuransi Bintang Tbk.,Financials,Insurance,Insurance,General Insurance
+ASDM,Asuransi Dayin Mitra Tbk.,Financials,Insurance,Insurance,General Insurance
+ASGR,Astra Graphia Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+ASII,Astra International Tbk.,Industrials,Multi-sector Holdings,Multi-sector Holdings,Multi-sector Holdings
+ASJT,Asuransi Jasa Tania Tbk.,Financials,Insurance,Insurance,General Insurance
+ASMI,Asuransi Maximus Graha Persada Tbk.,Financials,Insurance,Insurance,General Insurance
+ASRI,Alam Sutera Realty Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+ASRM,Asuransi Ramayana Tbk.,Financials,Insurance,Insurance,General Insurance
+ASSA,Adi Sarana Armada Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+ATIC,Anabatic Technologies Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+AUTO,Astra Otoparts Tbk.,Consumer Cyclicals,Automobiles & Components,Auto Components,Auto Parts & Equipment
+BABP,Bank MNC Internasional Tbk.,Financials,Banks,Banks,Banks
+BACA,Bank Capital Indonesia Tbk.,Financials,Banks,Banks,Banks
+BAJA,Saranacentral Bajatama Tbk.,Basic Materials,Metals & Minerals,Iron & Steel,Iron & Steel
+BALI,Bali Towerindo Sentra Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+BAPA,Bekasi Asri Pemula Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BATA,Sepatu Bata Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Footwear,Footwear
+BAYU,Bayu Buana Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Travel Agencies
+BBCA,Bank Central Asia Tbk.,Financials,Banks,Banks,Banks
+BBHI,Allo Bank Indonesia Tbk.,Financials,Banks,Banks,Banks
+BBKP,Bank KB Indonesia Tbk.,Financials,Banks,Banks,Banks
+BBLD,Buana Finance Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+BBMD,Bank Mestika Dharma Tbk.,Financials,Banks,Banks,Banks
+BBNI,Bank Negara Indonesia (Persero) Tbk.,Financials,Banks,Banks,Banks
+BBRI,Bank Rakyat Indonesia (Persero) Tbk.,Financials,Banks,Banks,Banks
+BBRM,Pelayaran Nasional Bina Buana Raya Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+BBTN,Bank Tabungan Negara (Persero) Tbk.,Financials,Banks,Banks,Banks
+BBYB,Bank Neo Commerce Tbk.,Financials,Banks,Banks,Banks
+BCAP,MNC Kapital Indonesia Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+BCIC,Bank JTrust Indonesia Tbk.,Financials,Banks,Banks,Banks
+BCIP,Bumi Citra Permai Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BDMN,Bank Danamon Indonesia Tbk.,Financials,Banks,Banks,Banks
+BEKS,Bank Pembangunan Daerah Banten Tbk.,Financials,Banks,Banks,Banks
+BEST,Bekasi Fajar Industrial Estate Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BFIN,BFI Finance Indonesia Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+BGTG,Bank Ganesha Tbk.,Financials,Banks,Banks,Banks
+BHIT,MNC Asia Holding Tbk.,Financials,Holding & Investment Companies,Financial Holdings,Financial Holdings
+BIKA,Binakarya Jaya Abadi Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BIMA,Primarindo Asia Infrastructure Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Footwear,Footwear
+BINA,Bank Ina Perdana Tbk.,Financials,Banks,Banks,Banks
+BIPI,Astrindo Nusantara Infrastruktur Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Storage & Distribution
+BIPP,Bhuwanatala Indah Permai Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BIRD,Blue Bird Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+BISI,BISI International Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+BJBR,Bank Pembangunan Daerah Jawa Barat dan Banten Tbk.,Financials,Banks,Banks,Banks
+BJTM,Bank Pembangunan Daerah Jawa Timur Tbk.,Financials,Banks,Banks,Banks
+BKDP,Bukit Darmo Property Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BKSL,Sentul City Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BKSW,Bank QNB Indonesia Tbk.,Financials,Banks,Banks,Banks
+BLTA,Berlian Laju Tanker Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+BLTZ,Graha Layar Prima Tbk.,Consumer Cyclicals,Media & Entertainment,Entertainment & Movie Production,Entertainment & Movie Production
+BMAS,Bank Maspion Indonesia Tbk.,Financials,Banks,Banks,Banks
+BMRI,Bank Mandiri (Persero) Tbk.,Financials,Banks,Banks,Banks
+BMSR,Bintang Mitra Semestaraya Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+BMTR,Global Mediacom Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Broadcasting
+BNBA,Bank Bumi Arta Tbk.,Financials,Banks,Banks,Banks
+BNBR,Bakrie & Brothers Tbk.,Industrials,Multi-sector Holdings,Multi-sector Holdings,Multi-sector Holdings
+BNGA,Bank CIMB Niaga Tbk.,Financials,Banks,Banks,Banks
+BNII,Bank Maybank Indonesia Tbk.,Financials,Banks,Banks,Banks
+BNLI,Bank Permata Tbk.,Financials,Banks,Banks,Banks
+BOLT,Garuda Metalindo Tbk.,Industrials,Industrial Goods,Machinery,Industrial Machinery & Components
+BPFI,Woori Finance Indonesia Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+BPII,Batavia Prosperindo Internasional Tbk.,Financials,Investment Service,Investment Services,Investment Banking & Brokerage Services
+BRAM,Indo Kordsa Tbk.,Consumer Cyclicals,Automobiles & Components,Auto Components,Auto Parts & Equipment
+BRMS,Bumi Resources Minerals Tbk.,Basic Materials,Metals & Minerals,Gold,Gold
+BRNA,Berlina Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+BRPT,Barito Pacific Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+BSDE,Bumi Serpong Damai Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BSIM,Bank Sinarmas Tbk.,Financials,Banks,Banks,Banks
+BSSR,Baramulti Suksessarana Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+BSWD,Bank of India Indonesia Tbk.,Financials,Banks,Banks,Banks
+BTEK,Bumi Teknokultura Unggul Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+BTEL,Bakrie Telecom Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wireless Telecommunication Services
+BTON,Betonjaya Manunggal Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+BTPN,Bank SMBC Indonesia Tbk.,Financials,Banks,Banks,Banks
+BUDI,Budi Starch & Sweetener Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+BUKK,Bukaka Teknik Utama Tbk.,Industrials,Industrial Goods,Machinery,Industrial Machinery & Components
+BULL,Buana Lintas Lautan Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+BUMI,Bumi Resources Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+BUVA,Bukit Uluwatu Villa Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+BVIC,Bank Victoria International Tbk.,Financials,Banks,Banks,Banks
+BWPT,Eagle High Plantations Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+BYAN,Bayan Resources Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+CANI,Capitol Nusantara Indonesia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+CASS,Cahaya Aero Services Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+CEKA,Wilmar Cahaya Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+CENT,Centratama Telekomunikasi Indonesia Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+CFIN,Clipan Finance Indonesia Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+CINT,Chitose Internasional Tbk.,Consumer Cyclicals,Household Goods,Household Goods,Home Furnishings
+CITA,Cita Mineral Investindo Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+CLPI,Colorpak Indonesia Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+CMNP,Citra Marga Nusaphala Persada Tbk.,Infrastructures,Transportation Infrastructure,Transport Infrastructure Operator,Highways & Railtracks
+CMPP,AirAsia Indonesia Tbk.,Transportation & Logistic,Transportation,Airlines,Airlines
+CNKO,Exploitasi Energi Indonesia Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+CNTX,Century Textile Industry Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+COWL,Cowell Development Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+CPIN,Charoen Pokphand Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+CPRO,Central Proteina Prima Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+CSAP,Catur Sentosa Adiprana Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+CTBN,Citra Tubindo Tbk.,Basic Materials,Metals & Minerals,Iron & Steel,Iron & Steel
+CTRA,Ciputra Development Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+CTTH,Citatah Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+DART,Duta Anggada Realty Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+DEFI,Danasupra Erapacific Tbk.,Financials,Investment Service,Investment Services,Investment Management
+DEWA,Darma Henwa Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports","Oil, Gas & Coal Equipment & Services"
+DGIK,Nusa Konstruksi Enjiniring Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+DILD,Intiland Development Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+DKFT,Central Omega Resources Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+DLTA,Delta Djakarta Tbk.,Consumer Non-Cyclicals,Food & Beverage,Beverages,Liquors
+DMAS,Puradelta Lestari Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+DNAR,Bank Oke Indonesia Tbk.,Financials,Banks,Banks,Banks
+DNET,Indoritel Makmur Internasional Tbk.,Consumer Cyclicals,Retailing,Consumer Distributors,Consumer Distributors
+DOID,BUMA Internasional Grup Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+DPNS,Duta Pertiwi Nusantara Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+DSFI,Dharma Samudera Fishing Industries Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+DSNG,Dharma Satya Nusantara Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+DSSA,Dian Swastatika Sentosa Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+DUTI,Duta Pertiwi Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+DVLA,Darya-Varia Laboratoria Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+DYAN,Dyandra Media International Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Advertising
+ECII,Electronic City Indonesia Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Electronics Retail
+EKAD,Ekadharma International Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+ELSA,Elnusa Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports","Oil, Gas & Coal Equipment & Services"
+ELTY,Bakrieland Development Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+EMDE,Megapolitan Developments Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+EMTK,Elang Mahkota Teknologi Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Broadcasting
+ENRG,Energi Mega Persada Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+EPMT,Enseval Putera Megatrading Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Supplies & Distributions,Healthcare Supplies & Distributions
+ERAA,Erajaya Swasembada Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Electronics Retail
+ERTX,Eratex Djaja Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+ESSA,ESSA Industries Indonesia Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+ESTI,Ever Shine Tex Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+ETWA,Eterindo Wahanatama Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+EXCL,XLSMART Telecom Sejahtera Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wireless Telecommunication Services
+FAST,Fast Food Indonesia Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Restaurants
+FASW,Fajar Surya Wisesa Tbk.,Basic Materials,Forestry & Paper,Paper,Paper
+FISH,FKS Multi Agro Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+FMII,Fortune Mate Indonesia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+FORU,Fortune Indonesia Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Advertising
+FPNI,Lotte Chemical Titan Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+GAMA,Aksara Global Development Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+GDST,Gunawan Dianjaya Steel Tbk.,Basic Materials,Metals & Minerals,Iron & Steel,Iron & Steel
+GDYR,Goodyear Indonesia Tbk.,Consumer Cyclicals,Automobiles & Components,Auto Components,Tires
+GEMA,Gema Grahasarana Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+GEMS,Golden Energy Mines Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+GGRM,Gudang Garam Tbk.,Consumer Non-Cyclicals,Tobacco,Tobacco,Tobacco
+GIAA,Garuda Indonesia (Persero) Tbk.,Transportation & Logistic,Transportation,Airlines,Airlines
+GJTL,Gajah Tunggal Tbk.,Consumer Cyclicals,Automobiles & Components,Auto Components,Tires
+GLOB,Globe Kita Terang Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Electronics Retail
+GMTD,Gowa Makassar Tourism Development Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+GOLD,Visi Telekomunikasi Infrastruktur Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+GOLL,Golden Plantation Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+GPRA,Perdana Gapuraprima Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+GSMF,Equity Development Investment Tbk.,Financials,Investment Service,Investment Services,Investment Management
+GTBO,Garda Tujuh Buana Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+GWSA,Greenwood Sejahtera Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+GZCO,Gozco Plantations Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+HADE,Himalaya Energi Perkasa Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+HDFA,Radana Bhaskara Finance Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+HERO,DFI Retail Nusantara Tbk.,Consumer Non-Cyclicals,Food & Staples Retailing,Food & Staples Retailing,Food Retail & Distributors
+HEXA,Hexindo Adiperkasa Tbk.,Industrials,Industrial Goods,Machinery,Construction Machinery & Heavy Vehicles
+HITS,Humpuss Intermoda Transportasi Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+HMSP,H.M. Sampoerna Tbk.,Consumer Non-Cyclicals,Tobacco,Tobacco,Tobacco
+HOME,Hotel Mandarine Regency Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+HOTL,Saraswati Griya Lestari Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+HRUM,Harum Energy Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+IATA,MNC Energy Investments Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+IBFN,Intan Baru Prana Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+IBST,Inti Bangun Sejahtera Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+ICBP,Indofood CBP Sukses Makmur Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+ICON,Island Concepts Indonesia Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+IGAR,Champion Pacific Indonesia Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+IIKP,Inti Agri Resources Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+IKAI,Intikeramik Alamasri Industri Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+IKBI,Sumi Indo Kabel Tbk.,Industrials,Industrial Goods,Electrical,Electrical Components & Equipment
+IMAS,Indomobil Sukses Internasional Tbk.,Consumer Cyclicals,Automobiles & Components,Automobiles,Car Manufacturers
+IMJS,Indomobil Multi Jasa Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+IMPC,Impack Pratama Industri Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+INAF,Indofarma Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+INAI,Indal Aluminium Industry Tbk.,Basic Materials,Metals & Minerals,Aluminum,Aluminum
+INCI,Intanwijaya Internasional Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+INCO,Vale Indonesia Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+INDF,Indofood Sukses Makmur Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+INDR,Indo-Rama Synthetics Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+INDS,Indospring Tbk.,Consumer Cyclicals,Automobiles & Components,Auto Components,Auto Parts & Equipment
+INDX,Tanah Laut Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+INDY,Indika Energy Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+INKP,Indah Kiat Pulp & Paper Tbk.,Basic Materials,Forestry & Paper,Paper,Paper
+INPC,Bank Artha Graha Internasional Tbk.,Financials,Banks,Banks,Banks
+INPP,Indonesian Paradise Property Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+INRU,Toba Pulp Lestari Tbk.,Basic Materials,Forestry & Paper,Paper,Paper
+INTA,Intraco Penta Tbk.,Industrials,Industrial Goods,Machinery,Construction Machinery & Heavy Vehicles
+INTD,Inter Delta Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+INTP,Indocement Tunggal Prakarsa Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+IPOL,Indopoly Swakarsa Industry Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+ISAT,Indosat Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Integrated Telecommunication Service
+ISSP,Steel Pipe Industry of Indonesia Tbk.,Basic Materials,Metals & Minerals,Iron & Steel,Iron & Steel
+ITMA,Sumber Energi Andalan Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+ITMG,Indo Tambangraya Megah Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+JAWA,Jaya Agra Wattie Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+JECC,Jembo Cable Company Tbk.,Industrials,Industrial Goods,Electrical,Electrical Components & Equipment
+JIHD,Jakarta International Hotels & Development Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+JKON,Jaya Konstruksi Manggala Pratama Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+JPFA,Japfa Comfeed Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+JRPT,Jaya Real Property Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+JSMR,Jasa Marga (Persero) Tbk.,Infrastructures,Transportation Infrastructure,Transport Infrastructure Operator,Highways & Railtracks
+JSPT,Jakarta Setiabudi Internasional Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+JTPE,Jasuindo Tiga Perkasa Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+KAEF,Kimia Farma Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+KARW,Meratus Jasa Prima Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+KBLI,KMI Wire & Cable Tbk.,Industrials,Industrial Goods,Electrical,Electrical Components & Equipment
+KBLM,Kabelindo Murni Tbk.,Industrials,Industrial Goods,Electrical,Electrical Components & Equipment
+KBLV,First Media Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+KBRI,Kertas Basuki Rachmat Indonesia Tbk.,Basic Materials,Forestry & Paper,Paper,Paper
+KDSI,Kedawung Setia Industrial Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+KIAS,Keramika Indonesia Assosiasi Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+KICI,Kedaung Indah Can Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+KIJA,Kawasan Industri Jababeka Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+KKGI,Resource Alam Indonesia Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+KLBF,Kalbe Farma Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+KOBX,Kobexindo Tractors Tbk.,Industrials,Industrial Goods,Machinery,Construction Machinery & Heavy Vehicles
+KOIN,Kokoh Inti Arebama Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Home Improvement Retail
+KONI,Perdana Bangun Pusaka Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+KOPI,Mitra Energi Persada Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+KPIG,MNC Tourism Indonesia Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+KRAS,Krakatau Steel (Persero) Tbk.,Basic Materials,Metals & Minerals,Iron & Steel,Iron & Steel
+KREN,Quantum Clovera Investama Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+LAPD,Leyand International Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+LCGP,Eureka Prima Jakarta Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+LEAD,Logindo Samudramakmur Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+LINK,Link Net Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+LION,Lion Metal Works Tbk.,Industrials,Industrial Goods,Building Products & Fixtures,Building Products & Fixtures
+LMAS,Limas Indonesia Makmur Tbk.,Consumer Cyclicals,Household Goods,Household Goods,Household Appliances
+LMPI,Langgeng Makmur Industri Tbk.,Consumer Cyclicals,Household Goods,Household Goods,Housewares & Specialties
+LMSH,Lionmesh Prima Tbk.,Industrials,Industrial Goods,Building Products & Fixtures,Building Products & Fixtures
+LPCK,Lippo Cikarang Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+LPGI,Lippo General Insurance Tbk.,Financials,Insurance,Insurance,General Insurance
+LPIN,Multi Prima Sejahtera Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+LPKR,Lippo Karawaci Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+LPLI,Star Pacific Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+LPPF,Matahari Department Store Tbk.,Consumer Cyclicals,Retailing,Department Stores,Department Stores
+LPPS,Lenox Pasifik Investama Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+LRNA,Eka Sari Lorena Transport Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+LSIP,PP London Sumatra Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+LTLS,Lautan Luas Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+MAGP,Multi Agro Gemilang Plantation Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+MAIN,Malindo Feedmill Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+MAPI,Mitra Adiperkasa Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+MAYA,Bank Mayapada Internasional Tbk.,Financials,Banks,Banks,Banks
+MBAP,Mitrabara Adiperdana Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+MBSS,Mitrabahtera Segara Sejati Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+MBTO,Martina Berto Tbk.,Consumer Non-Cyclicals,Nondurable Household Products,Personal Care Products,Personal Care Products
+MCOR,Bank China Construction Bank Indonesia Tbk.,Financials,Banks,Banks,Banks
+MDIA,Intermedia Capital Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Broadcasting
+MDKA,Merdeka Copper Gold Tbk.,Basic Materials,Metals & Minerals,Gold,Gold
+MDLN,Modernland Realty Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+MDRN,Modern Internasional Tbk.,Consumer Cyclicals,Retailing,Consumer Distributors,Consumer Distributors
+MEDC,Medco Energi Internasional Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+MEGA,Bank Mega Tbk.,Financials,Banks,Banks,Banks
+MERK,Merck Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+META,Nusantara Infrastructure Tbk.,Infrastructures,Transportation Infrastructure,Transport Infrastructure Operator,Marine Ports & Services
+MFMI,Multifiling Mitra Indonesia Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+MGNA,Magna Investama Mandiri Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+MICE,Multi Indocitra Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+MIDI,Midi Utama Indonesia Tbk.,Consumer Non-Cyclicals,Food & Staples Retailing,Food & Staples Retailing,Supermarkets & Convenience Store
+MIKA,Mitra Keluarga Karyasehat Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+MIRA,Mitra International Resources Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+MITI,Mitra Investindo Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+MKPI,Metropolitan Kentjana Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+MLBI,Multi Bintang Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Beverages,Liquors
+MLIA,Mulia Industrindo Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+MLPL,Multipolar Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+MLPT,Multipolar Technology Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+MMLP,Mega Manunggal Property Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+MNCN,Media Nusantara Citra Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Broadcasting
+MPMX,Mitra Pinasthika Mustika Tbk.,Consumer Cyclicals,Automobiles & Components,Consumer Distributors,Consumer Distributors
+MPPA,Matahari Putra Prima Tbk.,Consumer Non-Cyclicals,Food & Staples Retailing,Food & Staples Retailing,Food Retail & Distributors
+MRAT,Mustika Ratu Tbk.,Consumer Non-Cyclicals,Nondurable Household Products,Personal Care Products,Personal Care Products
+MREI,Maskapai Reasuransi Indonesia Tbk.,Financials,Insurance,Insurance,Reinsurance
+MSKY,MNC Sky Vision Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Cable & Satellite
+MTDL,Metrodata Electronics Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+MTFN,Capitalinc Investment Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+MTLA,Metropolitan Land Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+MTSM,Metro Realty Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+MYOH,Samindo Resources Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+MYOR,Mayora Indah Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+MYTX,Asia Pacific Investama Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+NELY,Pelayaran Nelly Dwi Putri Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+NIKL,Pelat Timah Nusantara Tbk.,Basic Materials,Metals & Minerals,Iron & Steel,Iron & Steel
+NIRO,City Retail Developments Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+NISP,Bank OCBC NISP Tbk.,Financials,Banks,Banks,Banks
+NOBU,Bank Nationalnobu Tbk.,Financials,Banks,Banks,Banks
+NRCA,Nusa Raya Cipta Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+OCAP,Onix Capital Tbk.,Financials,Investment Service,Investment Services,Investment Management
+OKAS,Ancora Indonesia Resources Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+OMRE,Indonesia Prima Property Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PADI,Minna Padi Investama Sekuritas Tbk.,Financials,Investment Service,Investment Services,Investment Banking & Brokerage Services
+PALM,Provident Investasi Bersama Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+PANR,Panorama Sentrawisata Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Travel Agencies
+PANS,Panin Sekuritas Tbk.,Financials,Investment Service,Investment Services,Investment Banking & Brokerage Services
+PBRX,Pan Brothers Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+PDES,Destinasi Tirta Nusantara Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Recreational & Sports Facilities
+PEGE,Panca Global Kapital Tbk.,Financials,Investment Service,Investment Services,Investment Management
+PGAS,Perusahaan Gas Negara Tbk.,Infrastructures,Utilities,Gas Utilities,Gas Utilities
+PGLI,Pembangunan Graha Lestari Indah Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PICO,Pelangi Indah Canindo Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+PJAA,Pembangunan Jaya Ancol Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Recreational & Sports Facilities
+PKPK,Paragon Karya Perkasa Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+PLAS,Polaris Investama Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+PLIN,Plaza Indonesia Realty Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PNBN,Bank Pan Indonesia Tbk.,Financials,Banks,Banks,Banks
+PNBS,Bank Panin Dubai Syariah Tbk.,Financials,Banks,Banks,Banks
+PNIN,Paninvest Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+PNLF,Panin Financial Tbk.,Financials,Holding & Investment Companies,Financial Holdings,Financial Holdings
+PNSE,Pudjiadi & Sons Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+POLY,Asia Pacific Fibers Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+POOL,Pool Advista Indonesia Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+PPRO,PP Properti Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PSAB,J Resources Asia Pasifik Tbk.,Basic Materials,Metals & Minerals,Gold,Gold
+PSDN,Prasidha Aneka Niaga Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+PSKT,Red Planet Indonesia Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+PTBA,Bukit Asam Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+PTIS,Indo Straits Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports","Oil, Gas & Coal Equipment & Services"
+PTPP,PP (Persero) Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+PTRO,Petrosea Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports","Oil, Gas & Coal Equipment & Services"
+PTSN,Sat Nusapersada Tbk.,Technology,Technology Hardware & Equipment,Electronic Equipment & Instruments,Electronic Equipment & Instruments
+PTSP,Pioneerindo Gourmet International Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Restaurants
+PUDP,Pudjiadi Prestige Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PWON,Pakuwon Jati Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PYFA,Pyridam Farma Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+RAJA,Rukun Raharja Tbk.,Infrastructures,Utilities,Gas Utilities,Gas Utilities
+RALS,Ramayana Lestari Sentosa Tbk.,Consumer Cyclicals,Retailing,Department Stores,Department Stores
+RANC,Supra Boga Lestari Tbk.,Consumer Non-Cyclicals,Food & Staples Retailing,Food & Staples Retailing,Food Retail & Distributors
+RBMS,Ristia Bintang Mahkotasejati Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+RDTX,Roda Vivatex Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+RELI,Reliance Sekuritas Indonesia Tbk.,Financials,Investment Service,Investment Services,Investment Banking & Brokerage Services
+RICY,Ricky Putra Globalindo Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+RIGS,Rig Tenders Indonesia Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports",Oil & Gas Drilling Service
+RIMO,Rimo International Lestari Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+RODA,Pikko Land Development Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+ROTI,Nippon Indosari Corpindo Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+RUIS,Radiant Utama Interinsco Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports","Oil, Gas & Coal Equipment & Services"
+SAFE,Steady Safe Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+SAME,Sarana Meditama Metropolitan Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+SCCO,Supreme Cable Manufacturing & Commerce Tbk.,Industrials,Industrial Goods,Electrical,Electrical Components & Equipment
+SCMA,Surya Citra Media Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Broadcasting
+SCPI,Organon Pharma Indonesia Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+SDMU,Sidomulyo Selaras Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+SDPC,Millennium Pharmacon International Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Supplies & Distributions,Healthcare Supplies & Distributions
+SDRA,Bank Woori Saudara Indonesia Tbk.,Financials,Banks,Banks,Banks
+SGRO,Sampoerna Agro Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+SHID,Hotel Sahid Jaya International Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+SIDO,Industri Jamu dan Farmasi Sido Muncul Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+SILO,Siloam International Hospitals Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+SIMA,Siwani Makmur Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+SIMP,Salim Ivomas Pratama Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+SIPD,Sreeya Sewu Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+SKBM,Sekar Bumi Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+SKLT,Sekar Laut Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+SKYB,Northcliff Citranusa Indonesia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SMAR,Sinar Mas Agro Resources and Technology Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+SMBR,Semen Baturaja Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+SMCB,Solusi Bangun Indonesia Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+SMDM,Suryamas Dutamakmur Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SMDR,Samudera Indonesia Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+SMGR,Semen Indonesia (Persero) Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+SMMA,Sinarmas Multiartha Tbk.,Financials,Holding & Investment Companies,Financial Holdings,Financial Holdings
+SMMT,Golden Eagle Energy Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+SMRA,Summarecon Agung Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SMRU,SMR Utama Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+SMSM,Selamat Sempurna Tbk.,Consumer Cyclicals,Automobiles & Components,Auto Components,Auto Parts & Equipment
+SOCI,Soechi Lines Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+SONA,Sona Topas Tourism Industry Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+SPMA,Suparma Tbk.,Basic Materials,Forestry & Paper,Paper,Paper
+SQMI,Wilton Makmur Indonesia Tbk.,Basic Materials,Metals & Minerals,Gold,Gold
+SRAJ,Sejahteraraya Anugrahjaya Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+SRIL,Sri Rejeki Isman Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+SRSN,Indo Acidatama Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+SRTG,Saratoga Investama Sedaya Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+SSIA,Surya Semesta Internusa Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SSMS,Sawit Sumbermas Sarana Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+SSTM,Sunson Textile Manufacture Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+STAR,Buana Artha Anugerah Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+STTP,Siantar Top Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+SUGI,Sugih Energy Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+SULI,SLJ Global Tbk.,Basic Materials,Forestry & Paper,Timber,Timber
+SUPR,Solusi Tunas Pratama Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+TALF,Tunas Alfin Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+TARA,Agung Semesta Sejahtera Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+TAXI,Express Transindo Utama Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+TBIG,Tower Bersama Infrastructure Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wireless Telecommunication Services
+TBLA,Tunas Baru Lampung Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+TBMS,Tembaga Mulia Semanan Tbk.,Basic Materials,Metals & Minerals,Copper,Copper
+TCID,Mandom Indonesia Tbk.,Consumer Non-Cyclicals,Nondurable Household Products,Personal Care Products,Personal Care Products
+TELE,Omni Inovasi Indonesia Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+TFCO,Tifico Fiber Indonesia Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+TGKA,Tigaraksa Satria Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+TIFA,KDB Tifa Finance Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+TINS,Timah Tbk.,Basic Materials,Metals & Minerals,Precious Metals & Minerals,Precious Metals & Minerals
+TIRA,Tira Austenite Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+TIRT,Tirta Mahakam Resources Tbk.,Basic Materials,Forestry & Paper,Timber,Timber
+TKIM,Pabrik Kertas Tjiwi Kimia Tbk.,Basic Materials,Forestry & Paper,Paper,Paper
+TLKM,Telkom Indonesia (Persero) Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Integrated Telecommunication Service
+TMAS,Temas Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+TMPO,Tempo Intimedia Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Consumer Publishing
+TOBA,TBS Energi Utama Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+TOTL,Total Bangun Persada Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+TOTO,Surya Toto Indonesia Tbk.,Industrials,Industrial Goods,Building Products & Fixtures,Building Products & Fixtures
+TOWR,Sarana Menara Nusantara Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+TPIA,Chandra Asri Pacific Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+TPMA,Trans Power Marine Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+TRAM,Trada Alam Minera Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+TRIL,Triwira Insanlestari Tbk.,Industrials,Industrial Goods,Machinery,Industrial Machinery & Components
+TRIM,Trimegah Sekuritas Indonesia Tbk.,Financials,Investment Service,Investment Services,Investment Banking & Brokerage Services
+TRIO,Trikomsel Oke Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Electronics Retail
+TRIS,Trisula International Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+TRST,Trias Sentosa Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+TRUS,Trust Finance Indonesia Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+TSPC,Tempo Scan Pacific Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+ULTJ,Ultrajaya Milk Industry & Trading Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+UNIC,Unggul Indah Cahaya Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+UNIT,Nusantara Inti Corpora Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+UNSP,Bakrie Sumatera Plantations Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+UNTR,United Tractors Tbk.,Industrials,Industrial Goods,Machinery,Construction Machinery & Heavy Vehicles
+UNVR,Unilever Indonesia Tbk.,Consumer Non-Cyclicals,Nondurable Household Products,Household Products,Household Products
+VICO,Victoria Investama Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+VINS,Victoria Insurance Tbk.,Financials,Insurance,Insurance,General Insurance
+VIVA,Visi Media Asia Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Broadcasting
+VOKS,Voksel Electric Tbk.,Industrials,Industrial Goods,Electrical,Electrical Components & Equipment
+VRNA,Mizuho Leasing Indonesia Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+WAPO,Wahana Pronatural Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+WEHA,WEHA Transportasi Indonesia Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+WICO,Wicaksana Overseas International Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+WIIM,Wismilak Inti Makmur Tbk.,Consumer Non-Cyclicals,Tobacco,Tobacco,Tobacco
+WIKA,Wijaya Karya (Persero) Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+WINS,Wintermar Offshore Marine Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports","Oil, Gas & Coal Equipment & Services"
+WOMF,Wahana Ottomitra Multiartha Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+WSKT,Waskita Karya (Persero) Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+WTON,Wijaya Karya Beton Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+YPAS,Yanaprima Hastapersada Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+YULE,Yulie Sekuritas Indonesia Tbk.,Financials,Investment Service,Investment Services,Investment Banking & Brokerage Services
+ZBRA,Dosni Roha Indonesia Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+SHIP,Sillo Maritime Perdana Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+CASA,Capital Financial Indonesia Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+DAYA,Duta Intidaya Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+DPUM,Dua Putra Utama Makmur Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+IDPR,Indonesia Pondasi Raya Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+JGLE,Graha Andrasentra Propertindo Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+KINO,Kino Indonesia Tbk.,Consumer Non-Cyclicals,Nondurable Household Products,Personal Care Products,Personal Care Products
+MARI,Mahaka Radio Integra Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Broadcasting
+MKNT,Mitra Komunikasi Nusantara Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+MTRA,Mitra Pemuda Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+OASA,Maharaksa Biru Energi Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+POWR,Cikarang Listrindo Tbk.,Infrastructures,Utilities,Electric Utilities,Electric Utilities
+INCF,Indo Komoditi Korpora Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+WSBP,Waskita Beton Precast Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+PBSA,Paramita Bangun Sarana Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+PRDA,Prodia Widyahusada Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+BOGA,Bintang Oto Global Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Automotive Retail
+BRIS,Bank Syariah Indonesia Tbk.,Financials,Banks,Banks,Banks
+PORT,Nusantara Pelabuhan Handal Tbk.,Infrastructures,Transportation Infrastructure,Transport Infrastructure Operator,Marine Ports & Services
+CARS,Industri dan Perdagangan Bintraco Dharma Tbk.,Consumer Cyclicals,Automobiles & Components,Consumer Distributors,Consumer Distributors
+MINA,Sanurhasta Mitra Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+CLEO,Sariguna Primatirta Tbk.,Consumer Non-Cyclicals,Food & Beverage,Beverages,Soft Drinks
+TAMU,Pelayaran Tamarin Samudra Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+CSIS,Cahayasakti Investindo Sukses Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+TGRA,Terregra Asia Energy Tbk.,Energy,Alternative Energy,Alternative Energy Equipment,Alternative Energy Equipment
+FIRE,Alfa Energi Investama Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+TOPS,Totalindo Eka Persada Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+KMTR,Kirana Megatara Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+ARMY,Armidian Karyatama Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+MAPB,MAP Boga Adiperkasa Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Restaurants
+WOOD,Integra Indocabinet Tbk.,Consumer Cyclicals,Household Goods,Household Goods,Home Furnishings
+HRTA,Hartadinata Abadi Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Specialty Retail,Specialty Stores
+MABA,Marga Abhinaya Abadi Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+HOKI,Buyung Poetra Sembada Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+MPOW,Megapower Makmur Tbk.,Infrastructures,Utilities,Electric Utilities,Electric Utilities
+MARK,Mark Dynamics Indonesia Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+NASA,Andalan Perkasa Abadi Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+MDKI,Emdeki Utama Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Equipment,Healthcare Equipment
+BELL,Trisula Textile Industries Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+KIOS,Kioson Komersial Indonesia Tbk.,Consumer Cyclicals,Retailing,Internet & Homeshop Retail,Internet & Homeshop Retail
+GMFI,Garuda Maintenance Facility Aero Asia Tbk.,Industrials,Industrial Services,Professional Services,Research & Consulting Services
+MTWI,Malacca Trust Wuwungan Insurance Tbk.,Financials,Insurance,Insurance,General Insurance
+ZINC,Kapuas Prima Coal Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+MCAS,M Cash Integrasi Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+PPRE,PP Presisi Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+WEGE,Wijaya Karya Bangunan Gedung Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+PSSI,IMC Pelita Logistik Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+MORA,Mora Telematika Indonesia Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+DWGL,Dwi Guna Laksana Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+PBID,Panca Budi Idaman Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+JMAS,Asuransi Jiwa Syariah Jasa Mitra Abadi Tbk.,Financials,Insurance,Insurance,Life Insurance
+CAMP,Campina Ice Cream Industry Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+IPCM,Jasa Armada Indonesia Tbk.,Infrastructures,Transportation Infrastructure,Transport Infrastructure Operator,Marine Ports & Services
+PCAR,Prima Cakrawala Abadi Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Automotive Retail
+LCKM,LCK Global Kedaton Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BOSS,Borneo Olah Sarana Sukses Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+HELI,Jaya Trishindo Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+JSKY,Sky Energy Indonesia Tbk.,Energy,Alternative Energy,Alternative Energy Equipment,Alternative Energy Equipment
+INPS,Indah Prakasa Sentosa Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+GHON,Gihon Telekomunikasi Indonesia Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+TDPM,Tianrong Chemicals Industry Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+DFAM,Dafam Property Indonesia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+NICK,Charnic Capital Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+BTPS,Bank BTPN Syariah Tbk.,Financials,Banks,Banks,Banks
+SPTO,Surya Pertiwi Tbk.,Industrials,Industrial Goods,Building Products & Fixtures,Building Products & Fixtures
+PRIM,Royal Prima Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+HEAL,Medikaloka Hermina Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+TRUK,Guna Timur Raya Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+PZZA,Sarimelati Kencana Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Restaurants
+TUGU,Asuransi Tugu Pratama Indonesia Tbk.,Financials,Insurance,Insurance,General Insurance
+MSIN,MNC Digital Entertainment Tbk.,Consumer Cyclicals,Media & Entertainment,Entertainment & Movie Production,Entertainment & Movie Production
+SWAT,Sriwahana Adityakarta Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+TNCA,Trimuda Nuansa Citra Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+MAPA,Map Aktif Adiperkasa Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+TCPI,Transcoal Pacific Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+IPCC,Indonesia Kendaraan Terminal Tbk.,Infrastructures,Transportation Infrastructure,Transport Infrastructure Operator,Marine Ports & Services
+RISE,Jaya Sukses Makmur Sentosa Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BPTR,Batavia Prosperindo Trans Tbk.,Financials,Investment Service,Investment Services,Investment Management
+POLL,Pollux Properties Indonesia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+NFCX,NFC Indonesia Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+MGRO,Mahkota Group Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+NUSA,Sinergi Megah Internusa Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+FILM,MD Entertainment Tbk.,Consumer Cyclicals,Media & Entertainment,Entertainment & Movie Production,Entertainment & Movie Production
+ANDI,Andira Agro Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+LAND,Trimitra Propertindo Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+MOLI,Madusari Murni Indah Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+PANI,Pantai Indah Kapuk Dua Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+DIGI,Arkadia Digital Media Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Advertising
+CITY,Natura City Developments Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SAPX,Satria Antaran Prima Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+SURE,Super Energy Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+HKMU,HK Metals Utama Tbk.,Basic Materials,Metals & Minerals,Iron & Steel,Iron & Steel
+MPRO,Maha Properti Indonesia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+DUCK,Jaya Bersama Indo Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+GOOD,Garudafood Putra Putri Jaya Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+SKRN,Superkrane Mitra Utama Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+YELO,Yelooo Integra Datanet Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+CAKK,Cahayaputra Asa Keramik Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+SATU,Kota Satu Properti Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SOSS,Shield On Service Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+DEAL,Dewata Freightinternational Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+POLA,Pool Advista Finance Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+DIVA,Distribusi Voucher Nusantara Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+LUCK,Sentral Mitra Informatika Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+URBN,Urban Jakarta Propertindo Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SOTS,Satria Mega Kencana Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+ZONE,Mega Perintis Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,"Clothing, Accessories & Bags","Clothing, Accessories & Bags"
+PEHA,Phapros Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+FOOD,Sentra Food Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+BEEF,Estika Tata Tiara Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+POLI,Pollux Hotels Group Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+CLAY,Citra Putra Realty Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+NATO,Surya Permata Andalan Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+JAYA,Armada Berjaya Trans Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+COCO,Wahana Interfood Nusantara Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+MTPS,Meta Epsi Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+CPRI,Capri Nusa Satu Properti Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+HRME,Menteng Heritage Realty Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+POSA,Bliss Properti Indonesia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+JAST,Jasnita Telekomindo Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Integrated Telecommunication Service
+FITT,Hotel Fitra International Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+BOLA,Bali Bintang Sejahtera Tbk.,Consumer Cyclicals,Leisure Goods,Sport Equipment & Hobbies Goods,Sport Equipment & Hobbies Goods
+CCSI,Communication Cable Systems Indonesia Tbk.,Industrials,Industrial Goods,Electrical,Electrical Components & Equipment
+SFAN,Surya Fajar Capital Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+POLU,Golden Flower Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+KJEN,Krida Jaringan Nusantara Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+KAYU,Darmi Bersaudara Tbk.,Basic Materials,Forestry & Paper,Timber,Timber
+ITIC,Indonesian Tobacco Tbk.,Consumer Non-Cyclicals,Tobacco,Tobacco,Tobacco
+PAMG,Bima Sakti Pertiwi Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+IPTV,MNC Vision Networks Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Cable & Satellite
+BLUE,Berkah Prima Perkasa Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+ENVY,Envy Technologies Indonesia Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+EAST,Eastparc Hotel Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+LIFE,MSIG Life Insurance Indonesia Tbk.,Financials,Insurance,Insurance,Life Insurance
+FUJI,Fuji Finance Indonesia Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+KOTA,DMS Propertindo Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+INOV,Inocycle Technology Group Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+ARKA,Arkha Jayanti Persada Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SMKL,Satyamitra Kemas Lestari Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+HDIT,Hensel Davest Indonesia Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+KEEN,Kencana Energi Lestari Tbk.,Energy,Alternative Energy,Alternative Fuels,Alternative Fuels
+BAPI,Bhakti Agung Propertindo Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+TFAS,Telefast Indonesia Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+GGRP,Gunung Raja Paksi Tbk.,Basic Materials,Metals & Minerals,Iron & Steel,Iron & Steel
+OPMS,Optima Prima Metal Sinergi Tbk.,Basic Materials,Metals & Minerals,Iron & Steel,Iron & Steel
+NZIA,Nusantara Almazia Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+SLIS,Gaya Abadi Sempurna Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+PURE,Trinitan Metals and Minerals Tbk.,Basic Materials,Metals & Minerals,Precious Metals & Minerals,Precious Metals & Minerals
+IRRA,Itama Ranoraya Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Supplies & Distributions,Healthcare Supplies & Distributions
+DMMX,Digital Mediatama Maxima Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+SINI,Singaraja Putra Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+WOWS,Ginting Jaya Energi Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+ESIP,Sinergi Inti Plastindo Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+TEBE,Dana Brata Luhur Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+KEJU,Mulia Boga Raya Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+PSGO,Palma Serasih Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+AGAR,Asia Sejahtera Mina Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+IFSH,Ifishdeco Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+REAL,Repower Asia Indonesia Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+IFII,Indonesia Fibreboard Industry Tbk.,Basic Materials,Forestry & Paper,Timber,Timber
+PMJS,Putra Mandiri Jembar Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+UCID,Uni-Charm Indonesia Tbk.,Consumer Non-Cyclicals,Nondurable Household Products,Household Products,Household Products
+GLVA,Galva Technologies Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+PGJO,Bahtera Bumi Raya Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+AMAR,Bank Amar Indonesia Tbk.,Financials,Banks,Banks,Banks
+CSRA,Cisadane Sawit Raya Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+INDO,Royalindo Investa Wijaya Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+AMOR,Ashmore Asset Management Indonesia Tbk.,Financials,Investment Service,Investment Services,Investment Management
+TRIN,Perintis Triniti Properti Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+DMND,Diamond Food Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+PURA,Putra Rajawali Kencana Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+PTPW,Pratama Widya Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+TAMA,Lancartama Sejati Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+IKAN,Era Mandiri Cemerlang Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+SAMF,Saraswanti Anugerah Makmur Tbk.,Basic Materials,Chemicals,Agricultural Chemicals,Agricultural Chemicals
+SBAT,Sejahtera Bintang Abadi Textile Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+KBAG,Karya Bersama Anugerah Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+CBMF,Cahaya Bintang Medan Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+RONY,Aracord Nusantara Group Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+CSMI,Cipta Selera Murni Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Restaurants
+BBSS,Bumi Benowo Sukses Sejahtera Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+BHAT,Bhakti Multi Artha Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+CASH,Cashlez Worldwide Indonesia Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+TECH,Indosterling Technomedia Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+EPAC,Megalestari Epack Sentosaraya Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+UANG,Pakuan Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PGUN,Pradiksi Gunatama Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SOFA,Boston Furniture Industries Tbk.,Consumer Cyclicals,Household Goods,Household Goods,Home Furnishings
+PPGL,Prima Globalindo Logistik Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+TOYS,Sunindo Adipersada Tbk.,Consumer Cyclicals,Leisure Goods,Sport Equipment & Hobbies Goods,Sport Equipment & Hobbies Goods
+SGER,Sumber Global Energy Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+TRJA,Transkon Jaya Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+PNGO,Pinago Utama Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+SCNP,Selaras Citra Nusantara Perkasa Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+BBSI,Krom Bank Indonesia Tbk.,Financials,Banks,Banks,Banks
+KMDS,Kurniamitra Duta Sentosa Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+PURI,Puri Global Sukses Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SOHO,Soho Global Health Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+HOMI,Grand House Mulia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+ROCK,Rockfields Properti Indonesia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+ENZO,Morenzo Abadi Perkasa Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+PLAN,Planet Properindo Jaya Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PTDU,Djasa Ubersakti Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+ATAP,Trimitra Prawara Goldland Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+VICI,Victoria Care Indonesia Tbk.,Consumer Non-Cyclicals,Nondurable Household Products,Personal Care Products,Personal Care Products
+PMMP,Panca Mitra Multiperdana Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+BANK,Bank Aladin Syariah Tbk.,Financials,Banks,Banks,Banks
+WMUU,Widodo Makmur Unggas Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+EDGE,Indointernet Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+UNIQ,Ulima Nitra Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+BEBS,Berkah Beton Sadaya Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+SNLK,Sunter Lakeside Hotel Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,"Hotels, Resorts & Cruise Lines"
+ZYRX,Zyrexindo Mandiri Buana Tbk.,Technology,Technology Hardware & Equipment,Computer Hardware,Computer Hardware
+LFLO,Imago Mulia Persada Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+FIMP,Fimperkasa Utama Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+TAPG,Triputra Agro Persada Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+NPGF,Nusa Palapa Gemilang Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+LUCY,Lima Dua Lima Tiga Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+ADCP,Adhi Commuter Properti Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+HOPE,Harapan Duta Pertiwi Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+MGLV,Panca Anugrah Wisesa Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+True,Triniti Dinamik Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+LABA,Green Power Group Tbk.,Energy,Alternative Energy,Alternative Fuels,Alternative Fuels
+ARCI,Archi Indonesia Tbk.,Basic Materials,Metals & Minerals,Gold,Gold
+IPAC,Era Graharealty Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+MASB,Bank Multiarta Sentosa Tbk.,Financials,Banks,Banks,Banks
+BMHS,Bundamedik Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+FLMC,Falmaco Nonwoven Industri Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+NICL,PAM Mineral Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+UVCR,Trimegah Karya Pratama Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+BUKA,Bukalapak.com Tbk.,Consumer Cyclicals,Retailing,Internet & Homeshop Retail,Internet & Homeshop Retail
+HAIS,Hasnur Internasional Shipping Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+OILS,Indo Oil Perkasa Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+GPSO,Geoprima Solusi Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+MCOL,Prima Andalan Mandiri Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+RSGK,Kedoya Adyaraya Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+RUNS,Global Sukses Solusi Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+SBMA,Surya Biru Murni Acetylene Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+CMNT,Cemindo Gemilang Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+GTSI,GTS Internasional Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+IDEA,Idea Indonesia Akademi Tbk.,Consumer Cyclicals,Consumer Services,Education & Support Services,Education Services
+KUAS,Ace Oldfields Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+BOBA,Formosa Ingredient Factory Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+MTEL,Dayamitra Telekomunikasi Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wireless Telecommunication Services
+DEPO,Caturkarda Depo Bangunan Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Home Improvement Retail
+BINO,Perma Plasindo Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+CMRY,Cisarua Mountain Dairy Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Dairy Products
+WGSH,Wira Global Solusi Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+TAYS,Jaya Swarasa Agung Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+WMPP,Widodo Makmur Perkasa Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+RMKE,RMK Energy Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+OBMD,OBM Drilchem Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports",Oil & Gas Drilling Service
+AVIA,Avia Avian Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+IPPE,Indo Pureco Pratama Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+NASI,Wahana Inti Makmur Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+BSML,Bintang Samudera Mandiri Lines Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+DRMA,Dharma Polimetal Tbk.,Consumer Cyclicals,Automobiles & Components,Auto Components,Auto Parts & Equipment
+ADMR,Alamtri Minerals Indonesia Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+SEMA,Semacom Integrated Tbk.,Industrials,Industrial Goods,Machinery,Industrial Machinery & Components
+ASLC,Autopedia Sukses Lestari Tbk.,Consumer Cyclicals,Retailing,Automotive Retail,Automotive Retail
+NETV,MDTV Media Technologies Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Broadcasting
+BAUT,Mitra Angkasa Sejahtera Tbk.,Transportation & Logistic,Transportation,Passenger Land Transportation,Road Transportation
+ENAK,Champ Resto Indonesia Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Restaurants
+NTBK,Nusatama Berkah Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+SMKM,Sumber Mas Konstruksi Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+STAA,Sumber Tani Agung Resources Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+NANO,Nanotech Indonesia Global Tbk.,Technology,Technology Hardware & Equipment,Electronic Equipment & Instruments,Electronic Equipment & Instruments
+BIKE,Sepeda Bersama Indonesia Tbk.,Consumer Cyclicals,Leisure Goods,Sport Equipment & Hobbies Goods,Sport Equipment & Hobbies Goods
+WIRG,WIR ASIA Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+SICO,Sigma Energy Compressindo Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports","Oil, Gas & Coal Equipment & Services"
+GOTO,GoTo Gojek Tokopedia Tbk.,Consumer Cyclicals,Retailing,Internet & Homeshop Retail,Internet & Homeshop Retail
+TLDN,Teladan Prima Agro Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+MTMH,Murni Sadar Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+WINR,Winner Nusantara Jaya Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+IBOS,Indo Boga Sukses Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+OLIV,Oscar Mitra Sukses Sejahtera Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Home Furnishings Retail
+ASHA,Cilacap Samudera Fishing Industry Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+SWID,Saraswanti Indoland Development Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+TRGU,Cerestar Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+ARKO,Arkora Hydro Tbk.,Energy,Alternative Energy,Alternative Fuels,Alternative Fuels
+CHEM,Chemstar Indonesia Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+DEWI,Dewi Shri Farmindo Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+AXIO,Tera Data Indonusa Tbk.,Technology,Technology Hardware & Equipment,Computer Hardware,Computer Hardware
+KRYA,Bangun Karya Perkasa Jaya Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+HATM,Habco Trans Maritima Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+RCCC,Utama Radar Cahaya Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+GULA,Aman Agrindo Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+JARR,Jhonlin Agro Raya Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+AMMS,Agung Menjangan Mas Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+RAFI,Sari Kreasi Boga Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Restaurants
+KKES,Kusuma Kemindo Sentosa Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+ELPI,Pelayaran Nasional Ekalya Purnamasari Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+EURO,Estee Gold Feet Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Footwear,Footwear
+KLIN,Klinko Karya Imaji Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+TOOL,Rohartindo Nusantara Luas Tbk.,Industrials,Industrial Goods,Machinery,Industrial Machinery & Components
+BUAH,Segar Kumala Indonesia Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+CRAB,Toba Surimi Industries Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+MEDS,Hetzer Medical Indonesia Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Equipment,Healthcare Equipment
+COAL,Black Diamond Resources Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+PRAY,Famon Awal Bros Sedaya Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+CBUT,Citra Borneo Utama Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+BELI,Global Digital Niaga Tbk.,Consumer Cyclicals,Retailing,Internet & Homeshop Retail,Internet & Homeshop Retail
+MKTR,Menthobi Karyatama Raya Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+OMED,Jayamas Medica Industri Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Equipment,Healthcare Equipment
+BSBK,Wulandari Bangun Laksana Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PDPP,Primadaya Plastisindo Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+KDTN,Puri Sentul Permai Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+ZATA,Bersama Zatta Jaya Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,"Clothing, Accessories & Bags","Clothing, Accessories & Bags"
+NINE,Techno9 Indonesia Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+MMIX,Multi Medika Internasional Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Supplies & Distributions,Healthcare Supplies & Distributions
+PADA,Personel Alih Daya Tbk.,Industrials,Industrial Services,Human Resource & Employment Services,Human Resource & Employment Services
+ISAP,Isra Presisi Indonesia Tbk.,Industrials,Industrial Goods,Machinery,Industrial Machinery & Components
+VTNY,Venteny Fortuna International Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+SOUL,Mitra Tirta Buwana Tbk.,Consumer Non-Cyclicals,Food & Beverage,Beverages,Soft Drinks
+ELIT,Data Sinergitama Jaya Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+BEER,Jobubu Jarum Minahasa Tbk.,Consumer Non-Cyclicals,Food & Beverage,Beverages,Liquors
+CBPE,Citra Buana Prasida Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+SUNI,Sunindo Pratama Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+CBRE,Cakra Buana Resources Energi Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+WINE,Hatten Bali Tbk.,Consumer Non-Cyclicals,Food & Beverage,Beverages,Liquors
+BMBL,Lavender Bina Cendikia Tbk.,Consumer Cyclicals,Consumer Services,Education & Support Services,Education Services
+PEVE,Penta Valent Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+LAJU,Jasa Berdikari Logistics Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+FWCT,Wijaya Cahaya Timber Tbk.,Basic Materials,Forestry & Paper,Timber,Timber
+NAYZ,Hassana Boga Sejahtera Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Restaurants
+IRSX,Folago Global Nusantara Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+PACK,Abadi Nusantara Hijau Investama Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+VAST,Vastland Indonesia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+CHIP,Pelita Teknologi Global Tbk.,Technology,Technology Hardware & Equipment,Electronic Equipment & Instruments,Electronic Equipment & Instruments
+HALO,Haloni Jane Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+KING,Hoffmen Cleanindo Tbk.,Industrials,Industrial Services,Environmental & Facilities Services,Environmental & Facilities Services
+PGEO,Pertamina Geothermal Energy Tbk.,Energy,Alternative Energy,Alternative Fuels,Alternative Fuels
+FUTR,Futura Energi Global Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+HILL,Hillcon Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports",Oil & Gas Drilling Service
+BDKR,Berdikari Pondasi Perkasa Tbk.,Infrastructures,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering,Heavy Constructions & Civil Engineering
+PTMP,Mitra Pack Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+SAGE,Saptausaha Gemilangindah Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+TRON,Teknologi Karya Digital Nusa Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+CUAN,Petrindo Jaya Kreasi Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+NSSS,Nusantara Sawit Sejahtera Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+GTRA,Grahaprima Suksesmandiri Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+HAJJ,Arsy Buana Travelindo Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Travel Agencies
+JATI,Informasi Teknologi Indonesia Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+TYRE,King Tire Indonesia Tbk.,Consumer Cyclicals,Automobiles & Components,Auto Components,Tires
+MPXL,MPX Logistics International Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+SMIL,Sarana Mitra Luas Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+KLAS,Pelayaran Kurnia Lautan Semesta Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+MAXI,Maxindo Karya Anugerah Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+VKTR,VKTR Teknologi Mobilitas Tbk.,Industrials,Industrial Goods,Machinery,Construction Machinery & Heavy Vehicles
+RELF,Graha Mitra Asia Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+AMMN,Amman Mineral Internasional Tbk.,Basic Materials,Metals & Minerals,Copper,Copper
+CRSN,Carsurin Tbk.,Industrials,Industrial Services,Professional Services,Research & Consulting Services
+GRPM,Graha Prima Mentari Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+WIDI,Widiant Jaya Krenindo Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+TGUK,Platinum Wahab Nusantara Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+INET,Sinergi Inti Andalan Prima Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+MAHA,Mandiri Herindo Adiperkasa Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+RMKO,Royaltama Mulia Kontraktorindo Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports",Oil & Gas Drilling Service
+CNMA,Nusantara Sejahtera Raya Tbk.,Consumer Cyclicals,Media & Entertainment,Entertainment & Movie Production,Entertainment & Movie Production
+FOLK,Multi Garam Utama Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+HBAT,Minahasa Membangun Hebat Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+GRIA,Ingria Pratama Capitalindo Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+PPRI,Paperocks Indonesia Tbk.,Consumer Cyclicals,Apparel & Luxury Goods,Textiles,Textiles
+ERAL,Sinar Eka Selaras Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Electronics Retail
+CYBR,ITSEC Asia Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+MUTU,Mutuagung Lestari Tbk.,Industrials,Industrial Services,Professional Services,Research & Consulting Services
+LMAX,Lupromax Pelumas Indonesia Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+HUMI,Humpuss Maritim Internasional Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+MSIE,Multisarana Intan Eduka Tbk.,Consumer Cyclicals,Consumer Services,Education & Support Services,Education Services
+RSCH,Charlie Hospital Semarang Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+BABY,Multitrend Indo Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+AEGS,Anugerah Spareparts Sejahtera Tbk.,Consumer Cyclicals,Automobiles & Components,Auto Components,Auto Parts & Equipment
+IOTF,Sumber Sinergi Makmur Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+KOCI,Kokoh Exa Nusantara Tbk.,Industrials,Industrial Goods,Building Products & Fixtures,Building Products & Fixtures
+PTPS,Pulau Subur Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+BREN,Barito Renewables Energy Tbk.,Energy,Alternative Energy,Alternative Fuels,Alternative Fuels
+STRK,Lovina Beach Brewery Tbk.,Consumer Non-Cyclicals,Food & Beverage,Beverages,Liquors
+KOKA,Koka Indonesia Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+LOPI,Logisticsplus International Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+UDNG,Agro Bahari Nusantara Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+RGAS,Kian Santang Muliatama Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Storage & Distribution
+MSTI,Mastersystem Infotama Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+IKPM,Ikapharmindo Putramas Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Pharmaceuticals,Pharmaceuticals
+AYAM,Janu Putra Sejahtera Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+SURI,Maja Agung Latexindo Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+ASLI,Asri Karya Lestari Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+GRPH,Griptha Putra Persada Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+SMGA,Sumber Mineral Global Abadi Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+UNTD,Terang Dunia Internusa Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+TOSK,Topindo Solusi Komunika Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+MPIX,Mitra Pedagang Indonesia Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+ALII,Ancara Logistics Indonesia Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+MKAP,Multikarya Asia Pasifik Raya Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+MEJA,Harta Djaya Karya Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+LIVE,Homeco Victoria Makmur Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Home Furnishings Retail
+HYGN,Ecocare Indo Pasifik Tbk.,Industrials,Industrial Services,Environmental & Facilities Services,Environmental & Facilities Services
+BAIK,Bersama Mencapai Puncak Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+VISI,Satu Visi Putra Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Advertising
+AREA,Dunia Virtual Online Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+MHKI,Multi Hanna Kreasindo Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+ATLA,Atlantis Subsea Indonesia Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports",Oil & Gas Equipment & Services
+DATA,Remala Abadi Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+SOLA,Xolare RCR Energy Tbk.,Energy,Alternative Energy,Alternative Fuels,Alternative Fuels
+BATR,Benteng Api Technic Tbk.,Industrials,Industrial Goods,Machinery,Industrial Machinery & Components
+SPRE,Soraya Berjaya Indonesia Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+PART,Cipta Perdana Lancar Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+GOLF,Intra Golflink Resorts Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Recreational & Sports Facilities
+ISEA,Indo American Seafoods Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,"Fish, Meat & Poultry"
+BLES,Superior Prima Sukses Tbk.,Basic Materials,Construction Materials,Construction Materials,Construction Materials
+GUNA,Gunanusa Eramandiri Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+LABS,UBC Medical Indonesia Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Supplies & Distributions,Healthcare Supplies & Distributions
+DOSS,Global Sukses Digital Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+NEST,Esta Indonesia Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+PTMR,Master Print Tbk.,Industrials,Industrial Services,Commercial Services,Commercial Printing
+VERN,Verona Indah Pictures Tbk.,Consumer Cyclicals,Media & Entertainment,Entertainment & Movie Production,Entertainment & Movie Production
+DAAZ,Daaz Bara Lestari Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+BOAT,Newport Marine Services Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+NAIK,Adiwarna Anugerah Abadi Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+AADI,Adaro Andalan Indonesia Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+MDIY,Daya Intiguna Yasa Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Home Improvement Retail
+KSIX,Kentanix Supra International Tbk.,Technology,Technology Hardware & Equipment,Electronic Components & Semiconductors,Electronic Components & Semiconductors
+RATU,Raharja Energi Cepu Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Production & Refinery
+YOII,Asuransi Digital Bersama Tbk.,Financials,Insurance,Insurance,General Insurance
+HGII,Hero Global Investment Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+BRRC,Raja Roti Cemerlang Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+DGWG,Delta Giri Wacana Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+CBDK,Bangun Kosambi Sukses Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+OBAT,Brigit Biofarmaka Teknologi Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Healthcare Research,Healthcare Research
+MINE,Sinar Terang Mandiri Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+ASPR,Asia Pramulia Tbk.,Basic Materials,Containers & Packaging,Containers & Packaging,Containers & Packaging
+PSAT,Pancaran Samudera Transport Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+COIN,Indokripto Koin Semesta Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+CDIA,Chandra Daya Investasi Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+BLOG,Trimitra Trans Persada Tbk.,Transportation & Logistic,Logistics & Deliveries,Logistics & Deliveries,Logistics & Deliveries
+MERI,Merry Riana Edukasi Tbk.,Consumer Cyclicals,Consumer Services,Education & Support Services,Education Services
+CHEK,Diastika Biotekindo Tbk.,Healthcare,Pharmaceuticals & Health Care Research,Healthcare Research,Healthcare Research
+PMUI,Prima Multi Usaha Indonesia Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+EMAS,Merdeka Gold Resources Tbk.,Basic Materials,Metals & Minerals,Gold,Gold
+PJHB,Pelayaran Jaya Hidup Baru Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+RLCO,Abadi Lestari Indonesia Tbk.,Consumer Cyclicals,Retailing,Specialty Retail,Specialty Stores
+SUPA,Super Bank Indonesia Tbk.,Financials,Banks,Banks,Banks
+KAQI,Jantra Grupo Indonesia Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+YUPI,Yupi Indo Jelly Gum Tbk.,Consumer Non-Cyclicals,Food & Beverage,Processed Foods,Processed Foods
+FORE,Fore Kopi Indonesia Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Restaurants
+MDLA,Medela Potentia Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Supplies & Distributions,Healthcare Supplies & Distributions
+DKHH,Cipta Sarana Medika Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+AYLS,Agro Yasa Lestari Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+DADA,Diamond Citra Propertindo Tbk.,Properties & Real Estate,Real Estate,Real Estate Development,Real Estate Development
+ASPI,Andalan Sakti Primaindo Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+ESTA,Esta Multi Usaha Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+BESS,Batulicin Nusantara Maritim Tbk.,Transportation & Logistic,Transportation,Passenger Marine Transportation,Passenger Marine Transportation
+AMAN,Makmur Berkah Amanda Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies
+CARE,Metro Healthcare Indonesia Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+PIPA,Multi Makmur Lemindo Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+NCKL,Trimegah Bangun Persada Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+MENN,Menn Teknologi Indonesia Tbk.,Technology,Software & IT Services,Online Applications & Services,Online Applications & Services
+AWAN,Era Digital Media Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Advertising
+MBMA,Merdeka Battery Materials Tbk.,Basic Materials,Metals & Minerals,Diversified Metals & Minerals,Diversified Metals & Minerals
+RAAM,Tripar Multivision Plus Tbk.,Consumer Cyclicals,Media & Entertainment,Entertainment & Movie Production,Entertainment & Movie Production
+DOOH,Era Media Sejahtera Tbk.,Consumer Cyclicals,Media & Entertainment,Media,Advertising
+CGAS,Citra Nusantara Gemilang Tbk.,Energy,"Oil, Gas & Coal",Oil & Gas,Oil & Gas Storage & Distribution
+NICE,Adhi Kartiko Pratama Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+MSJA,Multi Spunindo Jaya Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+SMLE,Sinergi Multi Lestarindo Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+ACRO,Samcro Hyosung Adilestari Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+MANG,Manggung Polahraya Tbk.,Consumer Cyclicals,Consumer Services,Tourism & Recreation,Recreational & Sports Facilities
+WIFI,Solusi Sinergi Digital Tbk.,Infrastructures,Telecommunication,Telecommunication Service,Wired Telecommunication Service
+FAPA,FAP Agri Tbk.,Consumer Non-Cyclicals,Food & Beverage,Agricultural Products,Plantations & Crops
+DCII,DCI Indonesia Tbk.,Technology,Software & IT Services,IT Services & Consulting,IT Services & Consulting
+KETR,Ketrosden Triasmitra Tbk.,Energy,"Oil, Gas & Coal","Oil, Gas & Coal Supports",Oil & Gas Equipment & Services
+DGNS,Diagnos Laboratorium Utama Tbk.,Healthcare,Healthcare Equipment & Providers,Healthcare Providers,Healthcare Providers
+UFOE,Damai Sejahtera Abadi Tbk.,Industrials,Industrial Services,Business Support Services,Business Support Services
+ADMF,Adira Dinamika Multi Finance Tbk.,Financials,Financing Service,Consumer Financing,Consumer Financing
+ADMG,Polychem Indonesia Tbk.,Basic Materials,Chemicals,Basic Chemicals,Basic Chemicals
+ADRO,Alamtri Resources Indonesia Tbk.,Energy,"Oil, Gas & Coal",Coal,Coal Production
+AGII,Samator Indo Gas Tbk.,Basic Materials,Chemicals,Specialty Chemical,Specialty Chemical
+AGRO,Bank Raya Indonesia Tbk.,Financials,Banks,Banks,Banks
+AGRS,Bank IBK Indonesia Tbk.,Financials,Banks,Banks,Banks
+AHAP,Asuransi Harta Aman Pratama Tbk.,Financials,Insurance,Insurance,General Insurance
+AIMS,Artha Mahiya Investama Tbk.,Financials,Holding & Investment Companies,Investment Companies,Investment Companies

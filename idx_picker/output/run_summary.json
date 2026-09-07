@@ -1,0 +1,23 @@
+{
+  "run_at": "2026-09-04T08:18:45",
+  "market": "IDX",
+  "tickers_requested": 956,
+  "tickers_ok": 956,
+  "tickers_failed": 0,
+  "failed": [],
+  "elapsed_seconds": 4.3,
+  "rows_written": {
+    "RAW_idx_stocks.csv": 956,
+    "RAW_key_statistics.csv": 956,
+    "RAW_analyses.csv": 956,
+    "RAW_scores.csv": 956,
+    "RAW_history_quarterly.csv": 3502,
+    "RAW_history_annual.csv": 2683
+  },
+  "client_stats": {
+    "cache_hits": 8690,
+    "network": 0,
+    "retries": 0,
+    "failures": 0
+  }
+}
